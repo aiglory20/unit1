@@ -69,7 +69,7 @@ class KnowledgeGraph:
 
         for entity_id, entity_data in self.entities.items():
             if (keyword_lower in entity_data['name'].lower() or
-                keyword_lower in entity_data.get('description', '').lower()):
+                    keyword_lower in entity_data.get('description', '').lower()):
                 results.append(entity_data)
 
         return results
@@ -203,11 +203,13 @@ class KnowledgeGraph:
         # 统计实体类型
         for entity_data in self.entities.values():
             entity_type = entity_data['type']
-            stats['entity_types'][entity_type] = stats['entity_types'].get(entity_type, 0) + 1
+            stats['entity_types'][entity_type] = stats['entity_types'].get(
+                entity_type, 0) + 1
 
         # 统计关系类型
         for u, v, data in self.graph.edges(data=True):
             relation = data['relation']
-            stats['relation_types'][relation] = stats['relation_types'].get(relation, 0) + 1
+            stats['relation_types'][relation] = stats['relation_types'].get(
+                relation, 0) + 1
 
         return stats

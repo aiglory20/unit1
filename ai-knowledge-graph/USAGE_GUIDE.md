@@ -1,6 +1,7 @@
 # AI知识图谱系统使用指南
 
 ## 目录
+
 1. [环境准备](#环境准备)
 2. [快速开始](#快速开始)
 3. [功能详解](#功能详解)
@@ -12,6 +13,7 @@
 ## 环境准备
 
 ### 系统要求
+
 - Python 3.8+
 - Linux/MacOS/Windows
 - 4GB+ 内存
@@ -24,6 +26,7 @@ pip3 install -r requirements.txt
 ```
 
 或手动安装：
+
 ```bash
 pip3 install rdflib networkx matplotlib
 ```
@@ -40,6 +43,7 @@ python3 scripts/build_knowledge_graph.py
 ```
 
 **输出**：
+
 - `rdf/ai_knowledge_graph.ttl` - Turtle格式
 - `rdf/ai_knowledge_graph.rdf` - RDF/XML格式
 - `rdf/ai_knowledge_graph.nt` - N-Triples格式
@@ -53,6 +57,7 @@ python3 scripts/load_knowledge_graph.py
 ```
 
 **输出**：
+
 - `database/knowledge_graph.pkl` - 图数据库文件
 
 ### 第三步：运行测试
@@ -87,6 +92,7 @@ python3 scripts/visualize.py
 ### 1. 实体搜索
 
 #### 方式1：交互式应用
+
 ```bash
 python3 app/query_app.py
 # 选择 1 - 实体搜索
@@ -94,6 +100,7 @@ python3 app/query_app.py
 ```
 
 #### 方式2：Python API
+
 ```python
 from kg_core import KnowledgeGraph
 
@@ -109,6 +116,7 @@ for entity in results:
 ### 2. 实体详情查询
 
 #### Python API
+
 ```python
 # 按ID查找
 entity = kg.get_entity_by_id('E023')
@@ -126,6 +134,7 @@ print(f"年份：{entity['year']}")
 ### 3. 关系查询
 
 #### 查看实体的所有关系
+
 ```python
 relations = kg.get_relations('E023')  # GPT
 
@@ -139,6 +148,7 @@ for rel in relations['incoming']:
 ```
 
 #### 按关系类型查询
+
 ```python
 # 查找所有"developedBy"关系
 results = kg.query_by_relation('developedBy')
@@ -209,6 +219,7 @@ print(f"关系类型分布：{stats['relation_types']}")
 **问题**：我要开发一个机器翻译系统，应该使用什么模型？
 
 **查询步骤**：
+
 ```python
 # 1. 找到机器翻译实体
 mt = kg.get_entity_by_name('机器翻译')
@@ -229,6 +240,7 @@ for triple in results:
 **问题**：学习深度学习需要掌握哪些内容？
 
 **查询步骤**：
+
 ```python
 # 1. 找到深度学习领域
 dl = kg.get_entity_by_name('深度学习')
@@ -242,6 +254,7 @@ sorted_algos = sorted(algorithms,
 ```
 
 **学习路径**：
+
 1. 基础（1943-1986）：神经网络、反向传播
 2. 进阶（1997-2014）：CNN、RNN、LSTM
 3. 前沿（2014-2023）：Transformer、GAN、扩散模型
@@ -251,6 +264,7 @@ sorted_algos = sorted(algorithms,
 **问题**：Transformer对AI发展有什么影响？
 
 **查询步骤**：
+
 ```python
 # 1. 找到Transformer
 transformer = kg.get_entity_by_name('Transformer')
@@ -265,6 +279,7 @@ for triple in evolution:
 ```
 
 **影响分析**：
+
 - NLP：GPT、BERT、T5等
 - CV：ViT、CLIP等
 - 多模态：DALL-E、Stable Diffusion等
@@ -274,6 +289,7 @@ for triple in evolution:
 **问题**：了解OpenAI的技术产出？
 
 **查询步骤**：
+
 ```python
 # 1. 找到OpenAI
 openai = kg.get_entity_by_name('OpenAI')
@@ -288,6 +304,7 @@ for triple in products:
 ```
 
 **产出列表**：
+
 - 2018: GPT
 - 2019: GPT-2
 - 2020: GPT-3
@@ -314,6 +331,7 @@ for triple in products:
 ```
 
 然后运行：
+
 ```bash
 python3 scripts/build_knowledge_graph.py
 python3 scripts/load_knowledge_graph.py
@@ -340,6 +358,7 @@ with open('search_results.json', 'w', encoding='utf-8') as f:
 **答**：可以。提供两种方式：
 
 **方式1：使用py2neo**
+
 ```python
 from py2neo import Graph, Node, Relationship
 
@@ -361,6 +380,7 @@ for u, v, data in kg.graph.edges(data=True):
 ### Q5: 如何提高查询性能？
 
 **答**：对于大规模图谱：
+
 1. 使用Neo4j等专业图数据库
 2. 建立索引：`CREATE INDEX ON :Entity(name)`
 3. 优化查询语句
@@ -369,6 +389,7 @@ for u, v, data in kg.graph.edges(data=True):
 ### Q6: 中文显示乱码怎么办？
 
 **答**：安装中文字体：
+
 ```bash
 # Ubuntu/Debian
 sudo apt-get install fonts-wqy-microhei
@@ -382,10 +403,12 @@ matplotlib.rcParams['font.sans-serif'] = ['WenQuanYi Micro Hei']
 **答**：使用在线工具或命令行工具：
 
 **在线验证**：
-- http://www.easyrdf.org/converter
-- http://rdfvalidator.mybluemix.net/
+
+- <http://www.easyrdf.org/converter>
+- <http://rdfvalidator.mybluemix.net/>
 
 **命令行验证**：
+
 ```bash
 rapper -i turtle rdf/ai_knowledge_graph.ttl
 ```
@@ -439,6 +462,7 @@ AI知识图谱查询系统
 ### 使用示例
 
 #### 示例1：搜索实体
+
 ```
 请选择操作：1
 请输入搜索关键词：深度学习
@@ -451,6 +475,7 @@ AI知识图谱查询系统
 ```
 
 #### 示例2：查看实体详情
+
 ```
 请选择操作：2
 请输入实体ID或名称：GPT
@@ -470,6 +495,7 @@ ID：E023
 ```
 
 #### 示例3：按关系查询
+
 ```
 请选择操作：4
 请输入关系类型：developedBy
@@ -482,6 +508,7 @@ ID：E023
 ```
 
 #### 示例4：按类型查询
+
 ```
 请选择操作：5
 请输入实体类型：Person
@@ -498,6 +525,7 @@ ID：E023
 ## 数据说明
 
 ### 实体ID编码规则
+
 - E001-E050: AI领域、应用、人物、组织
 - E051-E150: 算法和模型
 - E151-E272: 概念、技术、工具
@@ -552,6 +580,7 @@ for model in recent_models:
 ### 数据导出
 
 #### 导出为CSV
+
 ```python
 import csv
 
@@ -577,6 +606,7 @@ with open('relations.csv', 'w', encoding='utf-8', newline='') as f:
 ```
 
 #### 导出为GraphML
+
 ```python
 import networkx as nx
 
@@ -589,22 +619,27 @@ nx.write_graphml(kg.graph, 'knowledge_graph.graphml')
 ## 可视化说明
 
 ### 1. 实体类型分布图 (viz_entity_types.png)
+
 - 柱状图展示9种实体类型的数量分布
 - 用于了解图谱的整体结构
 
 ### 2. 关系类型分布图 (viz_relation_types.png)
+
 - 水平柱状图展示10种关系的数量
 - 用于分析关系的丰富程度
 
 ### 3. AI发展时间线 (viz_timeline.png)
+
 - 散点图展示AI技术的历史发展
 - 按年份排列，了解技术演进
 
 ### 4. 深度学习子图 (viz_deeplearning_subgraph.png)
+
 - 以"深度学习"为中心的1跳邻居网络
 - 展示深度学习的技术生态
 
 ### 5. GPT子图 (viz_gpt_subgraph.png)
+
 - 以"GPT"为中心的关系网络
 - 展示GPT的技术基础和应用
 
@@ -613,15 +648,18 @@ nx.write_graphml(kg.graph, 'knowledge_graph.graphml')
 ## 性能优化建议
 
 ### 对于小规模图谱（<1000实体）
+
 - 当前方案已足够快速
 - 无需额外优化
 
 ### 对于中等规模图谱（1000-10000实体）
+
 - 考虑使用SQLite存储实体数据
 - 为常用查询添加缓存
 - 使用索引加速查找
 
 ### 对于大规模图谱（>10000实体）
+
 - 迁移到Neo4j等专业图数据库
 - 使用Cypher查询语言
 - 分布式存储和查询
@@ -684,21 +722,25 @@ def visualize_network_metrics(kg, output_file='viz_metrics.png'):
 ## 最佳实践
 
 ### 1. 数据维护
+
 - 定期验证数据完整性
 - 保持实体描述的准确性
 - 及时更新新技术
 
 ### 2. 查询优化
+
 - 使用ID查询比名称查询更快
 - 缓存频繁查询的结果
 - 限制返回结果数量
 
 ### 3. 代码规范
+
 - 遵循PEP 8编码规范
 - 添加类型注解
 - 编写单元测试
 
 ### 4. 文档更新
+
 - 保持README与代码同步
 - 记录重要的设计决策
 - 提供充足的示例代码
@@ -708,16 +750,19 @@ def visualize_network_metrics(kg, output_file='viz_metrics.png'):
 ## 参考资源
 
 ### 技术文档
+
 - [RDF 1.1 Primer](https://www.w3.org/TR/rdf11-primer/)
 - [OWL 2 Primer](https://www.w3.org/TR/owl2-primer/)
 - [SPARQL 1.1 Query Language](https://www.w3.org/TR/sparql11-query/)
 
 ### 相关库
+
 - [rdflib Documentation](https://rdflib.readthedocs.io/)
 - [NetworkX Documentation](https://networkx.org/documentation/stable/)
 - [Neo4j Python Driver](https://neo4j.com/docs/python-manual/current/)
 
 ### 工具
+
 - [Protégé](https://protege.stanford.edu/) - 本体编辑器
 - [Gephi](https://gephi.org/) - 图可视化工具
 - [Neo4j Desktop](https://neo4j.com/download/) - 图数据库
@@ -727,6 +772,7 @@ def visualize_network_metrics(kg, output_file='viz_metrics.png'):
 ## 联系与反馈
 
 如有问题或建议，欢迎：
+
 - 查看项目文档
 - 运行测试验证
 - 提出改进建议

@@ -5,6 +5,7 @@
 ## 一、Neo4j简介
 
 Neo4j是业界领先的原生图数据库，提供：
+
 - 高性能的图查询（Cypher语言）
 - 强大的可视化界面
 - 企业级特性（集群、备份等）
@@ -39,6 +40,7 @@ docker logs -f ai-kg-neo4j
 ### 方式2：本地安装
 
 #### Ubuntu/Debian
+
 ```bash
 # 添加Neo4j仓库
 wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
@@ -54,6 +56,7 @@ sudo systemctl enable neo4j
 ```
 
 #### MacOS
+
 ```bash
 # 使用Homebrew
 brew install neo4j
@@ -341,6 +344,7 @@ RETURN [node in nodes(path) | node.name] as learning_path
 ## 七、什么时候应该使用Neo4j？
 
 ### 使用Neo4j的场景
+
 - ✅ 实体数量 > 10000
 - ✅ 需要复杂的图查询
 - ✅ 需要高并发访问
@@ -349,6 +353,7 @@ RETURN [node in nodes(path) | node.name] as learning_path
 - ✅ 需要ACID事务
 
 ### 使用NetworkX的场景
+
 - ✅ 学习和演示
 - ✅ 快速原型开发
 - ✅ 实体数量 < 5000
@@ -357,7 +362,7 @@ RETURN [node in nodes(path) | node.name] as learning_path
 
 ## 八、Neo4j可视化界面
 
-访问 http://localhost:7474 后，可以：
+访问 <http://localhost:7474> 后，可以：
 
 1. **图形浏览**
    - 点击节点查看详情
@@ -377,11 +382,13 @@ RETURN [node in nodes(path) | node.name] as learning_path
 ## 九、Cypher学习资源
 
 ### 官方资源
+
 - [Neo4j Cypher手册](https://neo4j.com/docs/cypher-manual/)
 - [Cypher备忘单](https://neo4j.com/docs/cypher-refcard/)
 - [Neo4j图数据科学](https://neo4j.com/docs/graph-data-science/)
 
 ### 学习路径
+
 1. 基础：节点和关系的CRUD
 2. 进阶：模式匹配和路径查询
 3. 高级：聚合、索引、性能优化
@@ -412,6 +419,7 @@ DETACH DELETE n
 ## 十、迁移注意事项
 
 ### 数据迁移检查清单
+
 - [ ] 备份现有数据
 - [ ] 验证Neo4j连接
 - [ ] 检查数据完整性
@@ -423,12 +431,14 @@ DETACH DELETE n
 
 **Q1: 导入后中文显示乱码？**
 A: 确保使用UTF-8编码，在连接时设置：
+
 ```python
 driver = GraphDatabase.driver(uri, auth=auth, encoding='utf-8')
 ```
 
 **Q2: 导入速度慢？**
 A: 使用批量导入：
+
 ```python
 with driver.session() as session:
     with session.begin_transaction() as tx:
@@ -438,6 +448,7 @@ with driver.session() as session:
 
 **Q3: 如何备份Neo4j数据？**
 A: 使用neo4j-admin工具：
+
 ```bash
 neo4j-admin dump --database=neo4j --to=backup.dump
 ```
@@ -456,6 +467,7 @@ neo4j-admin dump --database=neo4j --to=backup.dump
 | 大规模图谱 | Neo4j | 必须使用 |
 
 ### 本项目建议
+
 - ✅ 默认使用NetworkX完成课程要求
 - ✅ 有兴趣的同学可以尝试Neo4j
 - ✅ 两种方案的核心功能相同
@@ -464,6 +476,7 @@ neo4j-admin dump --database=neo4j --to=backup.dump
 ---
 
 **参考文档**：
+
 - [Neo4j官方文档](https://neo4j.com/docs/)
 - [py2neo文档](https://py2neo.org/)
 - [Neo4j Python Driver](https://neo4j.com/docs/python-manual/)

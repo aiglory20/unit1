@@ -131,16 +131,19 @@ python3 scripts/visualize.py
 ### 3. 知识查询
 
 #### 实体检索
+
 - 关键词搜索
 - 按ID或名称精确查找
 - 按类型筛选
 
 #### 关系查询
+
 - 查看实体的所有关系
 - 按关系类型查询三元组
 - 关系路径查找
 
 #### 高级查询
+
 - K跳邻居查询
 - 最短路径计算
 - 子图提取
@@ -148,18 +151,21 @@ python3 scripts/visualize.py
 ### 4. 知识应用
 
 #### 技术选型辅助
+
 ```
 场景：我想开发图像分类应用，应该使用什么技术？
 答案：AlexNet、ResNet、VGG、ViT、CLIP等
 ```
 
 #### 学习路径推荐
+
 ```
 场景：学习深度学习需要了解哪些核心算法？
 答案：CNN、RNN、Transformer、反向传播、注意力机制等
 ```
 
 #### 技术演进追踪
+
 ```
 场景：Transformer如何影响AI发展？
 答案：GPT系列、BERT、T5、ViT、CLIP等都基于Transformer
@@ -187,21 +193,25 @@ python3 scripts/visualize.py
 ## 项目特点
 
 ### ✅ 符合规范
+
 - 严格遵循RDF/OWL知识表示规范
 - 清晰的本体设计和命名空间
 - 支持多种RDF序列化格式
 
 ### ✅ 易于扩展
+
 - 模块化设计，易于添加新实体和关系
 - 支持增量更新
 - 灵活的查询接口
 
 ### ✅ 实用性强
+
 - 涵盖AI领域核心知识
 - 支持多种实际应用场景
 - 提供丰富的查询功能
 
 ### ✅ 轻量级
+
 - 无需复杂的数据库部署
 - 运行速度快
 - 易于学习和演示
@@ -258,27 +268,35 @@ path = kg.get_shortest_path('E061', 'E023')  # Hinton -> GPT
 ## 知识图谱涵盖内容
 
 ### AI领域
+
 机器学习、深度学习、自然语言处理、计算机视觉、强化学习、知识图谱、专家系统等
 
 ### 核心算法
+
 神经网络、CNN、RNN、Transformer、反向传播、梯度下降、决策树、SVM、K-means等
 
 ### 重要模型
+
 GPT系列、BERT、ResNet、YOLO、AlexNet、GAN、VAE、LSTM、AlphaGo等
 
 ### 技术方法
+
 迁移学习、强化学习、注意力机制、对抗训练、数据增强、Fine-tuning、RLHF等
 
 ### 应用场景
+
 语音识别、图像分类、机器翻译、推荐系统、自动驾驶、人脸识别、文本生成等
 
 ### 重要人物
+
 图灵、Hinton、Bengio、LeCun、Andrew Ng、Ian Goodfellow等
 
 ### 研究机构
+
 OpenAI、DeepMind、Google AI、MIT CSAIL、Stanford AI Lab、Meta AI等
 
 ### 开发工具
+
 TensorFlow、PyTorch、Keras、scikit-learn、Hugging Face等
 
 ## 后续扩展

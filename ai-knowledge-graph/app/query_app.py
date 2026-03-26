@@ -4,13 +4,13 @@
 提供实体检索、关系查询等功能
 """
 
+from kg_core import KnowledgeGraph
 import sys
 import os
 
 # 添加项目根目录到Python路径
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from kg_core import KnowledgeGraph
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 
 class KGQueryApp:
@@ -46,7 +46,8 @@ class KGQueryApp:
             print(f"\n找到 {len(results)} 个匹配的实体：")
             print("-"*60)
             for i, entity in enumerate(results[:20], 1):  # 限制显示前20个
-                print(f"{i}. [{entity['id']}] {entity['name']} ({entity['type']})")
+                print(
+                    f"{i}. [{entity['id']}] {entity['name']} ({entity['type']})")
                 if 'description' in entity:
                     print(f"   描述：{entity['description'][:80]}...")
                 if 'year' in entity:
@@ -84,12 +85,14 @@ class KGQueryApp:
             if relations['outgoing']:
                 print(f"\n【出边关系】（{entity['name']} 作为主语）：")
                 for rel in relations['outgoing'][:10]:
-                    print(f"  → {rel['predicate']} → {rel['object_name']} ({rel['object']})")
+                    print(
+                        f"  → {rel['predicate']} → {rel['object_name']} ({rel['object']})")
 
             if relations['incoming']:
                 print(f"\n【入边关系】（{entity['name']} 作为宾语）：")
                 for rel in relations['incoming'][:10]:
-                    print(f"  ← {rel['predicate']} ← {rel['subject_name']} ({rel['subject']})")
+                    print(
+                        f"  ← {rel['predicate']} ← {rel['subject_name']} ({rel['subject']})")
 
         else:
             print("未找到该实体")
@@ -113,12 +116,14 @@ class KGQueryApp:
             if relations['outgoing']:
                 print(f"\n作为主语的关系（共{len(relations['outgoing'])}个）：")
                 for rel in relations['outgoing']:
-                    print(f"  {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
+                    print(
+                        f"  {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
 
             if relations['incoming']:
                 print(f"\n作为宾语的关系（共{len(relations['incoming'])}个）：")
                 for rel in relations['incoming']:
-                    print(f"  {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
+                    print(
+                        f"  {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
 
             if not relations['outgoing'] and not relations['incoming']:
                 print("该实体没有关系")
@@ -142,7 +147,8 @@ class KGQueryApp:
             print(f"\n找到 {len(results)} 个 [{relation}] 关系：")
             print("-"*60)
             for i, triple in enumerate(results[:30], 1):  # 限制显示前30个
-                print(f"{i}. {triple['subject_name']} --[{triple['predicate']}]--> {triple['object_name']}")
+                print(
+                    f"{i}. {triple['subject_name']} --[{triple['predicate']}]--> {triple['object_name']}")
         else:
             print(f"未找到 [{relation}] 关系")
 

@@ -7,6 +7,7 @@
 import os
 import sys
 
+
 def check_files():
     """检查文件完整性"""
     print("="*70)
@@ -55,7 +56,8 @@ def check_files():
     for file_path, description in required_files:
         if os.path.exists(file_path):
             size = os.path.getsize(file_path)
-            size_str = f"{size/1024:.1f}KB" if size < 1024*1024 else f"{size/1024/1024:.1f}MB"
+            size_str = f"{size/1024:.1f}KB" if size < 1024 * \
+                1024 else f"{size/1024/1024:.1f}MB"
             print(f"  ✓ {description:20s} {file_path:40s} ({size_str})")
             found += 1
         else:
@@ -220,11 +222,13 @@ def check_functionality():
 
         # 3. 关系
         relations = kg.get_relations(gpt['id'])
-        print(f"    ✓ 关系查询：{len(relations['outgoing'])}出边，{len(relations['incoming'])}入边")
+        print(
+            f"    ✓ 关系查询：{len(relations['outgoing'])}出边，{len(relations['incoming'])}入边")
 
         # 4. 统计
         stats = kg.get_statistics()
-        print(f"    ✓ 统计信息：{stats['total_entities']}实体，{stats['total_relations']}关系")
+        print(
+            f"    ✓ 统计信息：{stats['total_entities']}实体，{stats['total_relations']}关系")
 
         print("\n✓ 所有功能正常")
         return True

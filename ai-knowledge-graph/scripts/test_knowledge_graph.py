@@ -4,13 +4,13 @@
 验证图谱的准确性、完整性和功能
 """
 
+from kg_core import KnowledgeGraph
 import sys
 import os
 
 # 添加项目根目录到Python路径
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from kg_core import KnowledgeGraph
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 
 def test_entity_search(kg):
@@ -36,7 +36,8 @@ def test_entity_details(kg):
     print("-"*60)
 
     # 测试几个重要实体
-    test_entities = ['E023', 'E061', 'E074', 'E085']  # GPT, Hinton, OpenAI, PyTorch
+    # GPT, Hinton, OpenAI, PyTorch
+    test_entities = ['E023', 'E061', 'E074', 'E085']
 
     for entity_id in test_entities:
         entity = kg.get_entity_by_id(entity_id)
@@ -65,12 +66,14 @@ def test_relations(kg):
     if relations['outgoing']:
         print("\n  示例出边关系：")
         for rel in relations['outgoing'][:5]:
-            print(f"    {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
+            print(
+                f"    {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
 
     if relations['incoming']:
         print("\n  示例入边关系：")
         for rel in relations['incoming'][:5]:
-            print(f"    {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
+            print(
+                f"    {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
 
     print("✓ 关系查询测试通过")
 
@@ -87,7 +90,8 @@ def test_relation_type_query(kg):
         print(f"关系 '{rel_type}': 找到 {len(results)} 个三元组")
         if results:
             example = results[0]
-            print(f"  示例：{example['subject_name']} --[{rel_type}]--> {example['object_name']}")
+            print(
+                f"  示例：{example['subject_name']} --[{rel_type}]--> {example['object_name']}")
 
     print("✓ 关系类型查询测试通过")
 
@@ -149,7 +153,8 @@ def test_neighbors(kg):
         print("  示例邻居：")
         for neighbor_id, data in list(neighbors.items())[:5]:
             neighbor_entity = data['entity']
-            print(f"    - {neighbor_entity['name']} ({neighbor_entity['type']})")
+            print(
+                f"    - {neighbor_entity['name']} ({neighbor_entity['type']})")
 
     print("✓ 邻居查询测试通过")
 

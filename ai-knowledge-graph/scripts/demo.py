@@ -4,12 +4,12 @@
 展示核心功能和典型应用场景
 """
 
+from kg_core import KnowledgeGraph
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from kg_core import KnowledgeGraph
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 
 def demo_intro():
@@ -74,12 +74,14 @@ def demo_relation_exploration(kg):
     print(f"\n【出边关系】（{entity['name']} 作为主语）：")
     print("-"*70)
     for rel in relations['outgoing']:
-        print(f"  {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
+        print(
+            f"  {entity['name']} --[{rel['predicate']}]--> {rel['object_name']}")
 
     print(f"\n【入边关系】（{entity['name']} 作为宾语）：")
     print("-"*70)
     for rel in relations['incoming']:
-        print(f"  {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
+        print(
+            f"  {rel['subject_name']} --[{rel['predicate']}]--> {entity['name']}")
 
 
 def demo_relation_query(kg):
@@ -96,7 +98,8 @@ def demo_relation_query(kg):
     print(f"找到 {len(results)} 个基于Transformer的技术：\n")
     for i, triple in enumerate(results[:10], 1):
         subject = kg.get_entity_by_id(triple['subject'])
-        print(f"{i}. {triple['subject_name']} ({subject['type']}) - {subject.get('year', 'N/A')}")
+        print(
+            f"{i}. {triple['subject_name']} ({subject['type']}) - {subject.get('year', 'N/A')}")
 
     # 场景2：查找OpenAI开发的所有产品
     print("\n\n场景2：查找OpenAI开发的所有产品")
@@ -106,7 +109,8 @@ def demo_relation_query(kg):
     print(f"找到 {len(results)} 个OpenAI开发的产品：\n")
     for i, triple in enumerate(results, 1):
         subject = kg.get_entity_by_id(triple['subject'])
-        print(f"{i}. {triple['subject_name']} ({subject['type']}) - {subject.get('year', 'N/A')}")
+        print(
+            f"{i}. {triple['subject_name']} ({subject['type']}) - {subject.get('year', 'N/A')}")
 
 
 def demo_type_query(kg):
@@ -164,7 +168,6 @@ def demo_application_analysis(kg):
                         if r['predicate'] == 'belongsTo' and r['object'] == cv_field['id']:
                             if app not in cv_apps:
                                 cv_apps.append(app)
-
 
     # 获取所有应用于计算机视觉领域的应用
     cv_relations = kg.query_by_relation('appliedIn')
@@ -257,7 +260,8 @@ def demo_domain_experts(kg):
 
         # 查找贡献
         rels = kg.get_relations(person['id'])
-        contributions = [rel for rel in rels['outgoing'] if rel['predicate'] == 'proposes']
+        contributions = [rel for rel in rels['outgoing']
+                         if rel['predicate'] == 'proposes']
         if contributions:
             print(f"  主要贡献：", end='')
             print(', '.join([rel['object_name'] for rel in contributions]))
@@ -270,7 +274,8 @@ def demo_domain_experts(kg):
             print(', '.join([rel['subject_name'] for rel in developed[:3]]))
 
         # 查找工作单位
-        work_places = [rel for rel in rels['outgoing'] if rel['predicate'] == 'worksAt']
+        work_places = [rel for rel in rels['outgoing']
+                       if rel['predicate'] == 'worksAt']
         if work_places:
             print(f"  工作单位：", end='')
             print(', '.join([rel['object_name'] for rel in work_places]))
@@ -297,9 +302,11 @@ def demo_tool_ecosystem(kg):
 
         # 查找开发者
         rels = kg.get_relations(tool['id'])
-        developers = [rel for rel in rels['outgoing'] if rel['predicate'] == 'developedBy']
+        developers = [rel for rel in rels['outgoing']
+                      if rel['predicate'] == 'developedBy']
         if developers:
-            print(f"  开发者：{', '.join([rel['object_name'] for rel in developers])}")
+            print(
+                f"  开发者：{', '.join([rel['object_name'] for rel in developers])}")
 
         print()
 
@@ -318,13 +325,13 @@ def demo_statistics_analysis(kg):
 
     print("\n✓ 实体类型分布：")
     for entity_type, count in sorted(stats['entity_types'].items(),
-                                      key=lambda x: x[1], reverse=True):
+                                     key=lambda x: x[1], reverse=True):
         bar = '█' * (count // 5)
         print(f"  {entity_type:15s}: {count:3d} {bar}")
 
     print("\n✓ 关系类型分布：")
     for relation_type, count in sorted(stats['relation_types'].items(),
-                                        key=lambda x: x[1], reverse=True):
+                                       key=lambda x: x[1], reverse=True):
         bar = '█' * (count // 5)
         print(f"  {relation_type:15s}: {count:3d} {bar}")
 
@@ -355,7 +362,8 @@ def demo_use_cases(kg):
     print(f"\n核心算法和模型（共{len(nlp_tech)}个）：")
     for i, triple in enumerate(nlp_tech[:10], 1):
         tech = kg.get_entity_by_id(triple['subject'])
-        print(f"  {i}. {triple['subject_name']} ({tech['type']}, {tech.get('year', 'N/A')})")
+        print(
+            f"  {i}. {triple['subject_name']} ({tech['type']}, {tech.get('year', 'N/A')})")
 
     # 查找NLP的应用
     nlp_apps = kg.query_by_relation('appliedIn', obj=nlp['id'])
@@ -380,9 +388,11 @@ def demo_use_cases(kg):
 
         # 查找开发者
         rels = kg.get_relations(tool['id'])
-        devs = [rel for rel in rels['outgoing'] if rel['predicate'] == 'developedBy']
+        devs = [rel for rel in rels['outgoing']
+                if rel['predicate'] == 'developedBy']
         if devs:
-            print(f"     开发者：{', '.join([rel['object_name'] for rel in devs])}")
+            print(
+                f"     开发者：{', '.join([rel['object_name'] for rel in devs])}")
         print()
 
 

@@ -4,12 +4,12 @@
 展示核心功能和查询示例
 """
 
+from kg_core import KnowledgeGraph
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from kg_core import KnowledgeGraph
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 
 def main():
@@ -55,11 +55,13 @@ def main():
     relations = kg.get_relations(gpt['id'])
     print(f"\n出边关系（{len(relations['outgoing'])}个）：")
     for rel in relations['outgoing']:
-        print(f"  • {gpt['name']} --[{rel['predicate']}]--> {rel['object_name']}")
+        print(
+            f"  • {gpt['name']} --[{rel['predicate']}]--> {rel['object_name']}")
 
     print(f"\n入边关系（{len(relations['incoming'])}个）：")
     for rel in relations['incoming'][:5]:
-        print(f"  • {rel['subject_name']} --[{rel['predicate']}]--> {gpt['name']}")
+        print(
+            f"  • {rel['subject_name']} --[{rel['predicate']}]--> {gpt['name']}")
 
     # 演示3：按关系查询
     print("\n" + "="*70)
@@ -68,7 +70,8 @@ def main():
     print("\n查询所有'developedBy'关系（前10个）：")
     results = kg.query_by_relation('developedBy')
     for i, triple in enumerate(results[:10], 1):
-        print(f"  {i}. {triple['subject_name']} --[由...开发]--> {triple['object_name']}")
+        print(
+            f"  {i}. {triple['subject_name']} --[由...开发]--> {triple['object_name']}")
 
     # 演示4：按类型查询
     print("\n" + "="*70)
@@ -94,7 +97,8 @@ def main():
         results = kg.query_by_relation('appliedIn', obj=image_class['id'])
         for i, triple in enumerate(results, 1):
             model = kg.get_entity_by_id(triple['subject'])
-            print(f"  {i}. {triple['subject_name']} ({model.get('year', 'N/A')})")
+            print(
+                f"  {i}. {triple['subject_name']} ({model.get('year', 'N/A')})")
 
     # 演示6：技术栈分析
     print("\n" + "="*70)

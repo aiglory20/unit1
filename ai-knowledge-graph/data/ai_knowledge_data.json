@@ -1833,363 +1833,1795 @@
     }
   ],
   "relations": [
-    {"subject": "E002", "predicate": "isPartOf", "object": "E001"},
-    {"subject": "E003", "predicate": "isPartOf", "object": "E002"},
-    {"subject": "E004", "predicate": "isPartOf", "object": "E001"},
-    {"subject": "E005", "predicate": "isPartOf", "object": "E001"},
-    {"subject": "E006", "predicate": "isPartOf", "object": "E002"},
-    {"subject": "E007", "predicate": "isPartOf", "object": "E001"},
-    {"subject": "E008", "predicate": "isPartOf", "object": "E001"},
-    {"subject": "E009", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E010", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E010", "predicate": "basedon", "object": "E009"},
-    {"subject": "E011", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E011", "predicate": "basedon", "object": "E009"},
-    {"subject": "E012", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E013", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E014", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E015", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E016", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E017", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E017", "predicate": "basedon", "object": "E015"},
-    {"subject": "E018", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E019", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E020", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E021", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E022", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E023", "predicate": "basedon", "object": "E012"},
-    {"subject": "E023", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E024", "predicate": "basedon", "object": "E012"},
-    {"subject": "E024", "predicate": "developedBy", "object": "E076"},
-    {"subject": "E024", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E025", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E025", "predicate": "basedon", "object": "E010"},
-    {"subject": "E025", "predicate": "developedBy", "object": "E080"},
-    {"subject": "E026", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E026", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E027", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E027", "predicate": "basedon", "object": "E010"},
-    {"subject": "E028", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E028", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E029", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E029", "predicate": "developedBy", "object": "E065"},
-    {"subject": "E030", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E031", "predicate": "basedon", "object": "E011"},
-    {"subject": "E031", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E031", "predicate": "developedBy", "object": "E072"},
-    {"subject": "E032", "predicate": "basedon", "object": "E031"},
-    {"subject": "E032", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E033", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E033", "predicate": "isPartOf", "object": "E012"},
-    {"subject": "E034", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E035", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E036", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E037", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E038", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E039", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E040", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E041", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E042", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E043", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E044", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E045", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E046", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E047", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E048", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E049", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E050", "predicate": "appliedIn", "object": "E002"},
-    {"subject": "E051", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E052", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E053", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E054", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E055", "predicate": "appliedIn", "object": "E002"},
-    {"subject": "E056", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E057", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E058", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E059", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E061", "predicate": "proposes", "object": "E013"},
-    {"subject": "E061", "predicate": "worksAt", "object": "E076"},
-    {"subject": "E062", "predicate": "worksAt", "object": "E077"},
-    {"subject": "E063", "predicate": "developedBy", "object": "E010"},
-    {"subject": "E063", "predicate": "worksAt", "object": "E079"},
-    {"subject": "E064", "predicate": "worksAt", "object": "E078"},
-    {"subject": "E065", "predicate": "proposes", "object": "E029"},
-    {"subject": "E065", "predicate": "worksAt", "object": "E076"},
-    {"subject": "E066", "predicate": "worksAt", "object": "E075"},
-    {"subject": "E072", "predicate": "proposes", "object": "E031"},
-    {"subject": "E071", "predicate": "worksAt", "object": "E078"},
-    {"subject": "E084", "predicate": "developedBy", "object": "E076"},
-    {"subject": "E085", "predicate": "developedBy", "object": "E079"},
-    {"subject": "E086", "predicate": "relatedTo", "object": "E084"},
-    {"subject": "E087", "predicate": "usesTool", "object": "E093"},
-    {"subject": "E088", "predicate": "developedBy", "object": "E076"},
-    {"subject": "E089", "predicate": "relatedTo", "object": "E004"},
-    {"subject": "E023", "predicate": "usesTool", "object": "E085"},
-    {"subject": "E024", "predicate": "usesTool", "object": "E084"},
-    {"subject": "E025", "predicate": "usesTool", "object": "E085"},
-    {"subject": "E026", "predicate": "appliedIn", "object": "E046"},
-    {"subject": "E028", "predicate": "appliedIn", "object": "E045"},
-    {"subject": "E029", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E044", "predicate": "usesAlgorithm", "object": "E011"},
-    {"subject": "E045", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E046", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E011"},
-    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E012"},
-    {"subject": "E049", "predicate": "usesAlgorithm", "object": "E024"},
-    {"subject": "E053", "predicate": "usesAlgorithm", "object": "E023"},
-    {"subject": "E094", "predicate": "isPartOf", "object": "E009"},
-    {"subject": "E095", "predicate": "isPartOf", "object": "E009"},
-    {"subject": "E096", "predicate": "relatedTo", "object": "E009"},
-    {"subject": "E097", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E098", "predicate": "isPartOf", "object": "E014"},
-    {"subject": "E099", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E100", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E101", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E102", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E103", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E104", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E105", "predicate": "isPartOf", "object": "E010"},
-    {"subject": "E106", "predicate": "isPartOf", "object": "E010"},
-    {"subject": "E107", "predicate": "isPartOf", "object": "E095"},
-    {"subject": "E108", "predicate": "isPartOf", "object": "E095"},
-    {"subject": "E109", "predicate": "isPartOf", "object": "E095"},
-    {"subject": "E110", "predicate": "isPartOf", "object": "E096"},
-    {"subject": "E111", "predicate": "isPartOf", "object": "E096"},
-    {"subject": "E112", "predicate": "isPartOf", "object": "E097"},
-    {"subject": "E113", "predicate": "isPartOf", "object": "E097"},
-    {"subject": "E114", "predicate": "isPartOf", "object": "E097"},
-    {"subject": "E115", "predicate": "belongsTo", "object": "E014"},
-    {"subject": "E116", "predicate": "belongsTo", "object": "E014"},
-    {"subject": "E117", "predicate": "belongsTo", "object": "E014"},
-    {"subject": "E118", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E119", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E120", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E121", "predicate": "basedon", "object": "E015"},
-    {"subject": "E122", "predicate": "basedon", "object": "E121"},
-    {"subject": "E123", "predicate": "basedon", "object": "E121"},
-    {"subject": "E124", "predicate": "relatedTo", "object": "E021"},
-    {"subject": "E125", "predicate": "relatedTo", "object": "E021"},
-    {"subject": "E126", "predicate": "relatedTo", "object": "E021"},
-    {"subject": "E127", "predicate": "belongsTo", "object": "E036"},
-    {"subject": "E128", "predicate": "basedon", "object": "E010"},
-    {"subject": "E128", "predicate": "appliedIn", "object": "E046"},
-    {"subject": "E129", "predicate": "basedon", "object": "E128"},
-    {"subject": "E130", "predicate": "basedon", "object": "E129"},
-    {"subject": "E130", "predicate": "appliedIn", "object": "E056"},
-    {"subject": "E131", "predicate": "appliedIn", "object": "E046"},
-    {"subject": "E132", "predicate": "appliedIn", "object": "E056"},
-    {"subject": "E133", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E134", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E135", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E136", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E137", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E138", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E139", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E140", "predicate": "basedon", "object": "E023"},
-    {"subject": "E141", "predicate": "basedon", "object": "E140"},
-    {"subject": "E142", "predicate": "basedon", "object": "E141"},
-    {"subject": "E143", "predicate": "developedBy", "object": "E083"},
-    {"subject": "E144", "predicate": "developedBy", "object": "E079"},
-    {"subject": "E145", "predicate": "developedBy", "object": "E076"},
-    {"subject": "E146", "predicate": "developedBy", "object": "E076"},
-    {"subject": "E147", "predicate": "basedon", "object": "E024"},
-    {"subject": "E148", "predicate": "basedon", "object": "E024"},
-    {"subject": "E149", "predicate": "basedon", "object": "E024"},
-    {"subject": "E150", "predicate": "basedon", "object": "E012"},
-    {"subject": "E150", "predicate": "belongsTo", "object": "E005"},
-    {"subject": "E151", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E151", "predicate": "belongsTo", "object": "E191"},
-    {"subject": "E152", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E152", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E153", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E154", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E155", "predicate": "developedBy", "object": "E075"},
-    {"subject": "E155", "predicate": "usesAlgorithm", "object": "E022"},
-    {"subject": "E155", "predicate": "usesAlgorithm", "object": "E201"},
-    {"subject": "E156", "predicate": "basedon", "object": "E155"},
-    {"subject": "E157", "predicate": "developedBy", "object": "E075"},
-    {"subject": "E158", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E158", "predicate": "appliedIn", "object": "E044"},
-    {"subject": "E159", "predicate": "developedBy", "object": "E075"},
-    {"subject": "E159", "predicate": "appliedIn", "object": "E165"},
-    {"subject": "E160", "predicate": "appliedIn", "object": "E165"},
-    {"subject": "E161", "predicate": "basedon", "object": "E012"},
-    {"subject": "E162", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E163", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E164", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E166", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E167", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E167", "predicate": "appliedIn", "object": "E007"},
-    {"subject": "E168", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E169", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E170", "predicate": "appliedIn", "object": "E007"},
-    {"subject": "E171", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E172", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E173", "predicate": "appliedIn", "object": "E005"},
-    {"subject": "E174", "predicate": "appliedIn", "object": "E003"},
-    {"subject": "E175", "predicate": "appliedIn", "object": "E006"},
-    {"subject": "E176", "predicate": "appliedIn", "object": "E004"},
-    {"subject": "E177", "predicate": "basedon", "object": "E178"},
-    {"subject": "E177", "predicate": "appliedIn", "object": "E176"},
-    {"subject": "E178", "predicate": "basedon", "object": "E023"},
-    {"subject": "E179", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E180", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E181", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E182", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E183", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E184", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E185", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E186", "predicate": "isPartOf", "object": "E185"},
-    {"subject": "E187", "predicate": "isPartOf", "object": "E185"},
-    {"subject": "E188", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E189", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E190", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E191", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E192", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E193", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E194", "predicate": "isPartOf", "object": "E193"},
-    {"subject": "E195", "predicate": "isPartOf", "object": "E193"},
-    {"subject": "E196", "predicate": "isPartOf", "object": "E193"},
-    {"subject": "E197", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E198", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E199", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E200", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E201", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E202", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E203", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E204", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E205", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E206", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E207", "predicate": "isPartOf", "object": "E006"},
-    {"subject": "E208", "predicate": "isPartOf", "object": "E206"},
-    {"subject": "E209", "predicate": "isPartOf", "object": "E206"},
-    {"subject": "E210", "predicate": "isPartOf", "object": "E012"},
-    {"subject": "E211", "predicate": "isPartOf", "object": "E012"},
-    {"subject": "E212", "predicate": "isPartOf", "object": "E012"},
-    {"subject": "E213", "predicate": "isPartOf", "object": "E033"},
-    {"subject": "E214", "predicate": "isPartOf", "object": "E025"},
-    {"subject": "E215", "predicate": "isPartOf", "object": "E012"},
-    {"subject": "E216", "predicate": "relatedTo", "object": "E009"},
-    {"subject": "E217", "predicate": "relatedTo", "object": "E104"},
-    {"subject": "E218", "predicate": "isPartOf", "object": "E033"},
-    {"subject": "E219", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E220", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E221", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E222", "predicate": "relatedTo", "object": "E221"},
-    {"subject": "E223", "predicate": "relatedTo", "object": "E221"},
-    {"subject": "E224", "predicate": "relatedTo", "object": "E221"},
-    {"subject": "E225", "predicate": "relatedTo", "object": "E004"},
-    {"subject": "E226", "predicate": "relatedTo", "object": "E047"},
-    {"subject": "E227", "predicate": "relatedTo", "object": "E168"},
-    {"subject": "E228", "predicate": "isPartOf", "object": "E233"},
-    {"subject": "E229", "predicate": "isPartOf", "object": "E233"},
-    {"subject": "E230", "predicate": "isPartOf", "object": "E228"},
-    {"subject": "E231", "predicate": "isPartOf", "object": "E228"},
-    {"subject": "E232", "predicate": "relatedTo", "object": "E233"},
-    {"subject": "E233", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E234", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E235", "predicate": "relatedTo", "object": "E100"},
-    {"subject": "E236", "predicate": "relatedTo", "object": "E102"},
-    {"subject": "E237", "predicate": "relatedTo", "object": "E100"},
-    {"subject": "E238", "predicate": "relatedTo", "object": "E100"},
-    {"subject": "E239", "predicate": "isPartOf", "object": "E040"},
-    {"subject": "E240", "predicate": "isPartOf", "object": "E040"},
-    {"subject": "E241", "predicate": "isPartOf", "object": "E179"},
-    {"subject": "E242", "predicate": "relatedTo", "object": "E179"},
-    {"subject": "E243", "predicate": "belongsTo", "object": "E006"},
-    {"subject": "E244", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E245", "predicate": "isPartOf", "object": "E244"},
-    {"subject": "E246", "predicate": "relatedTo", "object": "E244"},
-    {"subject": "E247", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E248", "predicate": "relatedTo", "object": "E003"},
-    {"subject": "E249", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E250", "predicate": "basedon", "object": "E249"},
-    {"subject": "E251", "predicate": "basedon", "object": "E249"},
-    {"subject": "E252", "predicate": "relatedTo", "object": "E253"},
-    {"subject": "E253", "predicate": "belongsTo", "object": "E003"},
-    {"subject": "E254", "predicate": "basedon", "object": "E253"},
-    {"subject": "E255", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E256", "predicate": "belongsTo", "object": "E002"},
-    {"subject": "E257", "predicate": "belongsTo", "object": "E004"},
-    {"subject": "E258", "predicate": "belongsTo", "object": "E169"},
-    {"subject": "E259", "predicate": "appliedIn", "object": "E050"},
-    {"subject": "E260", "predicate": "appliedIn", "object": "E050"},
-    {"subject": "E261", "predicate": "relatedTo", "object": "E007"},
-    {"subject": "E262", "predicate": "usesTool", "object": "E074"},
-    {"subject": "E263", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E264", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E265", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E266", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E267", "predicate": "relatedTo", "object": "E003"},
-    {"subject": "E268", "predicate": "relatedTo", "object": "E084"},
-    {"subject": "E269", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E270", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E271", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E272", "predicate": "relatedTo", "object": "E270"},
-    {"subject": "E010", "predicate": "usesAlgorithm", "object": "E105"},
-    {"subject": "E010", "predicate": "usesAlgorithm", "object": "E106"},
-    {"subject": "E012", "predicate": "usesAlgorithm", "object": "E033"},
-    {"subject": "E023", "predicate": "appliedIn", "object": "E053"},
-    {"subject": "E024", "predicate": "appliedIn", "object": "E166"},
-    {"subject": "E029", "predicate": "usesAlgorithm", "object": "E039"},
-    {"subject": "E140", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E141", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E142", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E155", "predicate": "appliedIn", "object": "E175"},
-    {"subject": "E156", "predicate": "appliedIn", "object": "E175"},
-    {"subject": "E157", "predicate": "appliedIn", "object": "E174"},
-    {"subject": "E023", "predicate": "usesAlgorithm", "object": "E012"},
-    {"subject": "E024", "predicate": "usesAlgorithm", "object": "E012"},
-    {"subject": "E025", "predicate": "usesAlgorithm", "object": "E214"},
-    {"subject": "E009", "predicate": "usesAlgorithm", "object": "E013"},
-    {"subject": "E009", "predicate": "usesAlgorithm", "object": "E014"},
-    {"subject": "E044", "predicate": "usesAlgorithm", "object": "E031"},
-    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E024"},
-    {"subject": "E048", "predicate": "usesAlgorithm", "object": "E024"},
-    {"subject": "E052", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E056", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E118", "predicate": "relatedTo", "object": "E104"},
-    {"subject": "E119", "predicate": "relatedTo", "object": "E104"},
-    {"subject": "E120", "predicate": "relatedTo", "object": "E104"},
-    {"subject": "E152", "predicate": "usesAlgorithm", "object": "E244"},
-    {"subject": "E153", "predicate": "usesAlgorithm", "object": "E244"},
-    {"subject": "E177", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E178", "predicate": "developedBy", "object": "E074"},
-    {"subject": "E061", "predicate": "relatedTo", "object": "E003"},
-    {"subject": "E062", "predicate": "relatedTo", "object": "E003"},
-    {"subject": "E063", "predicate": "relatedTo", "object": "E003"},
-    {"subject": "E064", "predicate": "relatedTo", "object": "E002"},
-    {"subject": "E067", "predicate": "proposes", "object": "E001"},
-    {"subject": "E068", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E069", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E070", "predicate": "relatedTo", "object": "E001"},
-    {"subject": "E060", "predicate": "proposes", "object": "E001"},
-    {"subject": "E051", "predicate": "usesAlgorithm", "object": "E010"},
-    {"subject": "E051", "predicate": "usesAlgorithm", "object": "E006"},
-    {"subject": "E050", "predicate": "usesAlgorithm", "object": "E259"},
-    {"subject": "E143", "predicate": "appliedIn", "object": "E059"},
-    {"subject": "E023", "predicate": "appliedIn", "object": "E059"},
-    {"subject": "E141", "predicate": "appliedIn", "object": "E053"},
-    {"subject": "E142", "predicate": "appliedIn", "object": "E053"},
-    {"subject": "E151", "predicate": "appliedIn", "object": "E045"},
-    {"subject": "E150", "predicate": "appliedIn", "object": "E045"},
-    {"subject": "E025", "predicate": "appliedIn", "object": "E045"},
-    {"subject": "E027", "predicate": "appliedIn", "object": "E045"},
-    {"subject": "E028", "predicate": "appliedIn", "object": "E052"},
-    {"subject": "E132", "predicate": "appliedIn", "object": "E174"},
-    {"subject": "E029", "predicate": "appliedIn", "object": "E058"},
-    {"subject": "E030", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E041", "predicate": "relatedTo", "object": "E235"},
-    {"subject": "E042", "predicate": "relatedTo", "object": "E235"},
-    {"subject": "E241", "predicate": "relatedTo", "object": "E242"},
-    {"subject": "E243", "predicate": "appliedIn", "object": "E023"},
-    {"subject": "E243", "predicate": "appliedIn", "object": "E141"},
-    {"subject": "E244", "predicate": "appliedIn", "object": "E054"},
-    {"subject": "E089", "predicate": "usesTool", "object": "E085"},
-    {"subject": "E262", "predicate": "usesTool", "object": "E085"},
-    {"subject": "E090", "predicate": "relatedTo", "object": "E005"},
-    {"subject": "E091", "predicate": "relatedTo", "object": "E004"},
-    {"subject": "E092", "predicate": "relatedTo", "object": "E004"},
-    {"subject": "E093", "predicate": "relatedTo", "object": "E002"}
+    {
+      "subject": "E002",
+      "predicate": "isPartOf",
+      "object": "E001"
+    },
+    {
+      "subject": "E003",
+      "predicate": "isPartOf",
+      "object": "E002"
+    },
+    {
+      "subject": "E004",
+      "predicate": "isPartOf",
+      "object": "E001"
+    },
+    {
+      "subject": "E005",
+      "predicate": "isPartOf",
+      "object": "E001"
+    },
+    {
+      "subject": "E006",
+      "predicate": "isPartOf",
+      "object": "E002"
+    },
+    {
+      "subject": "E007",
+      "predicate": "isPartOf",
+      "object": "E001"
+    },
+    {
+      "subject": "E008",
+      "predicate": "isPartOf",
+      "object": "E001"
+    },
+    {
+      "subject": "E009",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E010",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E010",
+      "predicate": "basedon",
+      "object": "E009"
+    },
+    {
+      "subject": "E011",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E011",
+      "predicate": "basedon",
+      "object": "E009"
+    },
+    {
+      "subject": "E012",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E013",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E014",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E015",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E016",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E017",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E017",
+      "predicate": "basedon",
+      "object": "E015"
+    },
+    {
+      "subject": "E018",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E019",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E020",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E021",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E022",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E023",
+      "predicate": "basedon",
+      "object": "E012"
+    },
+    {
+      "subject": "E023",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E024",
+      "predicate": "basedon",
+      "object": "E012"
+    },
+    {
+      "subject": "E024",
+      "predicate": "developedBy",
+      "object": "E076"
+    },
+    {
+      "subject": "E024",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E025",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E025",
+      "predicate": "basedon",
+      "object": "E010"
+    },
+    {
+      "subject": "E025",
+      "predicate": "developedBy",
+      "object": "E080"
+    },
+    {
+      "subject": "E026",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E026",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E027",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E027",
+      "predicate": "basedon",
+      "object": "E010"
+    },
+    {
+      "subject": "E028",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E028",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E029",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E029",
+      "predicate": "developedBy",
+      "object": "E065"
+    },
+    {
+      "subject": "E030",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E031",
+      "predicate": "basedon",
+      "object": "E011"
+    },
+    {
+      "subject": "E031",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E031",
+      "predicate": "developedBy",
+      "object": "E072"
+    },
+    {
+      "subject": "E032",
+      "predicate": "basedon",
+      "object": "E031"
+    },
+    {
+      "subject": "E032",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E033",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E033",
+      "predicate": "isPartOf",
+      "object": "E012"
+    },
+    {
+      "subject": "E034",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E035",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E036",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E037",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E038",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E039",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E040",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E041",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E042",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E043",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E044",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E045",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E046",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E047",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E048",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E049",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E050",
+      "predicate": "appliedIn",
+      "object": "E002"
+    },
+    {
+      "subject": "E051",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E052",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E053",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E054",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E055",
+      "predicate": "appliedIn",
+      "object": "E002"
+    },
+    {
+      "subject": "E056",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E057",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E058",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E059",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E061",
+      "predicate": "proposes",
+      "object": "E013"
+    },
+    {
+      "subject": "E061",
+      "predicate": "worksAt",
+      "object": "E076"
+    },
+    {
+      "subject": "E062",
+      "predicate": "worksAt",
+      "object": "E077"
+    },
+    {
+      "subject": "E063",
+      "predicate": "developedBy",
+      "object": "E010"
+    },
+    {
+      "subject": "E063",
+      "predicate": "worksAt",
+      "object": "E079"
+    },
+    {
+      "subject": "E064",
+      "predicate": "worksAt",
+      "object": "E078"
+    },
+    {
+      "subject": "E065",
+      "predicate": "proposes",
+      "object": "E029"
+    },
+    {
+      "subject": "E065",
+      "predicate": "worksAt",
+      "object": "E076"
+    },
+    {
+      "subject": "E066",
+      "predicate": "worksAt",
+      "object": "E075"
+    },
+    {
+      "subject": "E072",
+      "predicate": "proposes",
+      "object": "E031"
+    },
+    {
+      "subject": "E071",
+      "predicate": "worksAt",
+      "object": "E078"
+    },
+    {
+      "subject": "E084",
+      "predicate": "developedBy",
+      "object": "E076"
+    },
+    {
+      "subject": "E085",
+      "predicate": "developedBy",
+      "object": "E079"
+    },
+    {
+      "subject": "E086",
+      "predicate": "relatedTo",
+      "object": "E084"
+    },
+    {
+      "subject": "E087",
+      "predicate": "usesTool",
+      "object": "E093"
+    },
+    {
+      "subject": "E088",
+      "predicate": "developedBy",
+      "object": "E076"
+    },
+    {
+      "subject": "E089",
+      "predicate": "relatedTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E023",
+      "predicate": "usesTool",
+      "object": "E085"
+    },
+    {
+      "subject": "E024",
+      "predicate": "usesTool",
+      "object": "E084"
+    },
+    {
+      "subject": "E025",
+      "predicate": "usesTool",
+      "object": "E085"
+    },
+    {
+      "subject": "E026",
+      "predicate": "appliedIn",
+      "object": "E046"
+    },
+    {
+      "subject": "E028",
+      "predicate": "appliedIn",
+      "object": "E045"
+    },
+    {
+      "subject": "E029",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E044",
+      "predicate": "usesAlgorithm",
+      "object": "E011"
+    },
+    {
+      "subject": "E045",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E046",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E047",
+      "predicate": "usesAlgorithm",
+      "object": "E011"
+    },
+    {
+      "subject": "E047",
+      "predicate": "usesAlgorithm",
+      "object": "E012"
+    },
+    {
+      "subject": "E049",
+      "predicate": "usesAlgorithm",
+      "object": "E024"
+    },
+    {
+      "subject": "E053",
+      "predicate": "usesAlgorithm",
+      "object": "E023"
+    },
+    {
+      "subject": "E094",
+      "predicate": "isPartOf",
+      "object": "E009"
+    },
+    {
+      "subject": "E095",
+      "predicate": "isPartOf",
+      "object": "E009"
+    },
+    {
+      "subject": "E096",
+      "predicate": "relatedTo",
+      "object": "E009"
+    },
+    {
+      "subject": "E097",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E098",
+      "predicate": "isPartOf",
+      "object": "E014"
+    },
+    {
+      "subject": "E099",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E100",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E101",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E102",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E103",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E104",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E105",
+      "predicate": "isPartOf",
+      "object": "E010"
+    },
+    {
+      "subject": "E106",
+      "predicate": "isPartOf",
+      "object": "E010"
+    },
+    {
+      "subject": "E107",
+      "predicate": "isPartOf",
+      "object": "E095"
+    },
+    {
+      "subject": "E108",
+      "predicate": "isPartOf",
+      "object": "E095"
+    },
+    {
+      "subject": "E109",
+      "predicate": "isPartOf",
+      "object": "E095"
+    },
+    {
+      "subject": "E110",
+      "predicate": "isPartOf",
+      "object": "E096"
+    },
+    {
+      "subject": "E111",
+      "predicate": "isPartOf",
+      "object": "E096"
+    },
+    {
+      "subject": "E112",
+      "predicate": "isPartOf",
+      "object": "E097"
+    },
+    {
+      "subject": "E113",
+      "predicate": "isPartOf",
+      "object": "E097"
+    },
+    {
+      "subject": "E114",
+      "predicate": "isPartOf",
+      "object": "E097"
+    },
+    {
+      "subject": "E115",
+      "predicate": "belongsTo",
+      "object": "E014"
+    },
+    {
+      "subject": "E116",
+      "predicate": "belongsTo",
+      "object": "E014"
+    },
+    {
+      "subject": "E117",
+      "predicate": "belongsTo",
+      "object": "E014"
+    },
+    {
+      "subject": "E118",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E119",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E120",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E121",
+      "predicate": "basedon",
+      "object": "E015"
+    },
+    {
+      "subject": "E122",
+      "predicate": "basedon",
+      "object": "E121"
+    },
+    {
+      "subject": "E123",
+      "predicate": "basedon",
+      "object": "E121"
+    },
+    {
+      "subject": "E124",
+      "predicate": "relatedTo",
+      "object": "E021"
+    },
+    {
+      "subject": "E125",
+      "predicate": "relatedTo",
+      "object": "E021"
+    },
+    {
+      "subject": "E126",
+      "predicate": "relatedTo",
+      "object": "E021"
+    },
+    {
+      "subject": "E127",
+      "predicate": "belongsTo",
+      "object": "E036"
+    },
+    {
+      "subject": "E128",
+      "predicate": "basedon",
+      "object": "E010"
+    },
+    {
+      "subject": "E128",
+      "predicate": "appliedIn",
+      "object": "E046"
+    },
+    {
+      "subject": "E129",
+      "predicate": "basedon",
+      "object": "E128"
+    },
+    {
+      "subject": "E130",
+      "predicate": "basedon",
+      "object": "E129"
+    },
+    {
+      "subject": "E130",
+      "predicate": "appliedIn",
+      "object": "E056"
+    },
+    {
+      "subject": "E131",
+      "predicate": "appliedIn",
+      "object": "E046"
+    },
+    {
+      "subject": "E132",
+      "predicate": "appliedIn",
+      "object": "E056"
+    },
+    {
+      "subject": "E133",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E134",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E135",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E136",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E137",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E138",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E139",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E140",
+      "predicate": "basedon",
+      "object": "E023"
+    },
+    {
+      "subject": "E141",
+      "predicate": "basedon",
+      "object": "E140"
+    },
+    {
+      "subject": "E142",
+      "predicate": "basedon",
+      "object": "E141"
+    },
+    {
+      "subject": "E143",
+      "predicate": "developedBy",
+      "object": "E083"
+    },
+    {
+      "subject": "E144",
+      "predicate": "developedBy",
+      "object": "E079"
+    },
+    {
+      "subject": "E145",
+      "predicate": "developedBy",
+      "object": "E076"
+    },
+    {
+      "subject": "E146",
+      "predicate": "developedBy",
+      "object": "E076"
+    },
+    {
+      "subject": "E147",
+      "predicate": "basedon",
+      "object": "E024"
+    },
+    {
+      "subject": "E148",
+      "predicate": "basedon",
+      "object": "E024"
+    },
+    {
+      "subject": "E149",
+      "predicate": "basedon",
+      "object": "E024"
+    },
+    {
+      "subject": "E150",
+      "predicate": "basedon",
+      "object": "E012"
+    },
+    {
+      "subject": "E150",
+      "predicate": "belongsTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E151",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E151",
+      "predicate": "belongsTo",
+      "object": "E191"
+    },
+    {
+      "subject": "E152",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E152",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E153",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E154",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E155",
+      "predicate": "developedBy",
+      "object": "E075"
+    },
+    {
+      "subject": "E155",
+      "predicate": "usesAlgorithm",
+      "object": "E022"
+    },
+    {
+      "subject": "E155",
+      "predicate": "usesAlgorithm",
+      "object": "E201"
+    },
+    {
+      "subject": "E156",
+      "predicate": "basedon",
+      "object": "E155"
+    },
+    {
+      "subject": "E157",
+      "predicate": "developedBy",
+      "object": "E075"
+    },
+    {
+      "subject": "E158",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E158",
+      "predicate": "appliedIn",
+      "object": "E044"
+    },
+    {
+      "subject": "E159",
+      "predicate": "developedBy",
+      "object": "E075"
+    },
+    {
+      "subject": "E159",
+      "predicate": "appliedIn",
+      "object": "E165"
+    },
+    {
+      "subject": "E160",
+      "predicate": "appliedIn",
+      "object": "E165"
+    },
+    {
+      "subject": "E161",
+      "predicate": "basedon",
+      "object": "E012"
+    },
+    {
+      "subject": "E162",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E163",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E164",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E166",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E167",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E167",
+      "predicate": "appliedIn",
+      "object": "E007"
+    },
+    {
+      "subject": "E168",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E169",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E170",
+      "predicate": "appliedIn",
+      "object": "E007"
+    },
+    {
+      "subject": "E171",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E172",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E173",
+      "predicate": "appliedIn",
+      "object": "E005"
+    },
+    {
+      "subject": "E174",
+      "predicate": "appliedIn",
+      "object": "E003"
+    },
+    {
+      "subject": "E175",
+      "predicate": "appliedIn",
+      "object": "E006"
+    },
+    {
+      "subject": "E176",
+      "predicate": "appliedIn",
+      "object": "E004"
+    },
+    {
+      "subject": "E177",
+      "predicate": "basedon",
+      "object": "E178"
+    },
+    {
+      "subject": "E177",
+      "predicate": "appliedIn",
+      "object": "E176"
+    },
+    {
+      "subject": "E178",
+      "predicate": "basedon",
+      "object": "E023"
+    },
+    {
+      "subject": "E179",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E180",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E181",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E182",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E183",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E184",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E185",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E186",
+      "predicate": "isPartOf",
+      "object": "E185"
+    },
+    {
+      "subject": "E187",
+      "predicate": "isPartOf",
+      "object": "E185"
+    },
+    {
+      "subject": "E188",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E189",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E190",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E191",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E192",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E193",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E194",
+      "predicate": "isPartOf",
+      "object": "E193"
+    },
+    {
+      "subject": "E195",
+      "predicate": "isPartOf",
+      "object": "E193"
+    },
+    {
+      "subject": "E196",
+      "predicate": "isPartOf",
+      "object": "E193"
+    },
+    {
+      "subject": "E197",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E198",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E199",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E200",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E201",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E202",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E203",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E204",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E205",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E206",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E207",
+      "predicate": "isPartOf",
+      "object": "E006"
+    },
+    {
+      "subject": "E208",
+      "predicate": "isPartOf",
+      "object": "E206"
+    },
+    {
+      "subject": "E209",
+      "predicate": "isPartOf",
+      "object": "E206"
+    },
+    {
+      "subject": "E210",
+      "predicate": "isPartOf",
+      "object": "E012"
+    },
+    {
+      "subject": "E211",
+      "predicate": "isPartOf",
+      "object": "E012"
+    },
+    {
+      "subject": "E212",
+      "predicate": "isPartOf",
+      "object": "E012"
+    },
+    {
+      "subject": "E213",
+      "predicate": "isPartOf",
+      "object": "E033"
+    },
+    {
+      "subject": "E214",
+      "predicate": "isPartOf",
+      "object": "E025"
+    },
+    {
+      "subject": "E215",
+      "predicate": "isPartOf",
+      "object": "E012"
+    },
+    {
+      "subject": "E216",
+      "predicate": "relatedTo",
+      "object": "E009"
+    },
+    {
+      "subject": "E217",
+      "predicate": "relatedTo",
+      "object": "E104"
+    },
+    {
+      "subject": "E218",
+      "predicate": "isPartOf",
+      "object": "E033"
+    },
+    {
+      "subject": "E219",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E220",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E221",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E222",
+      "predicate": "relatedTo",
+      "object": "E221"
+    },
+    {
+      "subject": "E223",
+      "predicate": "relatedTo",
+      "object": "E221"
+    },
+    {
+      "subject": "E224",
+      "predicate": "relatedTo",
+      "object": "E221"
+    },
+    {
+      "subject": "E225",
+      "predicate": "relatedTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E226",
+      "predicate": "relatedTo",
+      "object": "E047"
+    },
+    {
+      "subject": "E227",
+      "predicate": "relatedTo",
+      "object": "E168"
+    },
+    {
+      "subject": "E228",
+      "predicate": "isPartOf",
+      "object": "E233"
+    },
+    {
+      "subject": "E229",
+      "predicate": "isPartOf",
+      "object": "E233"
+    },
+    {
+      "subject": "E230",
+      "predicate": "isPartOf",
+      "object": "E228"
+    },
+    {
+      "subject": "E231",
+      "predicate": "isPartOf",
+      "object": "E228"
+    },
+    {
+      "subject": "E232",
+      "predicate": "relatedTo",
+      "object": "E233"
+    },
+    {
+      "subject": "E233",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E234",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E235",
+      "predicate": "relatedTo",
+      "object": "E100"
+    },
+    {
+      "subject": "E236",
+      "predicate": "relatedTo",
+      "object": "E102"
+    },
+    {
+      "subject": "E237",
+      "predicate": "relatedTo",
+      "object": "E100"
+    },
+    {
+      "subject": "E238",
+      "predicate": "relatedTo",
+      "object": "E100"
+    },
+    {
+      "subject": "E239",
+      "predicate": "isPartOf",
+      "object": "E040"
+    },
+    {
+      "subject": "E240",
+      "predicate": "isPartOf",
+      "object": "E040"
+    },
+    {
+      "subject": "E241",
+      "predicate": "isPartOf",
+      "object": "E179"
+    },
+    {
+      "subject": "E242",
+      "predicate": "relatedTo",
+      "object": "E179"
+    },
+    {
+      "subject": "E243",
+      "predicate": "belongsTo",
+      "object": "E006"
+    },
+    {
+      "subject": "E244",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E245",
+      "predicate": "isPartOf",
+      "object": "E244"
+    },
+    {
+      "subject": "E246",
+      "predicate": "relatedTo",
+      "object": "E244"
+    },
+    {
+      "subject": "E247",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E248",
+      "predicate": "relatedTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E249",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E250",
+      "predicate": "basedon",
+      "object": "E249"
+    },
+    {
+      "subject": "E251",
+      "predicate": "basedon",
+      "object": "E249"
+    },
+    {
+      "subject": "E252",
+      "predicate": "relatedTo",
+      "object": "E253"
+    },
+    {
+      "subject": "E253",
+      "predicate": "belongsTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E254",
+      "predicate": "basedon",
+      "object": "E253"
+    },
+    {
+      "subject": "E255",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E256",
+      "predicate": "belongsTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E257",
+      "predicate": "belongsTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E258",
+      "predicate": "belongsTo",
+      "object": "E169"
+    },
+    {
+      "subject": "E259",
+      "predicate": "appliedIn",
+      "object": "E050"
+    },
+    {
+      "subject": "E260",
+      "predicate": "appliedIn",
+      "object": "E050"
+    },
+    {
+      "subject": "E261",
+      "predicate": "relatedTo",
+      "object": "E007"
+    },
+    {
+      "subject": "E262",
+      "predicate": "usesTool",
+      "object": "E074"
+    },
+    {
+      "subject": "E263",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E264",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E265",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E266",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E267",
+      "predicate": "relatedTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E268",
+      "predicate": "relatedTo",
+      "object": "E084"
+    },
+    {
+      "subject": "E269",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E270",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E271",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E272",
+      "predicate": "relatedTo",
+      "object": "E270"
+    },
+    {
+      "subject": "E010",
+      "predicate": "usesAlgorithm",
+      "object": "E105"
+    },
+    {
+      "subject": "E010",
+      "predicate": "usesAlgorithm",
+      "object": "E106"
+    },
+    {
+      "subject": "E012",
+      "predicate": "usesAlgorithm",
+      "object": "E033"
+    },
+    {
+      "subject": "E023",
+      "predicate": "appliedIn",
+      "object": "E053"
+    },
+    {
+      "subject": "E024",
+      "predicate": "appliedIn",
+      "object": "E166"
+    },
+    {
+      "subject": "E029",
+      "predicate": "usesAlgorithm",
+      "object": "E039"
+    },
+    {
+      "subject": "E140",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E141",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E142",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E155",
+      "predicate": "appliedIn",
+      "object": "E175"
+    },
+    {
+      "subject": "E156",
+      "predicate": "appliedIn",
+      "object": "E175"
+    },
+    {
+      "subject": "E157",
+      "predicate": "appliedIn",
+      "object": "E174"
+    },
+    {
+      "subject": "E023",
+      "predicate": "usesAlgorithm",
+      "object": "E012"
+    },
+    {
+      "subject": "E024",
+      "predicate": "usesAlgorithm",
+      "object": "E012"
+    },
+    {
+      "subject": "E025",
+      "predicate": "usesAlgorithm",
+      "object": "E214"
+    },
+    {
+      "subject": "E009",
+      "predicate": "usesAlgorithm",
+      "object": "E013"
+    },
+    {
+      "subject": "E009",
+      "predicate": "usesAlgorithm",
+      "object": "E014"
+    },
+    {
+      "subject": "E044",
+      "predicate": "usesAlgorithm",
+      "object": "E031"
+    },
+    {
+      "subject": "E047",
+      "predicate": "usesAlgorithm",
+      "object": "E024"
+    },
+    {
+      "subject": "E048",
+      "predicate": "usesAlgorithm",
+      "object": "E024"
+    },
+    {
+      "subject": "E052",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E056",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E118",
+      "predicate": "relatedTo",
+      "object": "E104"
+    },
+    {
+      "subject": "E119",
+      "predicate": "relatedTo",
+      "object": "E104"
+    },
+    {
+      "subject": "E120",
+      "predicate": "relatedTo",
+      "object": "E104"
+    },
+    {
+      "subject": "E152",
+      "predicate": "usesAlgorithm",
+      "object": "E244"
+    },
+    {
+      "subject": "E153",
+      "predicate": "usesAlgorithm",
+      "object": "E244"
+    },
+    {
+      "subject": "E177",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E178",
+      "predicate": "developedBy",
+      "object": "E074"
+    },
+    {
+      "subject": "E061",
+      "predicate": "relatedTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E062",
+      "predicate": "relatedTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E063",
+      "predicate": "relatedTo",
+      "object": "E003"
+    },
+    {
+      "subject": "E064",
+      "predicate": "relatedTo",
+      "object": "E002"
+    },
+    {
+      "subject": "E067",
+      "predicate": "proposes",
+      "object": "E001"
+    },
+    {
+      "subject": "E068",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E069",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E070",
+      "predicate": "relatedTo",
+      "object": "E001"
+    },
+    {
+      "subject": "E060",
+      "predicate": "proposes",
+      "object": "E001"
+    },
+    {
+      "subject": "E051",
+      "predicate": "usesAlgorithm",
+      "object": "E010"
+    },
+    {
+      "subject": "E051",
+      "predicate": "usesAlgorithm",
+      "object": "E006"
+    },
+    {
+      "subject": "E050",
+      "predicate": "usesAlgorithm",
+      "object": "E259"
+    },
+    {
+      "subject": "E143",
+      "predicate": "appliedIn",
+      "object": "E059"
+    },
+    {
+      "subject": "E023",
+      "predicate": "appliedIn",
+      "object": "E059"
+    },
+    {
+      "subject": "E141",
+      "predicate": "appliedIn",
+      "object": "E053"
+    },
+    {
+      "subject": "E142",
+      "predicate": "appliedIn",
+      "object": "E053"
+    },
+    {
+      "subject": "E151",
+      "predicate": "appliedIn",
+      "object": "E045"
+    },
+    {
+      "subject": "E150",
+      "predicate": "appliedIn",
+      "object": "E045"
+    },
+    {
+      "subject": "E025",
+      "predicate": "appliedIn",
+      "object": "E045"
+    },
+    {
+      "subject": "E027",
+      "predicate": "appliedIn",
+      "object": "E045"
+    },
+    {
+      "subject": "E028",
+      "predicate": "appliedIn",
+      "object": "E052"
+    },
+    {
+      "subject": "E132",
+      "predicate": "appliedIn",
+      "object": "E174"
+    },
+    {
+      "subject": "E029",
+      "predicate": "appliedIn",
+      "object": "E058"
+    },
+    {
+      "subject": "E030",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E041",
+      "predicate": "relatedTo",
+      "object": "E235"
+    },
+    {
+      "subject": "E042",
+      "predicate": "relatedTo",
+      "object": "E235"
+    },
+    {
+      "subject": "E241",
+      "predicate": "relatedTo",
+      "object": "E242"
+    },
+    {
+      "subject": "E243",
+      "predicate": "appliedIn",
+      "object": "E023"
+    },
+    {
+      "subject": "E243",
+      "predicate": "appliedIn",
+      "object": "E141"
+    },
+    {
+      "subject": "E244",
+      "predicate": "appliedIn",
+      "object": "E054"
+    },
+    {
+      "subject": "E089",
+      "predicate": "usesTool",
+      "object": "E085"
+    },
+    {
+      "subject": "E262",
+      "predicate": "usesTool",
+      "object": "E085"
+    },
+    {
+      "subject": "E090",
+      "predicate": "relatedTo",
+      "object": "E005"
+    },
+    {
+      "subject": "E091",
+      "predicate": "relatedTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E092",
+      "predicate": "relatedTo",
+      "object": "E004"
+    },
+    {
+      "subject": "E093",
+      "predicate": "relatedTo",
+      "object": "E002"
+    }
   ]
 }

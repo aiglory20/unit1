@@ -4,10 +4,10 @@
 展示如何使用知识图谱API
 """
 
+from kg_core import KnowledgeGraph
 import sys
 sys.path.insert(0, '.')
 
-from kg_core import KnowledgeGraph
 
 # 加载知识图谱
 print("正在加载AI知识图谱...")
@@ -23,7 +23,8 @@ print("="*70)
 print("查询：搜索'GPT'相关实体\n")
 results = kg.search_entity('GPT')
 for i, entity in enumerate(results[:5], 1):
-    print(f"{i}. {entity['name']} ({entity['type']}) - {entity.get('year', 'N/A')}")
+    print(
+        f"{i}. {entity['name']} ({entity['type']}) - {entity.get('year', 'N/A')}")
 
 print("\n" + "="*70)
 print("【示例2：查看实体详情和关系】")
@@ -73,7 +74,8 @@ results = kg.query_by_relation('basedon', obj=transformer['id'])
 print(f"基于Transformer的技术（共{len(results)}个）：")
 for i, triple in enumerate(results[:10], 1):
     tech = kg.get_entity_by_id(triple['subject'])
-    print(f"  {i}. {triple['subject_name']} ({tech['type']}, {tech.get('year', 'N/A')})")
+    print(
+        f"  {i}. {triple['subject_name']} ({tech['type']}, {tech.get('year', 'N/A')})")
 
 print("\n" + "="*70)
 print("【示例6：应用场景分析】")

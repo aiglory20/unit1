@@ -12,10 +12,12 @@ from rdflib.namespace import XSD, OWL
 AI = Namespace("http://www.ai-kg.org/ontology#")
 ENTITY = Namespace("http://www.ai-kg.org/entity#")
 
+
 def load_json_data(json_file):
     """加载JSON数据文件"""
     with open(json_file, 'r', encoding='utf-8') as f:
         return json.load(f)
+
 
 def create_knowledge_graph(data):
     """创建知识图谱RDF表示"""
@@ -49,24 +51,29 @@ def create_knowledge_graph(data):
 
         # 添加描述
         if 'description' in entity:
-            g.add((entity_uri, AI.description, Literal(entity['description'], lang='zh')))
+            g.add((entity_uri, AI.description, Literal(
+                entity['description'], lang='zh')))
 
         # 添加年份
         if 'year' in entity:
-            g.add((entity_uri, AI.year, Literal(entity['year'], datatype=XSD.gYear)))
+            g.add((entity_uri, AI.year, Literal(
+                entity['year'], datatype=XSD.gYear)))
 
         # 添加特定属性
         if 'parameters' in entity:
-            g.add((entity_uri, AI.parameters, Literal(entity['parameters'], lang='zh')))
+            g.add((entity_uri, AI.parameters, Literal(
+                entity['parameters'], lang='zh')))
 
         if 'nationality' in entity:
-            g.add((entity_uri, AI.nationality, Literal(entity['nationality'], lang='zh')))
+            g.add((entity_uri, AI.nationality, Literal(
+                entity['nationality'], lang='zh')))
 
         if 'field' in entity:
             g.add((entity_uri, AI.field, Literal(entity['field'], lang='zh')))
 
         if 'founded' in entity:
-            g.add((entity_uri, AI.founded, Literal(entity['founded'], datatype=XSD.gYear)))
+            g.add((entity_uri, AI.founded, Literal(
+                entity['founded'], datatype=XSD.gYear)))
 
         entity_count += 1
         if entity_count % 50 == 0:
@@ -92,6 +99,7 @@ def create_knowledge_graph(data):
 
     return g
 
+
 def save_rdf_formats(graph, base_path):
     """保存多种RDF格式"""
     formats = {
@@ -105,10 +113,12 @@ def save_rdf_formats(graph, base_path):
     for format_name, extension in formats.items():
         output_file = f"{base_path}.{extension}"
         try:
-            graph.serialize(destination=output_file, format=format_name, encoding='utf-8')
+            graph.serialize(destination=output_file,
+                            format=format_name, encoding='utf-8')
             print(f"✓ 保存 {format_name} 格式：{output_file}")
         except Exception as e:
             print(f"✗ 保存 {format_name} 格式失败：{e}")
+
 
 def print_statistics(graph):
     """打印知识图谱统计信息"""
@@ -150,7 +160,7 @@ def print_statistics(graph):
         if str(p).startswith('http://www.ai-kg.org/ontology#'):
             pred_name = str(p).split('#')[-1]
             if pred_name not in ['name', 'description', 'year', 'parameters',
-                                  'nationality', 'field', 'founded']:
+                                 'nationality', 'field', 'founded']:
                 relation_types.add(pred_name)
 
     for rel_type in sorted(relation_types):
@@ -159,6 +169,7 @@ def print_statistics(graph):
         print(f"  {rel_type}: {count}")
 
     print("="*60)
+
 
 def main():
     """主函数"""
@@ -185,6 +196,7 @@ def main():
 
     print("\n✓ 知识图谱构建完成！")
     print(f"输出文件位置：rdf/ai_knowledge_graph.*")
+
 
 if __name__ == '__main__':
     main()

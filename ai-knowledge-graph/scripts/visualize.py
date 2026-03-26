@@ -4,22 +4,24 @@
 生成知识图谱的可视化图像
 """
 
+from collections import defaultdict
+import networkx as nx
+import matplotlib.pyplot as plt
+from kg_core import KnowledgeGraph
+import matplotlib
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 # 设置matplotlib使用非交互式后端
-import matplotlib
 matplotlib.use('Agg')
 
-from kg_core import KnowledgeGraph
-import matplotlib.pyplot as plt
-import networkx as nx
-from collections import defaultdict
 
 # 设置中文字体
-matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'SimHei', 'WenQuanYi Micro Hei']
+matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans',
+                                          'SimHei', 'WenQuanYi Micro Hei']
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 
@@ -124,14 +126,15 @@ def visualize_entity_type_distribution(kg, output_file='viz_entity_types.png'):
     colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8',
               '#F7DC6F', '#BB8FCE', '#85C1E2', '#F8B500']
 
-    bars = plt.bar(types, counts, color=colors[:len(types)], alpha=0.8, edgecolor='black')
+    bars = plt.bar(types, counts, color=colors[:len(
+        types)], alpha=0.8, edgecolor='black')
 
     # 在柱子上显示数值
     for bar in bars:
         height = bar.get_height()
         plt.text(bar.get_x() + bar.get_width()/2., height,
-                f'{int(height)}',
-                ha='center', va='bottom', fontsize=10, fontweight='bold')
+                 f'{int(height)}',
+                 ha='center', va='bottom', fontsize=10, fontweight='bold')
 
     plt.xlabel('实体类型', fontsize=12, fontweight='bold')
     plt.ylabel('数量', fontsize=12, fontweight='bold')
@@ -155,19 +158,21 @@ def visualize_relation_type_distribution(kg, output_file='viz_relation_types.png
     counts = list(stats['relation_types'].values())
 
     # 按数量排序
-    sorted_data = sorted(zip(relations, counts), key=lambda x: x[1], reverse=True)
+    sorted_data = sorted(zip(relations, counts),
+                         key=lambda x: x[1], reverse=True)
     relations, counts = zip(*sorted_data)
 
     # 创建水平柱状图
     plt.figure(figsize=(12, 8))
     colors = plt.cm.viridis(range(len(relations)))
 
-    bars = plt.barh(relations, counts, color=colors, alpha=0.8, edgecolor='black')
+    bars = plt.barh(relations, counts, color=colors,
+                    alpha=0.8, edgecolor='black')
 
     # 在柱子上显示数值
     for i, (bar, count) in enumerate(zip(bars, counts)):
         plt.text(count + 1, i, f'{count}',
-                va='center', fontsize=10, fontweight='bold')
+                 va='center', fontsize=10, fontweight='bold')
 
     plt.xlabel('数量', fontsize=12, fontweight='bold')
     plt.ylabel('关系类型', fontsize=12, fontweight='bold')
@@ -213,7 +218,7 @@ def visualize_timeline(kg, output_file='viz_timeline.png'):
         for i, entity in enumerate(entities[:3]):  # 每年最多显示3个
             plt.scatter(year, y_pos + i*0.3, s=100, alpha=0.7)
             plt.text(year + 0.5, y_pos + i*0.3, entity['name'],
-                    fontsize=7, va='center')
+                     fontsize=7, va='center')
 
         y_pos += 1
 
@@ -252,12 +257,14 @@ def main():
     # 4. 子图可视化 - 以深度学习为中心
     dl = kg.get_entity_by_name('深度学习')
     if dl:
-        visualize_subgraph(kg, dl['id'], depth=1, output_file='viz_deeplearning_subgraph.png')
+        visualize_subgraph(kg, dl['id'], depth=1,
+                           output_file='viz_deeplearning_subgraph.png')
 
     # 5. 子图可视化 - 以GPT为中心
     gpt = kg.get_entity_by_name('GPT')
     if gpt:
-        visualize_subgraph(kg, gpt['id'], depth=1, output_file='viz_gpt_subgraph.png')
+        visualize_subgraph(kg, gpt['id'], depth=1,
+                           output_file='viz_gpt_subgraph.png')
 
     print("\n" + "="*70)
     print("✓ 所有可视化已生成")
