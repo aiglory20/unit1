@@ -1,0 +1,1791 @@
+@prefix ai: <http://www.ai-kg.org/ontology#> .
+@prefix entity: <http://www.ai-kg.org/entity#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+entity:E008 a ai:AI_Field ;
+    ai:description "模拟人类专家决策能力的计算机系统"@zh ;
+    ai:isPartOf entity:E001 ;
+    ai:name "专家系统"@zh ;
+    ai:year "1970"^^xsd:gYear .
+
+entity:E016 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "在高维空间中构造分隔超平面的分类算法"@zh ;
+    ai:name "支持向量机"@zh ;
+    ai:year "1995"^^xsd:gYear .
+
+entity:E017 a ai:Algorithm ;
+    ai:basedon entity:E015 ;
+    ai:belongsTo entity:E002 ;
+    ai:description "集成多个决策树的机器学习算法"@zh ;
+    ai:name "随机森林"@zh ;
+    ai:year "2001"^^xsd:gYear .
+
+entity:E018 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "基于距离度量的分类和回归算法"@zh ;
+    ai:name "K近邻算法"@zh ;
+    ai:year "1967"^^xsd:gYear .
+
+entity:E019 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "基于贝叶斯定理的概率分类算法"@zh ;
+    ai:name "朴素贝叶斯"@zh ;
+    ai:year "1960"^^xsd:gYear .
+
+entity:E020 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "将数据分为K个簇的聚类算法"@zh ;
+    ai:name "K均值聚类"@zh ;
+    ai:year "1967"^^xsd:gYear .
+
+entity:E026 a ai:Model ;
+    ai:appliedIn entity:E046 ;
+    ai:belongsTo entity:E005 ;
+    ai:description "实时目标检测模型"@zh ;
+    ai:name "YOLO"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E027 a ai:Model ;
+    ai:appliedIn entity:E045 ;
+    ai:basedon entity:E010 ;
+    ai:belongsTo entity:E005 ;
+    ai:description "使用小卷积核的深度卷积网络"@zh ;
+    ai:name "VGG"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E028 a ai:Model ;
+    ai:appliedIn entity:E045,
+        entity:E052 ;
+    ai:belongsTo entity:E005 ;
+    ai:description "首个在ImageNet上取得突破的深度卷积网络"@zh ;
+    ai:name "AlexNet"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "2012"^^xsd:gYear .
+
+entity:E030 a ai:Model ;
+    ai:appliedIn entity:E054 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "变分自编码器，用于生成和表示学习"@zh ;
+    ai:name "VAE"@zh ;
+    ai:year "2013"^^xsd:gYear .
+
+entity:E032 a ai:Algorithm ;
+    ai:basedon entity:E031 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "门控循环单元，LSTM的简化版本"@zh ;
+    ai:name "GRU"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E034 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "将已训练模型的知识应用到新任务"@zh ;
+    ai:name "迁移学习"@zh ;
+    ai:year "1993"^^xsd:gYear .
+
+entity:E035 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "使用标注数据训练模型"@zh ;
+    ai:name "监督学习"@zh ;
+    ai:year "1950"^^xsd:gYear .
+
+entity:E037 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "结合标注和未标注数据的学习方法"@zh ;
+    ai:name "半监督学习"@zh ;
+    ai:year "1970"^^xsd:gYear .
+
+entity:E038 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "学习如何学习的方法"@zh ;
+    ai:name "元学习"@zh ;
+    ai:year "1987"^^xsd:gYear .
+
+entity:E041 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "防止过拟合的正则化技术"@zh ;
+    ai:name "Dropout"@zh ;
+    ai:relatedTo entity:E235 ;
+    ai:year "2012"^^xsd:gYear .
+
+entity:E042 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "加速训练和提高稳定性的技术"@zh ;
+    ai:name "批归一化"@zh ;
+    ai:relatedTo entity:E235 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E043 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "组合多个模型提高性能"@zh ;
+    ai:name "集成学习"@zh ;
+    ai:year "1990"^^xsd:gYear .
+
+entity:E048 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "分析文本的情感倾向"@zh ;
+    ai:name "情感分析"@zh ;
+    ai:usesAlgorithm entity:E024 ;
+    ai:year "2000"^^xsd:gYear .
+
+entity:E049 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "自动回答用户问题的系统"@zh ;
+    ai:name "问答系统"@zh ;
+    ai:usesAlgorithm entity:E024 ;
+    ai:year "1960"^^xsd:gYear .
+
+entity:E051 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "使车辆能够自主驾驶的技术"@zh ;
+    ai:name "自动驾驶"@zh ;
+    ai:usesAlgorithm entity:E006,
+        entity:E010 ;
+    ai:year "1984"^^xsd:gYear .
+
+entity:E055 a ai:Application ;
+    ai:appliedIn entity:E002 ;
+    ai:description "识别数据中的异常模式"@zh ;
+    ai:name "异常检测"@zh ;
+    ai:year "1980"^^xsd:gYear .
+
+entity:E057 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "检测人体或物体的姿态和关键点"@zh ;
+    ai:name "姿态估计"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E060 a ai:Person ;
+    ai:description "计算机科学和人工智能之父"@zh ;
+    ai:field "计算机科学"@zh ;
+    ai:name "Alan Turing"@zh ;
+    ai:nationality "英国"@zh ;
+    ai:proposes entity:E001 .
+
+entity:E061 a ai:Person ;
+    ai:description "深度学习之父"@zh ;
+    ai:field "深度学习"@zh ;
+    ai:name "Geoffrey Hinton"@zh ;
+    ai:nationality "加拿大"@zh ;
+    ai:proposes entity:E013 ;
+    ai:relatedTo entity:E003 ;
+    ai:worksAt entity:E076 .
+
+entity:E062 a ai:Person ;
+    ai:description "深度学习先驱"@zh ;
+    ai:field "深度学习"@zh ;
+    ai:name "Yoshua Bengio"@zh ;
+    ai:nationality "加拿大"@zh ;
+    ai:relatedTo entity:E003 ;
+    ai:worksAt entity:E077 .
+
+entity:E063 a ai:Person ;
+    ai:description "卷积神经网络之父"@zh ;
+    ai:developedBy entity:E010 ;
+    ai:field "深度学习"@zh ;
+    ai:name "Yann LeCun"@zh ;
+    ai:nationality "法国"@zh ;
+    ai:relatedTo entity:E003 ;
+    ai:worksAt entity:E079 .
+
+entity:E064 a ai:Person ;
+    ai:description "机器学习教育先驱"@zh ;
+    ai:field "机器学习"@zh ;
+    ai:name "Andrew Ng"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:worksAt entity:E078 .
+
+entity:E066 a ai:Person ;
+    ai:description "DeepMind创始人"@zh ;
+    ai:field "强化学习"@zh ;
+    ai:name "Demis Hassabis"@zh ;
+    ai:nationality "英国"@zh ;
+    ai:worksAt entity:E075 .
+
+entity:E067 a ai:Person ;
+    ai:description "人工智能一词的提出者"@zh ;
+    ai:field "人工智能"@zh ;
+    ai:name "John McCarthy"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:proposes entity:E001 .
+
+entity:E068 a ai:Person ;
+    ai:description "人工智能先驱"@zh ;
+    ai:field "人工智能"@zh ;
+    ai:name "Marvin Minsky"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E069 a ai:Person ;
+    ai:description "AI教科书作者"@zh ;
+    ai:field "人工智能"@zh ;
+    ai:name "Stuart Russell"@zh ;
+    ai:nationality "英国"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E070 a ai:Person ;
+    ai:description "AI教科书作者"@zh ;
+    ai:field "人工智能"@zh ;
+    ai:name "Peter Norvig"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E071 a ai:Person ;
+    ai:description "ImageNet创建者"@zh ;
+    ai:field "计算机视觉"@zh ;
+    ai:name "Fei-Fei Li"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:worksAt entity:E078 .
+
+entity:E073 a ai:Person ;
+    ai:description "认知心理学和AI先驱"@zh ;
+    ai:field "人工智能"@zh ;
+    ai:name "Herbert Simon"@zh ;
+    ai:nationality "美国"@zh .
+
+entity:E081 a ai:Organization ;
+    ai:description "卡内基梅隆大学"@zh ;
+    ai:founded "1900"^^xsd:gYear ;
+    ai:name "CMU"@zh .
+
+entity:E082 a ai:Organization ;
+    ai:description "伯克利人工智能研究实验室"@zh ;
+    ai:founded "1988"^^xsd:gYear ;
+    ai:name "Berkeley AI Research"@zh .
+
+entity:E086 a ai:Tool ;
+    ai:description "高级神经网络API"@zh ;
+    ai:name "Keras"@zh ;
+    ai:relatedTo entity:E084 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E087 a ai:Tool ;
+    ai:description "Python机器学习库"@zh ;
+    ai:name "scikit-learn"@zh ;
+    ai:usesTool entity:E093 ;
+    ai:year "2007"^^xsd:gYear .
+
+entity:E088 a ai:Tool ;
+    ai:description "Google的自动微分库"@zh ;
+    ai:developedBy entity:E076 ;
+    ai:name "JAX"@zh ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E089 a ai:Tool ;
+    ai:description "NLP模型库和平台"@zh ;
+    ai:name "Hugging Face"@zh ;
+    ai:relatedTo entity:E004 ;
+    ai:usesTool entity:E085 ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E090 a ai:Tool ;
+    ai:description "开源计算机视觉库"@zh ;
+    ai:name "OpenCV"@zh ;
+    ai:relatedTo entity:E005 ;
+    ai:year "2000"^^xsd:gYear .
+
+entity:E091 a ai:Tool ;
+    ai:description "自然语言处理工具包"@zh ;
+    ai:name "NLTK"@zh ;
+    ai:relatedTo entity:E004 ;
+    ai:year "2001"^^xsd:gYear .
+
+entity:E092 a ai:Tool ;
+    ai:description "工业级NLP库"@zh ;
+    ai:name "SpaCy"@zh ;
+    ai:relatedTo entity:E004 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E094 a ai:Concept ;
+    ai:description "神经网络的基本计算单元"@zh ;
+    ai:isPartOf entity:E009 ;
+    ai:name "神经元"@zh .
+
+entity:E098 a ai:Concept ;
+    ai:description "函数变化率的向量"@zh ;
+    ai:isPartOf entity:E014 ;
+    ai:name "梯度"@zh .
+
+entity:E099 a ai:Concept ;
+    ai:description "数据的可测量属性"@zh ;
+    ai:name "特征"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E101 a ai:Concept ;
+    ai:description "模型未能充分学习数据模式"@zh ;
+    ai:name "欠拟合"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E103 a ai:Concept ;
+    ai:description "选择和构造有效特征的过程"@zh ;
+    ai:name "特征工程"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E107 a ai:Concept ;
+    ai:description "修正线性单元激活函数"@zh ;
+    ai:isPartOf entity:E095 ;
+    ai:name "ReLU"@zh .
+
+entity:E108 a ai:Concept ;
+    ai:description "S形激活函数"@zh ;
+    ai:isPartOf entity:E095 ;
+    ai:name "Sigmoid"@zh .
+
+entity:E109 a ai:Concept ;
+    ai:description "多分类输出层常用激活函数"@zh ;
+    ai:isPartOf entity:E095 ;
+    ai:name "Softmax"@zh .
+
+entity:E110 a ai:Concept ;
+    ai:description "分类问题的常用损失函数"@zh ;
+    ai:isPartOf entity:E096 ;
+    ai:name "交叉熵"@zh .
+
+entity:E111 a ai:Concept ;
+    ai:description "回归问题的常用损失函数"@zh ;
+    ai:isPartOf entity:E096 ;
+    ai:name "均方误差"@zh .
+
+entity:E112 a ai:Concept ;
+    ai:description "控制参数更新步长的超参数"@zh ;
+    ai:isPartOf entity:E097 ;
+    ai:name "学习率"@zh .
+
+entity:E113 a ai:Concept ;
+    ai:description "每次训练迭代使用的样本数量"@zh ;
+    ai:isPartOf entity:E097 ;
+    ai:name "批大小"@zh .
+
+entity:E114 a ai:Concept ;
+    ai:description "训练数据的完整遍历次数"@zh ;
+    ai:isPartOf entity:E097 ;
+    ai:name "Epoch"@zh .
+
+entity:E115 a ai:Algorithm ;
+    ai:belongsTo entity:E014 ;
+    ai:description "自适应学习率优化算法"@zh ;
+    ai:name "Adam优化器"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E116 a ai:Algorithm ;
+    ai:belongsTo entity:E014 ;
+    ai:description "随机梯度下降优化算法"@zh ;
+    ai:name "SGD"@zh ;
+    ai:year "1951"^^xsd:gYear .
+
+entity:E117 a ai:Algorithm ;
+    ai:belongsTo entity:E014 ;
+    ai:description "自适应学习率优化算法"@zh ;
+    ai:name "RMSprop"@zh ;
+    ai:year "2012"^^xsd:gYear .
+
+entity:E118 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "学习词向量的算法"@zh ;
+    ai:name "Word2Vec"@zh ;
+    ai:relatedTo entity:E104 ;
+    ai:year "2013"^^xsd:gYear .
+
+entity:E119 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "全局向量词嵌入算法"@zh ;
+    ai:name "GloVe"@zh ;
+    ai:relatedTo entity:E104 ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E120 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "基于子词的词嵌入算法"@zh ;
+    ai:name "FastText"@zh ;
+    ai:relatedTo entity:E104 ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E122 a ai:Algorithm ;
+    ai:basedon entity:E121 ;
+    ai:description "高效梯度提升框架"@zh ;
+    ai:name "LightGBM"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E123 a ai:Algorithm ;
+    ai:basedon entity:E121 ;
+    ai:description "处理类别特征的梯度提升算法"@zh ;
+    ai:name "CatBoost"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E124 a ai:Algorithm ;
+    ai:description "主成分分析降维算法"@zh ;
+    ai:name "PCA"@zh ;
+    ai:relatedTo entity:E021 ;
+    ai:year "1901"^^xsd:gYear .
+
+entity:E125 a ai:Algorithm ;
+    ai:description "t分布随机邻域嵌入可视化算法"@zh ;
+    ai:name "t-SNE"@zh ;
+    ai:relatedTo entity:E021 ;
+    ai:year "2008"^^xsd:gYear .
+
+entity:E126 a ai:Algorithm ;
+    ai:description "统一流形逼近与投影降维算法"@zh ;
+    ai:name "UMAP"@zh ;
+    ai:relatedTo entity:E021 ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E127 a ai:Algorithm ;
+    ai:belongsTo entity:E036 ;
+    ai:description "基于密度的聚类算法"@zh ;
+    ai:name "DBSCAN"@zh ;
+    ai:year "1996"^^xsd:gYear .
+
+entity:E130 a ai:Model ;
+    ai:appliedIn entity:E056 ;
+    ai:basedon entity:E129 ;
+    ai:description "实例分割模型"@zh ;
+    ai:name "Mask R-CNN"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E131 a ai:Model ;
+    ai:appliedIn entity:E046 ;
+    ai:description "单次检测器目标检测模型"@zh ;
+    ai:name "SSD"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E132 a ai:Model ;
+    ai:appliedIn entity:E056,
+        entity:E174 ;
+    ai:description "医学图像分割模型"@zh ;
+    ai:name "U-Net"@zh ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E133 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "高效卷积神经网络"@zh ;
+    ai:name "EfficientNet"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E134 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "轻量级移动端模型"@zh ;
+    ai:name "MobileNet"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E135 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "压缩的卷积神经网络"@zh ;
+    ai:name "SqueezeNet"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E136 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "多尺度卷积网络"@zh ;
+    ai:name "Inception"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E137 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "密集连接卷积网络"@zh ;
+    ai:name "DenseNet"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E138 a ai:Model ;
+    ai:belongsTo entity:E005 ;
+    ai:description "压缩激励网络"@zh ;
+    ai:name "SENet"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E139 a ai:Model ;
+    ai:belongsTo entity:E004 ;
+    ai:description "上下文相关词表示模型"@zh ;
+    ai:name "ELMo"@zh ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E142 a ai:Model ;
+    ai:appliedIn entity:E053 ;
+    ai:basedon entity:E141 ;
+    ai:description "第四代生成式预训练Transformer"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "GPT-4"@zh ;
+    ai:year "2023"^^xsd:gYear .
+
+entity:E143 a ai:Model ;
+    ai:appliedIn entity:E059 ;
+    ai:description "Anthropic开发的大语言模型"@zh ;
+    ai:developedBy entity:E083 ;
+    ai:name "Claude"@zh ;
+    ai:year "2023"^^xsd:gYear .
+
+entity:E144 a ai:Model ;
+    ai:description "Meta开源的大语言模型"@zh ;
+    ai:developedBy entity:E079 ;
+    ai:name "LLaMA"@zh ;
+    ai:year "2023"^^xsd:gYear .
+
+entity:E145 a ai:Model ;
+    ai:description "Google的大语言模型"@zh ;
+    ai:developedBy entity:E076 ;
+    ai:name "PaLM"@zh ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E146 a ai:Model ;
+    ai:description "文本到文本转换Transformer模型"@zh ;
+    ai:developedBy entity:E076 ;
+    ai:name "T5"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E147 a ai:Model ;
+    ai:basedon entity:E024 ;
+    ai:description "优化的BERT模型"@zh ;
+    ai:name "RoBERTa"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E148 a ai:Model ;
+    ai:basedon entity:E024 ;
+    ai:description "广义自回归预训练模型"@zh ;
+    ai:name "XLNet"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E149 a ai:Model ;
+    ai:basedon entity:E024 ;
+    ai:description "轻量级BERT"@zh ;
+    ai:name "ALBERT"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E150 a ai:Model ;
+    ai:appliedIn entity:E045 ;
+    ai:basedon entity:E012 ;
+    ai:belongsTo entity:E005 ;
+    ai:description "视觉Transformer模型"@zh ;
+    ai:name "ViT"@zh ;
+    ai:year "2020"^^xsd:gYear .
+
+entity:E151 a ai:Model ;
+    ai:appliedIn entity:E045 ;
+    ai:belongsTo entity:E191 ;
+    ai:description "对比语言-图像预训练模型"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "CLIP"@zh ;
+    ai:year "2021"^^xsd:gYear .
+
+entity:E152 a ai:Model ;
+    ai:appliedIn entity:E054 ;
+    ai:description "文本到图像生成模型"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "DALL-E"@zh ;
+    ai:usesAlgorithm entity:E244 ;
+    ai:year "2021"^^xsd:gYear .
+
+entity:E153 a ai:Model ;
+    ai:appliedIn entity:E054 ;
+    ai:description "开源文本到图像扩散模型"@zh ;
+    ai:name "Stable Diffusion"@zh ;
+    ai:usesAlgorithm entity:E244 ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E154 a ai:Model ;
+    ai:appliedIn entity:E054 ;
+    ai:description "商业图像生成模型"@zh ;
+    ai:name "Midjourney"@zh ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E156 a ai:Model ;
+    ai:appliedIn entity:E175 ;
+    ai:basedon entity:E155 ;
+    ai:description "通用棋类游戏AI"@zh ;
+    ai:name "AlphaZero"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E157 a ai:Model ;
+    ai:appliedIn entity:E174 ;
+    ai:description "蛋白质结构预测模型"@zh ;
+    ai:developedBy entity:E075 ;
+    ai:name "AlphaFold"@zh ;
+    ai:year "2020"^^xsd:gYear .
+
+entity:E158 a ai:Model ;
+    ai:appliedIn entity:E044 ;
+    ai:description "语音识别模型"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "Whisper"@zh ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E159 a ai:Model ;
+    ai:appliedIn entity:E165 ;
+    ai:description "语音生成模型"@zh ;
+    ai:developedBy entity:E075 ;
+    ai:name "WaveNet"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E160 a ai:Model ;
+    ai:appliedIn entity:E165 ;
+    ai:description "语音合成模型"@zh ;
+    ai:name "Tacotron"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E161 a ai:Model ;
+    ai:basedon entity:E012 ;
+    ai:description "多语言大语言模型"@zh ;
+    ai:name "BLOOM"@zh ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E162 a ai:AI_Field ;
+    ai:description "研究计算机及其应用的学科"@zh ;
+    ai:name "计算机科学"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E163 a ai:AI_Field ;
+    ai:description "研究智能和认知过程的跨学科研究"@zh ;
+    ai:name "认知科学"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E164 a ai:AI_Field ;
+    ai:description "研究神经系统的学科"@zh ;
+    ai:name "神经科学"@zh ;
+    ai:relatedTo entity:E001 .
+
+entity:E167 a ai:Application ;
+    ai:appliedIn entity:E004,
+        entity:E007 ;
+    ai:description "识别实体间的关系"@zh ;
+    ai:name "关系抽取"@zh .
+
+entity:E170 a ai:Application ;
+    ai:appliedIn entity:E007 ;
+    ai:description "基于已知知识推导新知识"@zh ;
+    ai:name "知识推理"@zh .
+
+entity:E171 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "提升图像分辨率"@zh ;
+    ai:name "图像超分辨率"@zh .
+
+entity:E172 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "理解和分析视频内容"@zh ;
+    ai:name "视频分析"@zh .
+
+entity:E173 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "光学字符识别"@zh ;
+    ai:name "OCR"@zh ;
+    ai:year "1974"^^xsd:gYear .
+
+entity:E177 a ai:Model ;
+    ai:appliedIn entity:E176 ;
+    ai:basedon entity:E178 ;
+    ai:description "AI代码助手"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "GitHub Copilot"@zh ;
+    ai:year "2021"^^xsd:gYear .
+
+entity:E180 a ai:Technique ;
+    ai:belongsTo entity:E004 ;
+    ai:description "设计提示词优化模型输出"@zh ;
+    ai:name "Prompt Engineering"@zh .
+
+entity:E181 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "无需训练样本的学习方法"@zh ;
+    ai:name "零样本学习"@zh .
+
+entity:E182 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "使用少量样本学习新任务"@zh ;
+    ai:name "少样本学习"@zh .
+
+entity:E183 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "分布式机器学习保护隐私"@zh ;
+    ai:name "联邦学习"@zh .
+
+entity:E184 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "将大模型知识迁移到小模型"@zh ;
+    ai:name "知识蒸馏"@zh .
+
+entity:E186 a ai:Technique ;
+    ai:description "降低模型参数精度"@zh ;
+    ai:isPartOf entity:E185 ;
+    ai:name "量化"@zh .
+
+entity:E187 a ai:Technique ;
+    ai:description "移除不重要的模型参数"@zh ;
+    ai:isPartOf entity:E185 ;
+    ai:name "剪枝"@zh .
+
+entity:E188 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "自动搜索最优网络架构"@zh ;
+    ai:name "神经架构搜索"@zh .
+
+entity:E189 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "通过对比样本学习表示"@zh ;
+    ai:name "对比学习"@zh .
+
+entity:E190 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "从数据本身生成监督信号"@zh ;
+    ai:name "自监督学习"@zh .
+
+entity:E192 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "识别因果关系的方法"@zh ;
+    ai:name "因果推断"@zh .
+
+entity:E194 a ai:Algorithm ;
+    ai:description "图卷积网络"@zh ;
+    ai:isPartOf entity:E193 ;
+    ai:name "GCN"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E195 a ai:Algorithm ;
+    ai:description "图注意力网络"@zh ;
+    ai:isPartOf entity:E193 ;
+    ai:name "GAT"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E196 a ai:Algorithm ;
+    ai:description "图采样和聚合网络"@zh ;
+    ai:isPartOf entity:E193 ;
+    ai:name "GraphSAGE"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E197 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "深度Q网络强化学习算法"@zh ;
+    ai:name "DQN"@zh ;
+    ai:year "2013"^^xsd:gYear .
+
+entity:E198 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "近端策略优化强化学习算法"@zh ;
+    ai:name "PPO"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E199 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "异步优势演员评论家算法"@zh ;
+    ai:name "A3C"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E200 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "软演员评论家算法"@zh ;
+    ai:name "SAC"@zh ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E202 a ai:Concept ;
+    ai:description "强化学习中的权衡策略"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "探索与利用"@zh .
+
+entity:E203 a ai:Concept ;
+    ai:description "直接优化策略的方法"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "策略梯度"@zh .
+
+entity:E204 a ai:Concept ;
+    ai:description "评估状态或动作价值的函数"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "价值函数"@zh .
+
+entity:E205 a ai:Concept ;
+    ai:description "强化学习中的反馈信号"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "奖励函数"@zh .
+
+entity:E207 a ai:Concept ;
+    ai:description "动态规划的核心方程"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "贝尔曼方程"@zh .
+
+entity:E208 a ai:Concept ;
+    ai:description "所有可能状态的集合"@zh ;
+    ai:isPartOf entity:E206 ;
+    ai:name "状态空间"@zh .
+
+entity:E209 a ai:Concept ;
+    ai:description "所有可能动作的集合"@zh ;
+    ai:isPartOf entity:E206 ;
+    ai:name "动作空间"@zh .
+
+entity:E210 a ai:Concept ;
+    ai:description "序列到序列模型架构"@zh ;
+    ai:isPartOf entity:E012 ;
+    ai:name "编码器-解码器"@zh .
+
+entity:E211 a ai:Concept ;
+    ai:description "Transformer的核心机制"@zh ;
+    ai:isPartOf entity:E012 ;
+    ai:name "自注意力"@zh .
+
+entity:E212 a ai:Concept ;
+    ai:description "在Transformer中编码序列位置信息"@zh ;
+    ai:isPartOf entity:E012 ;
+    ai:name "位置编码"@zh .
+
+entity:E213 a ai:Concept ;
+    ai:description "并行的多个注意力机制"@zh ;
+    ai:isPartOf entity:E033 ;
+    ai:name "多头注意力"@zh .
+
+entity:E215 a ai:Concept ;
+    ai:description "归一化层的输出"@zh ;
+    ai:isPartOf entity:E012 ;
+    ai:name "层归一化"@zh .
+
+entity:E216 a ai:Concept ;
+    ai:description "信息单向传播的神经网络"@zh ;
+    ai:name "前馈网络"@zh ;
+    ai:relatedTo entity:E009 .
+
+entity:E217 a ai:Concept ;
+    ai:description "将离散符号映射到连续向量"@zh ;
+    ai:name "嵌入层"@zh ;
+    ai:relatedTo entity:E104 .
+
+entity:E218 a ai:Concept ;
+    ai:description "注意力机制中的重要性分数"@zh ;
+    ai:isPartOf entity:E033 ;
+    ai:name "注意力权重"@zh .
+
+entity:E219 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "序列生成的搜索算法"@zh ;
+    ai:name "Beam Search"@zh .
+
+entity:E220 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "每步选择最优的生成策略"@zh ;
+    ai:name "贪心搜索"@zh .
+
+entity:E222 a ai:Concept ;
+    ai:description "控制生成多样性的参数"@zh ;
+    ai:name "温度参数"@zh ;
+    ai:relatedTo entity:E221 .
+
+entity:E223 a ai:Technique ;
+    ai:description "从概率最高的k个候选中采样"@zh ;
+    ai:name "Top-k采样"@zh ;
+    ai:relatedTo entity:E221 .
+
+entity:E224 a ai:Technique ;
+    ai:description "核采样，累积概率达到p时截断"@zh ;
+    ai:name "Top-p采样"@zh ;
+    ai:relatedTo entity:E221 .
+
+entity:E225 a ai:Concept ;
+    ai:description "评估语言模型的指标"@zh ;
+    ai:name "困惑度"@zh ;
+    ai:relatedTo entity:E004 .
+
+entity:E226 a ai:Concept ;
+    ai:description "机器翻译评估指标"@zh ;
+    ai:name "BLEU"@zh ;
+    ai:relatedTo entity:E047 .
+
+entity:E227 a ai:Concept ;
+    ai:description "文本摘要评估指标"@zh ;
+    ai:name "ROUGE"@zh ;
+    ai:relatedTo entity:E168 .
+
+entity:E229 a ai:Concept ;
+    ai:description "正确预测的比例"@zh ;
+    ai:isPartOf entity:E233 ;
+    ai:name "准确率"@zh .
+
+entity:E230 a ai:Concept ;
+    ai:description "找出的正样本占总正样本的比例"@zh ;
+    ai:isPartOf entity:E228 ;
+    ai:name "召回率"@zh .
+
+entity:E231 a ai:Concept ;
+    ai:description "预测为正的样本中真正为正的比例"@zh ;
+    ai:isPartOf entity:E228 ;
+    ai:name "精确率"@zh .
+
+entity:E232 a ai:Concept ;
+    ai:description "ROC曲线下面积"@zh ;
+    ai:name "AUC"@zh ;
+    ai:relatedTo entity:E233 .
+
+entity:E234 a ai:Concept ;
+    ai:description "模型复杂度的权衡"@zh ;
+    ai:name "偏差方差权衡"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E236 a ai:Technique ;
+    ai:description "评估模型泛化能力的方法"@zh ;
+    ai:name "交叉验证"@zh ;
+    ai:relatedTo entity:E102 .
+
+entity:E237 a ai:Technique ;
+    ai:description "防止过拟合的训练策略"@zh ;
+    ai:name "早停"@zh ;
+    ai:relatedTo entity:E100 .
+
+entity:E238 a ai:Technique ;
+    ai:description "改善模型泛化的技术"@zh ;
+    ai:name "标签平滑"@zh ;
+    ai:relatedTo entity:E100 .
+
+entity:E239 a ai:Technique ;
+    ai:description "数据增强技术"@zh ;
+    ai:isPartOf entity:E040 ;
+    ai:name "Mixup"@zh .
+
+entity:E240 a ai:Technique ;
+    ai:description "图像数据增强技术"@zh ;
+    ai:isPartOf entity:E040 ;
+    ai:name "CutMix"@zh .
+
+entity:E241 a ai:Technique ;
+    ai:description "低秩适配微调技术"@zh ;
+    ai:isPartOf entity:E179 ;
+    ai:name "LoRA"@zh ;
+    ai:relatedTo entity:E242 ;
+    ai:year "2021"^^xsd:gYear .
+
+entity:E243 a ai:Technique ;
+    ai:appliedIn entity:E023,
+        entity:E141 ;
+    ai:belongsTo entity:E006 ;
+    ai:description "基于人类反馈的强化学习"@zh ;
+    ai:name "RLHF"@zh ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E245 a ai:Algorithm ;
+    ai:description "去噪扩散概率模型"@zh ;
+    ai:isPartOf entity:E244 ;
+    ai:name "DDPM"@zh ;
+    ai:year "2020"^^xsd:gYear .
+
+entity:E246 a ai:Algorithm ;
+    ai:description "分数匹配生成模型"@zh ;
+    ai:name "Score Matching"@zh ;
+    ai:relatedTo entity:E244 ;
+    ai:year "2005"^^xsd:gYear .
+
+entity:E247 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "基于流的生成模型"@zh ;
+    ai:name "Flow-based模型"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E248 a ai:Concept ;
+    ai:description "基于能量函数的模型"@zh ;
+    ai:name "能量模型"@zh ;
+    ai:relatedTo entity:E003 .
+
+entity:E250 a ai:Algorithm ;
+    ai:basedon entity:E249 ;
+    ai:description "学习稀疏表示的自编码器"@zh ;
+    ai:name "稀疏自编码器"@zh .
+
+entity:E251 a ai:Algorithm ;
+    ai:basedon entity:E249 ;
+    ai:description "通过去噪学习鲁棒表示"@zh ;
+    ai:name "去噪自编码器"@zh .
+
+entity:E252 a ai:Algorithm ;
+    ai:description "训练能量模型的算法"@zh ;
+    ai:name "对比散度"@zh ;
+    ai:relatedTo entity:E253 .
+
+entity:E254 a ai:Algorithm ;
+    ai:basedon entity:E253 ;
+    ai:description "堆叠受限玻尔兹曼机"@zh ;
+    ai:name "深度信念网络"@zh ;
+    ai:year "2006"^^xsd:gYear .
+
+entity:E255 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "期望最大化算法"@zh ;
+    ai:name "EM算法"@zh ;
+    ai:year "1977"^^xsd:gYear .
+
+entity:E256 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "处理序列数据的概率模型"@zh ;
+    ai:name "隐马尔可夫模型"@zh ;
+    ai:year "1960"^^xsd:gYear .
+
+entity:E257 a ai:Algorithm ;
+    ai:belongsTo entity:E004 ;
+    ai:description "序列标注的概率模型"@zh ;
+    ai:name "条件随机场"@zh ;
+    ai:year "2001"^^xsd:gYear .
+
+entity:E258 a ai:Algorithm ;
+    ai:belongsTo entity:E169 ;
+    ai:description "网页排名算法"@zh ;
+    ai:name "PageRank"@zh ;
+    ai:year "1996"^^xsd:gYear .
+
+entity:E260 a ai:Algorithm ;
+    ai:appliedIn entity:E050 ;
+    ai:description "推荐系统中的降维技术"@zh ;
+    ai:name "矩阵分解"@zh ;
+    ai:year "2006"^^xsd:gYear .
+
+entity:E261 a ai:Tool ;
+    ai:description "图数据库管理系统"@zh ;
+    ai:name "Neo4j"@zh ;
+    ai:relatedTo entity:E007 ;
+    ai:year "2007"^^xsd:gYear .
+
+entity:E262 a ai:Tool ;
+    ai:description "大语言模型应用开发框架"@zh ;
+    ai:name "LangChain"@zh ;
+    ai:usesTool entity:E074,
+        entity:E085 ;
+    ai:year "2022"^^xsd:gYear .
+
+entity:E263 a ai:Tool ;
+    ai:description "机器学习实验跟踪平台"@zh ;
+    ai:name "Weights & Biases"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E264 a ai:Tool ;
+    ai:description "机器学习生命周期管理平台"@zh ;
+    ai:name "MLflow"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E265 a ai:Tool ;
+    ai:description "数据版本控制工具"@zh ;
+    ai:name "DVC"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E266 a ai:Tool ;
+    ai:description "分布式计算框架"@zh ;
+    ai:name "Ray"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E267 a ai:Tool ;
+    ai:description "开放神经网络交换格式"@zh ;
+    ai:name "ONNX"@zh ;
+    ai:relatedTo entity:E003 ;
+    ai:year "2017"^^xsd:gYear .
+
+entity:E268 a ai:Tool ;
+    ai:description "TensorFlow可视化工具"@zh ;
+    ai:name "TensorBoard"@zh ;
+    ai:relatedTo entity:E084 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E269 a ai:Tool ;
+    ai:description "交互式计算环境"@zh ;
+    ai:name "Jupyter"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E271 a ai:Tool ;
+    ai:description "数据分析库"@zh ;
+    ai:name "Pandas"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2008"^^xsd:gYear .
+
+entity:E272 a ai:Tool ;
+    ai:description "统计数据可视化库"@zh ;
+    ai:name "Seaborn"@zh ;
+    ai:relatedTo entity:E270 ;
+    ai:year "2012"^^xsd:gYear .
+
+ai:AI_Knowledge_Graph a owl:Ontology ;
+    rdfs:label "人工智能核心概念知识图谱本体"@zh ;
+    rdfs:comment "定义人工智能领域的核心概念、实体和关系"@zh .
+
+ai:appliedIn a owl:ObjectProperty ;
+    rdfs:label "应用于"@zh ;
+    rdfs:comment "应用于某场景"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Algorithm ai:Technique ) ] ;
+    rdfs:range ai:Application .
+
+ai:basedon a owl:ObjectProperty ;
+    rdfs:label "基于"@zh ;
+    rdfs:comment "某技术基于另一技术发展而来"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Algorithm ai:Technique ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Algorithm ai:Technique ) ] .
+
+ai:belongsTo a owl:ObjectProperty ;
+    rdfs:label "属于"@zh ;
+    rdfs:comment "某实体属于某领域或类别"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Algorithm ai:Model ai:Technique ai:Application ) ] ;
+    rdfs:range ai:AI_Field .
+
+ai:description a owl:DatatypeProperty ;
+    rdfs:label "描述"@zh ;
+    rdfs:range xsd:string .
+
+ai:developedBy a owl:ObjectProperty ;
+    rdfs:label "开发者"@zh ;
+    rdfs:comment "由某人或组织开发"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Algorithm ai:Tool ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( ai:Person ai:Organization ) ] .
+
+ai:field a owl:DatatypeProperty ;
+    rdfs:label "研究领域"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range xsd:string .
+
+ai:founded a owl:DatatypeProperty ;
+    rdfs:label "成立年份"@zh ;
+    rdfs:domain ai:Organization ;
+    rdfs:range xsd:gYear .
+
+ai:isPartOf a owl:ObjectProperty ;
+    rdfs:label "是...的一部分"@zh ;
+    rdfs:comment "某概念是更大概念的组成部分"@zh ;
+    owl:propertyType owl:TransitiveProperty .
+
+ai:name a owl:DatatypeProperty ;
+    rdfs:label "名称"@zh ;
+    rdfs:range xsd:string .
+
+ai:nationality a owl:DatatypeProperty ;
+    rdfs:label "国籍"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range xsd:string .
+
+ai:parameters a owl:DatatypeProperty ;
+    rdfs:label "参数量"@zh ;
+    rdfs:range xsd:string .
+
+ai:proposes a owl:ObjectProperty ;
+    rdfs:label "提出"@zh ;
+    rdfs:comment "提出某概念或方法"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Person ai:Organization ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( ai:Concept ai:Algorithm ai:Model ) ] .
+
+ai:relatedTo a owl:ObjectProperty ;
+    rdfs:label "相关"@zh ;
+    rdfs:comment "两个实体相关"@zh ;
+    owl:propertyType owl:SymmetricProperty .
+
+ai:usesAlgorithm a owl:ObjectProperty ;
+    rdfs:label "使用算法"@zh ;
+    rdfs:comment "模型或应用使用某算法"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Application ) ] ;
+    rdfs:range ai:Algorithm .
+
+ai:usesTool a owl:ObjectProperty ;
+    rdfs:label "使用工具"@zh ;
+    rdfs:comment "使用某工具实现"@zh ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( ai:Model ai:Application ) ] ;
+    rdfs:range ai:Tool .
+
+ai:worksAt a owl:ObjectProperty ;
+    rdfs:label "工作于"@zh ;
+    rdfs:comment "某人在某组织工作"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range ai:Organization .
+
+ai:year a owl:DatatypeProperty ;
+    rdfs:label "年份"@zh ;
+    rdfs:range xsd:gYear .
+
+entity:E022 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "无模型的强化学习算法"@zh ;
+    ai:name "Q学习"@zh ;
+    ai:year "1989"^^xsd:gYear .
+
+entity:E025 a ai:Model ;
+    ai:appliedIn entity:E045 ;
+    ai:basedon entity:E010 ;
+    ai:belongsTo entity:E005 ;
+    ai:description "残差网络，解决深层网络训练问题"@zh ;
+    ai:developedBy entity:E080 ;
+    ai:name "ResNet"@zh ;
+    ai:usesAlgorithm entity:E214 ;
+    ai:usesTool entity:E085 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E029 a ai:Model ;
+    ai:appliedIn entity:E054,
+        entity:E058 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "生成对抗网络，用于生成逼真数据"@zh ;
+    ai:developedBy entity:E065 ;
+    ai:name "GAN"@zh ;
+    ai:usesAlgorithm entity:E039 ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E036 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "从无标注数据中学习模式"@zh ;
+    ai:name "无监督学习"@zh ;
+    ai:year "1950"^^xsd:gYear .
+
+entity:E039 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "通过对抗样本提高模型鲁棒性"@zh ;
+    ai:name "对抗训练"@zh ;
+    ai:year "2013"^^xsd:gYear .
+
+entity:E044 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "将语音转换为文本"@zh ;
+    ai:name "语音识别"@zh ;
+    ai:usesAlgorithm entity:E011,
+        entity:E031 ;
+    ai:year "1952"^^xsd:gYear .
+
+entity:E047 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "自动将文本从一种语言翻译为另一种语言"@zh ;
+    ai:name "机器翻译"@zh ;
+    ai:usesAlgorithm entity:E011,
+        entity:E012,
+        entity:E024 ;
+    ai:year "1954"^^xsd:gYear .
+
+entity:E052 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "识别或验证人脸身份"@zh ;
+    ai:name "人脸识别"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "1964"^^xsd:gYear .
+
+entity:E058 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "将一种图像的风格应用到另一图像"@zh ;
+    ai:name "风格迁移"@zh ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E065 a ai:Person ;
+    ai:description "生成对抗网络发明者"@zh ;
+    ai:field "深度学习"@zh ;
+    ai:name "Ian Goodfellow"@zh ;
+    ai:nationality "美国"@zh ;
+    ai:proposes entity:E029 ;
+    ai:worksAt entity:E076 .
+
+entity:E072 a ai:Person ;
+    ai:description "LSTM贡献者"@zh ;
+    ai:field "深度学习"@zh ;
+    ai:name "Jürgen Schmidhuber"@zh ;
+    ai:nationality "瑞士"@zh ;
+    ai:proposes entity:E031 .
+
+entity:E077 a ai:Organization ;
+    ai:description "麻省理工学院计算机科学与人工智能实验室"@zh ;
+    ai:founded "1959"^^xsd:gYear ;
+    ai:name "MIT CSAIL"@zh .
+
+entity:E080 a ai:Organization ;
+    ai:description "微软研究院"@zh ;
+    ai:founded "1991"^^xsd:gYear ;
+    ai:name "Microsoft Research"@zh .
+
+entity:E083 a ai:Organization ;
+    ai:description "AI安全研究公司"@zh ;
+    ai:founded "2021"^^xsd:gYear ;
+    ai:name "Anthropic"@zh .
+
+entity:E093 a ai:Tool ;
+    ai:description "Python科学计算库"@zh ;
+    ai:name "NumPy"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2006"^^xsd:gYear .
+
+entity:E102 a ai:Concept ;
+    ai:description "模型在新数据上的表现能力"@zh ;
+    ai:name "泛化能力"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E105 a ai:Concept ;
+    ai:description "卷积操作的滤波器"@zh ;
+    ai:isPartOf entity:E010 ;
+    ai:name "卷积核"@zh .
+
+entity:E106 a ai:Concept ;
+    ai:description "降低特征图维度的操作"@zh ;
+    ai:isPartOf entity:E010 ;
+    ai:name "池化"@zh .
+
+entity:E128 a ai:Model ;
+    ai:appliedIn entity:E046 ;
+    ai:basedon entity:E010 ;
+    ai:description "区域卷积神经网络目标检测模型"@zh ;
+    ai:name "R-CNN"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E129 a ai:Model ;
+    ai:basedon entity:E128 ;
+    ai:description "更快的区域卷积神经网络"@zh ;
+    ai:name "Faster R-CNN"@zh ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E140 a ai:Model ;
+    ai:basedon entity:E023 ;
+    ai:description "第二代生成式预训练Transformer"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "GPT-2"@zh ;
+    ai:parameters "15亿参数"@zh ;
+    ai:year "2019"^^xsd:gYear .
+
+entity:E155 a ai:Model ;
+    ai:appliedIn entity:E175 ;
+    ai:description "围棋AI程序"@zh ;
+    ai:developedBy entity:E075 ;
+    ai:name "AlphaGo"@zh ;
+    ai:usesAlgorithm entity:E022,
+        entity:E201 ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E166 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "识别文本中的实体"@zh ;
+    ai:name "命名实体识别"@zh .
+
+entity:E168 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "生成文本的简短摘要"@zh ;
+    ai:name "文本摘要"@zh .
+
+entity:E169 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "从大量数据中检索相关信息"@zh ;
+    ai:name "信息检索"@zh .
+
+entity:E176 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "自动生成程序代码"@zh ;
+    ai:name "代码生成"@zh .
+
+entity:E178 a ai:Model ;
+    ai:basedon entity:E023 ;
+    ai:description "代码生成模型"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "Codex"@zh ;
+    ai:year "2021"^^xsd:gYear .
+
+entity:E191 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "处理多种类型数据的学习方法"@zh ;
+    ai:name "多模态学习"@zh .
+
+entity:E201 a ai:Algorithm ;
+    ai:belongsTo entity:E006 ;
+    ai:description "蒙特卡洛树搜索"@zh ;
+    ai:name "MCTS"@zh ;
+    ai:year "2006"^^xsd:gYear .
+
+entity:E214 a ai:Concept ;
+    ai:description "跳跃连接缓解梯度消失"@zh ;
+    ai:isPartOf entity:E025 ;
+    ai:name "残差连接"@zh .
+
+entity:E242 a ai:Technique ;
+    ai:description "参数高效微调方法"@zh ;
+    ai:name "PEFT"@zh ;
+    ai:relatedTo entity:E179 .
+
+entity:E259 a ai:Algorithm ;
+    ai:appliedIn entity:E050 ;
+    ai:description "推荐系统的核心算法"@zh ;
+    ai:name "协同过滤"@zh ;
+    ai:year "1992"^^xsd:gYear .
+
+entity:E270 a ai:Tool ;
+    ai:description "Python绘图库"@zh ;
+    ai:name "Matplotlib"@zh ;
+    ai:relatedTo entity:E002 ;
+    ai:year "2003"^^xsd:gYear .
+
+entity:E013 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "神经网络训练的核心算法，用于计算梯度"@zh ;
+    ai:name "反向传播"@zh ;
+    ai:year "1986"^^xsd:gYear .
+
+entity:E015 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "基于树结构进行决策的机器学习算法"@zh ;
+    ai:name "决策树"@zh ;
+    ai:year "1986"^^xsd:gYear .
+
+entity:E040 a ai:Technique ;
+    ai:belongsTo entity:E002 ;
+    ai:description "通过变换扩充训练数据"@zh ;
+    ai:name "数据增强"@zh ;
+    ai:year "1990"^^xsd:gYear .
+
+entity:E050 a ai:Application ;
+    ai:appliedIn entity:E002 ;
+    ai:description "向用户推荐可能感兴趣的内容"@zh ;
+    ai:name "推荐系统"@zh ;
+    ai:usesAlgorithm entity:E259 ;
+    ai:year "1992"^^xsd:gYear .
+
+entity:E056 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "对图像进行像素级分类"@zh ;
+    ai:name "语义分割"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E059 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "与用户进行自然对话的系统"@zh ;
+    ai:name "对话系统"@zh ;
+    ai:year "1966"^^xsd:gYear .
+
+entity:E078 a ai:Organization ;
+    ai:description "斯坦福大学人工智能实验室"@zh ;
+    ai:founded "1962"^^xsd:gYear ;
+    ai:name "Stanford AI Lab"@zh .
+
+entity:E096 a ai:Concept ;
+    ai:description "衡量预测值与真实值差异的函数"@zh ;
+    ai:name "损失函数"@zh ;
+    ai:relatedTo entity:E009 .
+
+entity:E121 a ai:Algorithm ;
+    ai:basedon entity:E015 ;
+    ai:description "梯度提升决策树算法"@zh ;
+    ai:name "XGBoost"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E141 a ai:Model ;
+    ai:appliedIn entity:E053 ;
+    ai:basedon entity:E140 ;
+    ai:description "第三代生成式预训练Transformer"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "GPT-3"@zh ;
+    ai:parameters "1750亿参数"@zh ;
+    ai:year "2020"^^xsd:gYear .
+
+entity:E165 a ai:Application ;
+    ai:description "将文本转换为语音"@zh ;
+    ai:name "语音合成"@zh .
+
+entity:E174 a ai:Application ;
+    ai:appliedIn entity:E003 ;
+    ai:description "辅助医疗诊断"@zh ;
+    ai:name "医疗诊断"@zh ;
+    ai:year "1970"^^xsd:gYear .
+
+entity:E175 a ai:Application ;
+    ai:appliedIn entity:E006 ;
+    ai:description "游戏中的智能体"@zh ;
+    ai:name "游戏AI"@zh ;
+    ai:year "1950"^^xsd:gYear .
+
+entity:E179 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "在预训练模型基础上针对特定任务微调"@zh ;
+    ai:name "Fine-tuning"@zh .
+
+entity:E185 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "减小模型大小和计算量"@zh ;
+    ai:name "模型压缩"@zh .
+
+entity:E206 a ai:Concept ;
+    ai:description "强化学习的数学框架"@zh ;
+    ai:isPartOf entity:E006 ;
+    ai:name "马尔可夫决策过程"@zh .
+
+entity:E228 a ai:Concept ;
+    ai:description "分类模型性能指标"@zh ;
+    ai:isPartOf entity:E233 ;
+    ai:name "F1分数"@zh .
+
+entity:E235 a ai:Technique ;
+    ai:description "防止过拟合的技术"@zh ;
+    ai:name "正则化"@zh ;
+    ai:relatedTo entity:E100 .
+
+entity:E249 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "学习数据压缩表示的神经网络"@zh ;
+    ai:name "自编码器"@zh ;
+    ai:year "1987"^^xsd:gYear .
+
+entity:E253 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "生成式随机神经网络"@zh ;
+    ai:name "受限玻尔兹曼机"@zh ;
+    ai:year "1986"^^xsd:gYear .
+
+entity:E007 a ai:AI_Field ;
+    ai:description "用图结构表示实体及其关系的知识库"@zh ;
+    ai:isPartOf entity:E001 ;
+    ai:name "知识图谱"@zh ;
+    ai:year "2012"^^xsd:gYear .
+
+entity:E011 a ai:Algorithm ;
+    ai:basedon entity:E009 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "处理序列数据的神经网络架构"@zh ;
+    ai:name "循环神经网络"@zh ;
+    ai:year "1986"^^xsd:gYear .
+
+entity:E021 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "降维算法，提取数据的主要特征"@zh ;
+    ai:name "主成分分析"@zh ;
+    ai:year "1901"^^xsd:gYear .
+
+entity:E031 a ai:Algorithm ;
+    ai:basedon entity:E011 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "长短期记忆网络，解决RNN梯度消失问题"@zh ;
+    ai:developedBy entity:E072 ;
+    ai:name "LSTM"@zh ;
+    ai:year "1997"^^xsd:gYear .
+
+entity:E033 a ai:Technique ;
+    ai:belongsTo entity:E003 ;
+    ai:description "使模型关注输入的重要部分"@zh ;
+    ai:isPartOf entity:E012 ;
+    ai:name "注意力机制"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E046 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "定位和识别图像中的多个物体"@zh ;
+    ai:name "目标检测"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "2001"^^xsd:gYear .
+
+entity:E053 a ai:Application ;
+    ai:appliedIn entity:E004 ;
+    ai:description "自动生成自然语言文本"@zh ;
+    ai:name "文本生成"@zh ;
+    ai:usesAlgorithm entity:E023 ;
+    ai:year "1980"^^xsd:gYear .
+
+entity:E079 a ai:Organization ;
+    ai:description "Meta的AI研究部门"@zh ;
+    ai:founded "2013"^^xsd:gYear ;
+    ai:name "Meta AI"@zh .
+
+entity:E084 a ai:Tool ;
+    ai:description "Google开源的机器学习框架"@zh ;
+    ai:developedBy entity:E076 ;
+    ai:name "TensorFlow"@zh ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E095 a ai:Concept ;
+    ai:description "引入非线性特性的函数"@zh ;
+    ai:isPartOf entity:E009 ;
+    ai:name "激活函数"@zh .
+
+entity:E097 a ai:Concept ;
+    ai:description "在训练前设定的参数"@zh ;
+    ai:name "超参数"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E100 a ai:Concept ;
+    ai:description "模型在训练数据上表现好但泛化能力差"@zh ;
+    ai:name "过拟合"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E193 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "处理图结构数据的神经网络"@zh ;
+    ai:name "图神经网络"@zh ;
+    ai:year "2009"^^xsd:gYear .
+
+entity:E221 a ai:Technique ;
+    ai:belongsTo entity:E004 ;
+    ai:description "从概率分布中生成序列"@zh ;
+    ai:name "采样"@zh .
+
+entity:E233 a ai:Concept ;
+    ai:description "分类结果的统计表格"@zh ;
+    ai:name "混淆矩阵"@zh ;
+    ai:relatedTo entity:E002 .
+
+entity:E023 a ai:Model ;
+    ai:appliedIn entity:E053,
+        entity:E059 ;
+    ai:basedon entity:E012 ;
+    ai:description "生成式预训练Transformer模型"@zh ;
+    ai:developedBy entity:E074 ;
+    ai:name "GPT"@zh ;
+    ai:parameters "多版本，从1.17亿到1750亿参数"@zh ;
+    ai:usesAlgorithm entity:E012 ;
+    ai:usesTool entity:E085 ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E075 a ai:Organization ;
+    ai:description "Google旗下AI研究公司"@zh ;
+    ai:founded "2010"^^xsd:gYear ;
+    ai:name "DeepMind"@zh .
+
+entity:E085 a ai:Tool ;
+    ai:description "Meta开源的深度学习框架"@zh ;
+    ai:developedBy entity:E079 ;
+    ai:name "PyTorch"@zh ;
+    ai:year "2016"^^xsd:gYear .
+
+entity:E104 a ai:Concept ;
+    ai:belongsTo entity:E004 ;
+    ai:description "将词语映射到连续向量空间"@zh ;
+    ai:name "词嵌入"@zh .
+
+entity:E244 a ai:Algorithm ;
+    ai:appliedIn entity:E054 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "通过去噪过程生成数据"@zh ;
+    ai:name "扩散模型"@zh ;
+    ai:year "2015"^^xsd:gYear .
+
+entity:E014 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "优化算法，通过梯度方向更新参数"@zh ;
+    ai:name "梯度下降"@zh ;
+    ai:year "1847"^^xsd:gYear .
+
+entity:E045 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "识别图像中的物体类别"@zh ;
+    ai:name "图像分类"@zh ;
+    ai:usesAlgorithm entity:E010 ;
+    ai:year "1960"^^xsd:gYear .
+
+entity:E009 a ai:Algorithm ;
+    ai:belongsTo entity:E002 ;
+    ai:description "模拟生物神经网络的计算模型"@zh ;
+    ai:name "神经网络"@zh ;
+    ai:usesAlgorithm entity:E013,
+        entity:E014 ;
+    ai:year "1943"^^xsd:gYear .
+
+entity:E024 a ai:Model ;
+    ai:appliedIn entity:E166 ;
+    ai:basedon entity:E012 ;
+    ai:belongsTo entity:E004 ;
+    ai:description "双向编码器表示的Transformer模型"@zh ;
+    ai:developedBy entity:E076 ;
+    ai:name "BERT"@zh ;
+    ai:parameters "3.4亿参数"@zh ;
+    ai:usesAlgorithm entity:E012 ;
+    ai:usesTool entity:E084 ;
+    ai:year "2018"^^xsd:gYear .
+
+entity:E054 a ai:Application ;
+    ai:appliedIn entity:E005 ;
+    ai:description "自动生成图像内容"@zh ;
+    ai:name "图像生成"@zh ;
+    ai:year "2014"^^xsd:gYear .
+
+entity:E076 a ai:Organization ;
+    ai:description "Google的AI研究部门"@zh ;
+    ai:founded "2017"^^xsd:gYear ;
+    ai:name "Google AI"@zh .
+
+entity:E074 a ai:Organization ;
+    ai:description "人工智能研究实验室"@zh ;
+    ai:founded "2015"^^xsd:gYear ;
+    ai:name "OpenAI"@zh .
+
+entity:E012 a ai:Algorithm ;
+    ai:belongsTo entity:E003 ;
+    ai:description "基于自注意力机制的神经网络架构"@zh ;
+    ai:name "Transformer"@zh ;
+    ai:usesAlgorithm entity:E033 ;
+    ai:year "2017"^^xsd:gYear .
+
+ai:AI_Field a owl:Class ;
+    rdfs:label "AI领域"@zh ;
+    rdfs:comment "人工智能的主要研究领域和分支"@zh .
+
+entity:E001 a ai:AI_Field ;
+    ai:description "研究和开发模拟、延伸和扩展人类智能的理论、方法、技术及应用系统的技术科学"@zh ;
+    ai:name "人工智能"@zh ;
+    ai:year "1956"^^xsd:gYear .
+
+entity:E010 a ai:Algorithm ;
+    ai:basedon entity:E009 ;
+    ai:belongsTo entity:E003 ;
+    ai:description "专门用于处理网格结构数据的深度学习算法"@zh ;
+    ai:name "卷积神经网络"@zh ;
+    ai:usesAlgorithm entity:E105,
+        entity:E106 ;
+    ai:year "1989"^^xsd:gYear .
+
+ai:Organization a owl:Class ;
+    rdfs:label "组织"@zh ;
+    rdfs:comment "AI研究机构和公司"@zh .
+
+entity:E006 a ai:AI_Field ;
+    ai:description "通过与环境交互学习最优策略的机器学习方法"@zh ;
+    ai:isPartOf entity:E002 ;
+    ai:name "强化学习"@zh ;
+    ai:year "1980"^^xsd:gYear .
+
+ai:Person a owl:Class ;
+    rdfs:label "人物"@zh ;
+    rdfs:comment "AI领域的重要人物"@zh .
+
+entity:E005 a ai:AI_Field ;
+    ai:description "使计算机能够理解和处理视觉信息的技术"@zh ;
+    ai:isPartOf entity:E001 ;
+    ai:name "计算机视觉"@zh ;
+    ai:year "1960"^^xsd:gYear .
+
+ai:Tool a owl:Class ;
+    rdfs:label "工具"@zh ;
+    rdfs:comment "AI开发工具和框架"@zh .
+
+entity:E004 a ai:AI_Field ;
+    ai:description "使计算机能够理解、解释和生成人类语言的技术"@zh ;
+    ai:isPartOf entity:E001 ;
+    ai:name "自然语言处理"@zh ;
+    ai:year "1950"^^xsd:gYear .
+
+entity:E003 a ai:AI_Field ;
+    ai:description "基于多层神经网络的机器学习方法"@zh ;
+    ai:isPartOf entity:E002 ;
+    ai:name "深度学习"@zh ;
+    ai:year "2006"^^xsd:gYear .
+
+ai:Application a owl:Class ;
+    rdfs:label "应用"@zh ;
+    rdfs:comment "AI的实际应用场景"@zh .
+
+ai:Technique a owl:Class ;
+    rdfs:label "技术"@zh ;
+    rdfs:comment "AI中的技术概念和方法"@zh .
+
+entity:E002 a ai:AI_Field ;
+    ai:description "通过数据和经验自动改善性能的计算机算法研究"@zh ;
+    ai:isPartOf entity:E001 ;
+    ai:name "机器学习"@zh ;
+    ai:year "1959"^^xsd:gYear .
+
+ai:Concept a owl:Class ;
+    rdfs:label "概念"@zh ;
+    rdfs:comment "基础AI理论概念"@zh .
+
+ai:Model a owl:Class ;
+    rdfs:label "模型"@zh ;
+    rdfs:comment "具体的AI模型"@zh .
+
+ai:Algorithm a owl:Class ;
+    rdfs:label "算法"@zh ;
+    rdfs:comment "具体的AI算法和技术方法"@zh .
+

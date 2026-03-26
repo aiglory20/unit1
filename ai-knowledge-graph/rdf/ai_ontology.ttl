@@ -1,0 +1,175 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ai: <http://www.ai-kg.org/ontology#> .
+
+# Ontology Definition
+ai:AI_Knowledge_Graph
+    rdf:type owl:Ontology ;
+    rdfs:label "人工智能核心概念知识图谱本体"@zh ;
+    rdfs:comment "定义人工智能领域的核心概念、实体和关系"@zh .
+
+# Classes (实体类型)
+ai:AI_Field
+    rdf:type owl:Class ;
+    rdfs:label "AI领域"@zh ;
+    rdfs:comment "人工智能的主要研究领域和分支"@zh .
+
+ai:Algorithm
+    rdf:type owl:Class ;
+    rdfs:label "算法"@zh ;
+    rdfs:comment "具体的AI算法和技术方法"@zh .
+
+ai:Model
+    rdf:type owl:Class ;
+    rdfs:label "模型"@zh ;
+    rdfs:comment "具体的AI模型"@zh .
+
+ai:Technique
+    rdf:type owl:Class ;
+    rdfs:label "技术"@zh ;
+    rdfs:comment "AI中的技术概念和方法"@zh .
+
+ai:Application
+    rdf:type owl:Class ;
+    rdfs:label "应用"@zh ;
+    rdfs:comment "AI的实际应用场景"@zh .
+
+ai:Person
+    rdf:type owl:Class ;
+    rdfs:label "人物"@zh ;
+    rdfs:comment "AI领域的重要人物"@zh .
+
+ai:Organization
+    rdf:type owl:Class ;
+    rdfs:label "组织"@zh ;
+    rdfs:comment "AI研究机构和公司"@zh .
+
+ai:Tool
+    rdf:type owl:Class ;
+    rdfs:label "工具"@zh ;
+    rdfs:comment "AI开发工具和框架"@zh .
+
+ai:Concept
+    rdf:type owl:Class ;
+    rdfs:label "概念"@zh ;
+    rdfs:comment "基础AI理论概念"@zh .
+
+# Object Properties (关系)
+ai:belongsTo
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "属于"@zh ;
+    rdfs:comment "某实体属于某领域或类别"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Algorithm ai:Model ai:Technique ai:Application) ] ;
+    rdfs:range ai:AI_Field .
+
+ai:usesAlgorithm
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "使用算法"@zh ;
+    rdfs:comment "模型或应用使用某算法"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Model ai:Application) ] ;
+    rdfs:range ai:Algorithm .
+
+ai:basedon
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "基于"@zh ;
+    rdfs:comment "某技术基于另一技术发展而来"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Model ai:Algorithm ai:Technique) ] ;
+    rdfs:range [ rdf:type owl:Class ;
+                 owl:unionOf (ai:Model ai:Algorithm ai:Technique) ] .
+
+ai:developedBy
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "开发者"@zh ;
+    rdfs:comment "由某人或组织开发"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Model ai:Algorithm ai:Tool) ] ;
+    rdfs:range [ rdf:type owl:Class ;
+                 owl:unionOf (ai:Person ai:Organization) ] .
+
+ai:appliedIn
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "应用于"@zh ;
+    rdfs:comment "应用于某场景"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Model ai:Algorithm ai:Technique) ] ;
+    rdfs:range ai:Application .
+
+ai:usesTool
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "使用工具"@zh ;
+    rdfs:comment "使用某工具实现"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Model ai:Application) ] ;
+    rdfs:range ai:Tool .
+
+ai:relatedTo
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "相关"@zh ;
+    rdfs:comment "两个实体相关"@zh ;
+    owl:propertyType owl:SymmetricProperty .
+
+ai:isPartOf
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "是...的一部分"@zh ;
+    rdfs:comment "某概念是更大概念的组成部分"@zh ;
+    owl:propertyType owl:TransitiveProperty .
+
+ai:worksAt
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "工作于"@zh ;
+    rdfs:comment "某人在某组织工作"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range ai:Organization .
+
+ai:proposes
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "提出"@zh ;
+    rdfs:comment "提出某概念或方法"@zh ;
+    rdfs:domain [ rdf:type owl:Class ;
+                  owl:unionOf (ai:Person ai:Organization) ] ;
+    rdfs:range [ rdf:type owl:Class ;
+                 owl:unionOf (ai:Concept ai:Algorithm ai:Model) ] .
+
+# Data Properties (属性)
+ai:name
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "名称"@zh ;
+    rdfs:range xsd:string .
+
+ai:description
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "描述"@zh ;
+    rdfs:range xsd:string .
+
+ai:year
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "年份"@zh ;
+    rdfs:range xsd:gYear .
+
+ai:parameters
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "参数量"@zh ;
+    rdfs:range xsd:string .
+
+ai:nationality
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "国籍"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range xsd:string .
+
+ai:field
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "研究领域"@zh ;
+    rdfs:domain ai:Person ;
+    rdfs:range xsd:string .
+
+ai:founded
+    rdf:type owl:DatatypeProperty ;
+    rdfs:label "成立年份"@zh ;
+    rdfs:domain ai:Organization ;
+    rdfs:range xsd:gYear .

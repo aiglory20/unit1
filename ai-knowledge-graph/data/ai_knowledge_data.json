@@ -1,0 +1,2195 @@
+{
+  "entities": [
+    {
+      "id": "E001",
+      "name": "人工智能",
+      "type": "AI_Field",
+      "description": "研究和开发模拟、延伸和扩展人类智能的理论、方法、技术及应用系统的技术科学",
+      "year": "1956"
+    },
+    {
+      "id": "E002",
+      "name": "机器学习",
+      "type": "AI_Field",
+      "description": "通过数据和经验自动改善性能的计算机算法研究",
+      "year": "1959"
+    },
+    {
+      "id": "E003",
+      "name": "深度学习",
+      "type": "AI_Field",
+      "description": "基于多层神经网络的机器学习方法",
+      "year": "2006"
+    },
+    {
+      "id": "E004",
+      "name": "自然语言处理",
+      "type": "AI_Field",
+      "description": "使计算机能够理解、解释和生成人类语言的技术",
+      "year": "1950"
+    },
+    {
+      "id": "E005",
+      "name": "计算机视觉",
+      "type": "AI_Field",
+      "description": "使计算机能够理解和处理视觉信息的技术",
+      "year": "1960"
+    },
+    {
+      "id": "E006",
+      "name": "强化学习",
+      "type": "AI_Field",
+      "description": "通过与环境交互学习最优策略的机器学习方法",
+      "year": "1980"
+    },
+    {
+      "id": "E007",
+      "name": "知识图谱",
+      "type": "AI_Field",
+      "description": "用图结构表示实体及其关系的知识库",
+      "year": "2012"
+    },
+    {
+      "id": "E008",
+      "name": "专家系统",
+      "type": "AI_Field",
+      "description": "模拟人类专家决策能力的计算机系统",
+      "year": "1970"
+    },
+    {
+      "id": "E009",
+      "name": "神经网络",
+      "type": "Algorithm",
+      "description": "模拟生物神经网络的计算模型",
+      "year": "1943"
+    },
+    {
+      "id": "E010",
+      "name": "卷积神经网络",
+      "type": "Algorithm",
+      "description": "专门用于处理网格结构数据的深度学习算法",
+      "year": "1989"
+    },
+    {
+      "id": "E011",
+      "name": "循环神经网络",
+      "type": "Algorithm",
+      "description": "处理序列数据的神经网络架构",
+      "year": "1986"
+    },
+    {
+      "id": "E012",
+      "name": "Transformer",
+      "type": "Algorithm",
+      "description": "基于自注意力机制的神经网络架构",
+      "year": "2017"
+    },
+    {
+      "id": "E013",
+      "name": "反向传播",
+      "type": "Algorithm",
+      "description": "神经网络训练的核心算法，用于计算梯度",
+      "year": "1986"
+    },
+    {
+      "id": "E014",
+      "name": "梯度下降",
+      "type": "Algorithm",
+      "description": "优化算法，通过梯度方向更新参数",
+      "year": "1847"
+    },
+    {
+      "id": "E015",
+      "name": "决策树",
+      "type": "Algorithm",
+      "description": "基于树结构进行决策的机器学习算法",
+      "year": "1986"
+    },
+    {
+      "id": "E016",
+      "name": "支持向量机",
+      "type": "Algorithm",
+      "description": "在高维空间中构造分隔超平面的分类算法",
+      "year": "1995"
+    },
+    {
+      "id": "E017",
+      "name": "随机森林",
+      "type": "Algorithm",
+      "description": "集成多个决策树的机器学习算法",
+      "year": "2001"
+    },
+    {
+      "id": "E018",
+      "name": "K近邻算法",
+      "type": "Algorithm",
+      "description": "基于距离度量的分类和回归算法",
+      "year": "1967"
+    },
+    {
+      "id": "E019",
+      "name": "朴素贝叶斯",
+      "type": "Algorithm",
+      "description": "基于贝叶斯定理的概率分类算法",
+      "year": "1960"
+    },
+    {
+      "id": "E020",
+      "name": "K均值聚类",
+      "type": "Algorithm",
+      "description": "将数据分为K个簇的聚类算法",
+      "year": "1967"
+    },
+    {
+      "id": "E021",
+      "name": "主成分分析",
+      "type": "Algorithm",
+      "description": "降维算法，提取数据的主要特征",
+      "year": "1901"
+    },
+    {
+      "id": "E022",
+      "name": "Q学习",
+      "type": "Algorithm",
+      "description": "无模型的强化学习算法",
+      "year": "1989"
+    },
+    {
+      "id": "E023",
+      "name": "GPT",
+      "type": "Model",
+      "description": "生成式预训练Transformer模型",
+      "year": "2018",
+      "parameters": "多版本，从1.17亿到1750亿参数"
+    },
+    {
+      "id": "E024",
+      "name": "BERT",
+      "type": "Model",
+      "description": "双向编码器表示的Transformer模型",
+      "year": "2018",
+      "parameters": "3.4亿参数"
+    },
+    {
+      "id": "E025",
+      "name": "ResNet",
+      "type": "Model",
+      "description": "残差网络，解决深层网络训练问题",
+      "year": "2015"
+    },
+    {
+      "id": "E026",
+      "name": "YOLO",
+      "type": "Model",
+      "description": "实时目标检测模型",
+      "year": "2015"
+    },
+    {
+      "id": "E027",
+      "name": "VGG",
+      "type": "Model",
+      "description": "使用小卷积核的深度卷积网络",
+      "year": "2014"
+    },
+    {
+      "id": "E028",
+      "name": "AlexNet",
+      "type": "Model",
+      "description": "首个在ImageNet上取得突破的深度卷积网络",
+      "year": "2012"
+    },
+    {
+      "id": "E029",
+      "name": "GAN",
+      "type": "Model",
+      "description": "生成对抗网络，用于生成逼真数据",
+      "year": "2014"
+    },
+    {
+      "id": "E030",
+      "name": "VAE",
+      "type": "Model",
+      "description": "变分自编码器，用于生成和表示学习",
+      "year": "2013"
+    },
+    {
+      "id": "E031",
+      "name": "LSTM",
+      "type": "Algorithm",
+      "description": "长短期记忆网络，解决RNN梯度消失问题",
+      "year": "1997"
+    },
+    {
+      "id": "E032",
+      "name": "GRU",
+      "type": "Algorithm",
+      "description": "门控循环单元，LSTM的简化版本",
+      "year": "2014"
+    },
+    {
+      "id": "E033",
+      "name": "注意力机制",
+      "type": "Technique",
+      "description": "使模型关注输入的重要部分",
+      "year": "2014"
+    },
+    {
+      "id": "E034",
+      "name": "迁移学习",
+      "type": "Technique",
+      "description": "将已训练模型的知识应用到新任务",
+      "year": "1993"
+    },
+    {
+      "id": "E035",
+      "name": "监督学习",
+      "type": "Technique",
+      "description": "使用标注数据训练模型",
+      "year": "1950"
+    },
+    {
+      "id": "E036",
+      "name": "无监督学习",
+      "type": "Technique",
+      "description": "从无标注数据中学习模式",
+      "year": "1950"
+    },
+    {
+      "id": "E037",
+      "name": "半监督学习",
+      "type": "Technique",
+      "description": "结合标注和未标注数据的学习方法",
+      "year": "1970"
+    },
+    {
+      "id": "E038",
+      "name": "元学习",
+      "type": "Technique",
+      "description": "学习如何学习的方法",
+      "year": "1987"
+    },
+    {
+      "id": "E039",
+      "name": "对抗训练",
+      "type": "Technique",
+      "description": "通过对抗样本提高模型鲁棒性",
+      "year": "2013"
+    },
+    {
+      "id": "E040",
+      "name": "数据增强",
+      "type": "Technique",
+      "description": "通过变换扩充训练数据",
+      "year": "1990"
+    },
+    {
+      "id": "E041",
+      "name": "Dropout",
+      "type": "Technique",
+      "description": "防止过拟合的正则化技术",
+      "year": "2012"
+    },
+    {
+      "id": "E042",
+      "name": "批归一化",
+      "type": "Technique",
+      "description": "加速训练和提高稳定性的技术",
+      "year": "2015"
+    },
+    {
+      "id": "E043",
+      "name": "集成学习",
+      "type": "Technique",
+      "description": "组合多个模型提高性能",
+      "year": "1990"
+    },
+    {
+      "id": "E044",
+      "name": "语音识别",
+      "type": "Application",
+      "description": "将语音转换为文本",
+      "year": "1952"
+    },
+    {
+      "id": "E045",
+      "name": "图像分类",
+      "type": "Application",
+      "description": "识别图像中的物体类别",
+      "year": "1960"
+    },
+    {
+      "id": "E046",
+      "name": "目标检测",
+      "type": "Application",
+      "description": "定位和识别图像中的多个物体",
+      "year": "2001"
+    },
+    {
+      "id": "E047",
+      "name": "机器翻译",
+      "type": "Application",
+      "description": "自动将文本从一种语言翻译为另一种语言",
+      "year": "1954"
+    },
+    {
+      "id": "E048",
+      "name": "情感分析",
+      "type": "Application",
+      "description": "分析文本的情感倾向",
+      "year": "2000"
+    },
+    {
+      "id": "E049",
+      "name": "问答系统",
+      "type": "Application",
+      "description": "自动回答用户问题的系统",
+      "year": "1960"
+    },
+    {
+      "id": "E050",
+      "name": "推荐系统",
+      "type": "Application",
+      "description": "向用户推荐可能感兴趣的内容",
+      "year": "1992"
+    },
+    {
+      "id": "E051",
+      "name": "自动驾驶",
+      "type": "Application",
+      "description": "使车辆能够自主驾驶的技术",
+      "year": "1984"
+    },
+    {
+      "id": "E052",
+      "name": "人脸识别",
+      "type": "Application",
+      "description": "识别或验证人脸身份",
+      "year": "1964"
+    },
+    {
+      "id": "E053",
+      "name": "文本生成",
+      "type": "Application",
+      "description": "自动生成自然语言文本",
+      "year": "1980"
+    },
+    {
+      "id": "E054",
+      "name": "图像生成",
+      "type": "Application",
+      "description": "自动生成图像内容",
+      "year": "2014"
+    },
+    {
+      "id": "E055",
+      "name": "异常检测",
+      "type": "Application",
+      "description": "识别数据中的异常模式",
+      "year": "1980"
+    },
+    {
+      "id": "E056",
+      "name": "语义分割",
+      "type": "Application",
+      "description": "对图像进行像素级分类",
+      "year": "2014"
+    },
+    {
+      "id": "E057",
+      "name": "姿态估计",
+      "type": "Application",
+      "description": "检测人体或物体的姿态和关键点",
+      "year": "2014"
+    },
+    {
+      "id": "E058",
+      "name": "风格迁移",
+      "type": "Application",
+      "description": "将一种图像的风格应用到另一图像",
+      "year": "2015"
+    },
+    {
+      "id": "E059",
+      "name": "对话系统",
+      "type": "Application",
+      "description": "与用户进行自然对话的系统",
+      "year": "1966"
+    },
+    {
+      "id": "E060",
+      "name": "Alan Turing",
+      "type": "Person",
+      "description": "计算机科学和人工智能之父",
+      "nationality": "英国",
+      "field": "计算机科学"
+    },
+    {
+      "id": "E061",
+      "name": "Geoffrey Hinton",
+      "type": "Person",
+      "description": "深度学习之父",
+      "nationality": "加拿大",
+      "field": "深度学习"
+    },
+    {
+      "id": "E062",
+      "name": "Yoshua Bengio",
+      "type": "Person",
+      "description": "深度学习先驱",
+      "nationality": "加拿大",
+      "field": "深度学习"
+    },
+    {
+      "id": "E063",
+      "name": "Yann LeCun",
+      "type": "Person",
+      "description": "卷积神经网络之父",
+      "nationality": "法国",
+      "field": "深度学习"
+    },
+    {
+      "id": "E064",
+      "name": "Andrew Ng",
+      "type": "Person",
+      "description": "机器学习教育先驱",
+      "nationality": "美国",
+      "field": "机器学习"
+    },
+    {
+      "id": "E065",
+      "name": "Ian Goodfellow",
+      "type": "Person",
+      "description": "生成对抗网络发明者",
+      "nationality": "美国",
+      "field": "深度学习"
+    },
+    {
+      "id": "E066",
+      "name": "Demis Hassabis",
+      "type": "Person",
+      "description": "DeepMind创始人",
+      "nationality": "英国",
+      "field": "强化学习"
+    },
+    {
+      "id": "E067",
+      "name": "John McCarthy",
+      "type": "Person",
+      "description": "人工智能一词的提出者",
+      "nationality": "美国",
+      "field": "人工智能"
+    },
+    {
+      "id": "E068",
+      "name": "Marvin Minsky",
+      "type": "Person",
+      "description": "人工智能先驱",
+      "nationality": "美国",
+      "field": "人工智能"
+    },
+    {
+      "id": "E069",
+      "name": "Stuart Russell",
+      "type": "Person",
+      "description": "AI教科书作者",
+      "nationality": "英国",
+      "field": "人工智能"
+    },
+    {
+      "id": "E070",
+      "name": "Peter Norvig",
+      "type": "Person",
+      "description": "AI教科书作者",
+      "nationality": "美国",
+      "field": "人工智能"
+    },
+    {
+      "id": "E071",
+      "name": "Fei-Fei Li",
+      "type": "Person",
+      "description": "ImageNet创建者",
+      "nationality": "美国",
+      "field": "计算机视觉"
+    },
+    {
+      "id": "E072",
+      "name": "Jürgen Schmidhuber",
+      "type": "Person",
+      "description": "LSTM贡献者",
+      "nationality": "瑞士",
+      "field": "深度学习"
+    },
+    {
+      "id": "E073",
+      "name": "Herbert Simon",
+      "type": "Person",
+      "description": "认知心理学和AI先驱",
+      "nationality": "美国",
+      "field": "人工智能"
+    },
+    {
+      "id": "E074",
+      "name": "OpenAI",
+      "type": "Organization",
+      "description": "人工智能研究实验室",
+      "founded": "2015"
+    },
+    {
+      "id": "E075",
+      "name": "DeepMind",
+      "type": "Organization",
+      "description": "Google旗下AI研究公司",
+      "founded": "2010"
+    },
+    {
+      "id": "E076",
+      "name": "Google AI",
+      "type": "Organization",
+      "description": "Google的AI研究部门",
+      "founded": "2017"
+    },
+    {
+      "id": "E077",
+      "name": "MIT CSAIL",
+      "type": "Organization",
+      "description": "麻省理工学院计算机科学与人工智能实验室",
+      "founded": "1959"
+    },
+    {
+      "id": "E078",
+      "name": "Stanford AI Lab",
+      "type": "Organization",
+      "description": "斯坦福大学人工智能实验室",
+      "founded": "1962"
+    },
+    {
+      "id": "E079",
+      "name": "Meta AI",
+      "type": "Organization",
+      "description": "Meta的AI研究部门",
+      "founded": "2013"
+    },
+    {
+      "id": "E080",
+      "name": "Microsoft Research",
+      "type": "Organization",
+      "description": "微软研究院",
+      "founded": "1991"
+    },
+    {
+      "id": "E081",
+      "name": "CMU",
+      "type": "Organization",
+      "description": "卡内基梅隆大学",
+      "founded": "1900"
+    },
+    {
+      "id": "E082",
+      "name": "Berkeley AI Research",
+      "type": "Organization",
+      "description": "伯克利人工智能研究实验室",
+      "founded": "1988"
+    },
+    {
+      "id": "E083",
+      "name": "Anthropic",
+      "type": "Organization",
+      "description": "AI安全研究公司",
+      "founded": "2021"
+    },
+    {
+      "id": "E084",
+      "name": "TensorFlow",
+      "type": "Tool",
+      "description": "Google开源的机器学习框架",
+      "year": "2015"
+    },
+    {
+      "id": "E085",
+      "name": "PyTorch",
+      "type": "Tool",
+      "description": "Meta开源的深度学习框架",
+      "year": "2016"
+    },
+    {
+      "id": "E086",
+      "name": "Keras",
+      "type": "Tool",
+      "description": "高级神经网络API",
+      "year": "2015"
+    },
+    {
+      "id": "E087",
+      "name": "scikit-learn",
+      "type": "Tool",
+      "description": "Python机器学习库",
+      "year": "2007"
+    },
+    {
+      "id": "E088",
+      "name": "JAX",
+      "type": "Tool",
+      "description": "Google的自动微分库",
+      "year": "2018"
+    },
+    {
+      "id": "E089",
+      "name": "Hugging Face",
+      "type": "Tool",
+      "description": "NLP模型库和平台",
+      "year": "2016"
+    },
+    {
+      "id": "E090",
+      "name": "OpenCV",
+      "type": "Tool",
+      "description": "开源计算机视觉库",
+      "year": "2000"
+    },
+    {
+      "id": "E091",
+      "name": "NLTK",
+      "type": "Tool",
+      "description": "自然语言处理工具包",
+      "year": "2001"
+    },
+    {
+      "id": "E092",
+      "name": "SpaCy",
+      "type": "Tool",
+      "description": "工业级NLP库",
+      "year": "2015"
+    },
+    {
+      "id": "E093",
+      "name": "NumPy",
+      "type": "Tool",
+      "description": "Python科学计算库",
+      "year": "2006"
+    },
+    {
+      "id": "E094",
+      "name": "神经元",
+      "type": "Concept",
+      "description": "神经网络的基本计算单元"
+    },
+    {
+      "id": "E095",
+      "name": "激活函数",
+      "type": "Concept",
+      "description": "引入非线性特性的函数"
+    },
+    {
+      "id": "E096",
+      "name": "损失函数",
+      "type": "Concept",
+      "description": "衡量预测值与真实值差异的函数"
+    },
+    {
+      "id": "E097",
+      "name": "超参数",
+      "type": "Concept",
+      "description": "在训练前设定的参数"
+    },
+    {
+      "id": "E098",
+      "name": "梯度",
+      "type": "Concept",
+      "description": "函数变化率的向量"
+    },
+    {
+      "id": "E099",
+      "name": "特征",
+      "type": "Concept",
+      "description": "数据的可测量属性"
+    },
+    {
+      "id": "E100",
+      "name": "过拟合",
+      "type": "Concept",
+      "description": "模型在训练数据上表现好但泛化能力差"
+    },
+    {
+      "id": "E101",
+      "name": "欠拟合",
+      "type": "Concept",
+      "description": "模型未能充分学习数据模式"
+    },
+    {
+      "id": "E102",
+      "name": "泛化能力",
+      "type": "Concept",
+      "description": "模型在新数据上的表现能力"
+    },
+    {
+      "id": "E103",
+      "name": "特征工程",
+      "type": "Concept",
+      "description": "选择和构造有效特征的过程"
+    },
+    {
+      "id": "E104",
+      "name": "词嵌入",
+      "type": "Concept",
+      "description": "将词语映射到连续向量空间"
+    },
+    {
+      "id": "E105",
+      "name": "卷积核",
+      "type": "Concept",
+      "description": "卷积操作的滤波器"
+    },
+    {
+      "id": "E106",
+      "name": "池化",
+      "type": "Concept",
+      "description": "降低特征图维度的操作"
+    },
+    {
+      "id": "E107",
+      "name": "ReLU",
+      "type": "Concept",
+      "description": "修正线性单元激活函数"
+    },
+    {
+      "id": "E108",
+      "name": "Sigmoid",
+      "type": "Concept",
+      "description": "S形激活函数"
+    },
+    {
+      "id": "E109",
+      "name": "Softmax",
+      "type": "Concept",
+      "description": "多分类输出层常用激活函数"
+    },
+    {
+      "id": "E110",
+      "name": "交叉熵",
+      "type": "Concept",
+      "description": "分类问题的常用损失函数"
+    },
+    {
+      "id": "E111",
+      "name": "均方误差",
+      "type": "Concept",
+      "description": "回归问题的常用损失函数"
+    },
+    {
+      "id": "E112",
+      "name": "学习率",
+      "type": "Concept",
+      "description": "控制参数更新步长的超参数"
+    },
+    {
+      "id": "E113",
+      "name": "批大小",
+      "type": "Concept",
+      "description": "每次训练迭代使用的样本数量"
+    },
+    {
+      "id": "E114",
+      "name": "Epoch",
+      "type": "Concept",
+      "description": "训练数据的完整遍历次数"
+    },
+    {
+      "id": "E115",
+      "name": "Adam优化器",
+      "type": "Algorithm",
+      "description": "自适应学习率优化算法",
+      "year": "2014"
+    },
+    {
+      "id": "E116",
+      "name": "SGD",
+      "type": "Algorithm",
+      "description": "随机梯度下降优化算法",
+      "year": "1951"
+    },
+    {
+      "id": "E117",
+      "name": "RMSprop",
+      "type": "Algorithm",
+      "description": "自适应学习率优化算法",
+      "year": "2012"
+    },
+    {
+      "id": "E118",
+      "name": "Word2Vec",
+      "type": "Algorithm",
+      "description": "学习词向量的算法",
+      "year": "2013"
+    },
+    {
+      "id": "E119",
+      "name": "GloVe",
+      "type": "Algorithm",
+      "description": "全局向量词嵌入算法",
+      "year": "2014"
+    },
+    {
+      "id": "E120",
+      "name": "FastText",
+      "type": "Algorithm",
+      "description": "基于子词的词嵌入算法",
+      "year": "2016"
+    },
+    {
+      "id": "E121",
+      "name": "XGBoost",
+      "type": "Algorithm",
+      "description": "梯度提升决策树算法",
+      "year": "2014"
+    },
+    {
+      "id": "E122",
+      "name": "LightGBM",
+      "type": "Algorithm",
+      "description": "高效梯度提升框架",
+      "year": "2017"
+    },
+    {
+      "id": "E123",
+      "name": "CatBoost",
+      "type": "Algorithm",
+      "description": "处理类别特征的梯度提升算法",
+      "year": "2017"
+    },
+    {
+      "id": "E124",
+      "name": "PCA",
+      "type": "Algorithm",
+      "description": "主成分分析降维算法",
+      "year": "1901"
+    },
+    {
+      "id": "E125",
+      "name": "t-SNE",
+      "type": "Algorithm",
+      "description": "t分布随机邻域嵌入可视化算法",
+      "year": "2008"
+    },
+    {
+      "id": "E126",
+      "name": "UMAP",
+      "type": "Algorithm",
+      "description": "统一流形逼近与投影降维算法",
+      "year": "2018"
+    },
+    {
+      "id": "E127",
+      "name": "DBSCAN",
+      "type": "Algorithm",
+      "description": "基于密度的聚类算法",
+      "year": "1996"
+    },
+    {
+      "id": "E128",
+      "name": "R-CNN",
+      "type": "Model",
+      "description": "区域卷积神经网络目标检测模型",
+      "year": "2014"
+    },
+    {
+      "id": "E129",
+      "name": "Faster R-CNN",
+      "type": "Model",
+      "description": "更快的区域卷积神经网络",
+      "year": "2015"
+    },
+    {
+      "id": "E130",
+      "name": "Mask R-CNN",
+      "type": "Model",
+      "description": "实例分割模型",
+      "year": "2017"
+    },
+    {
+      "id": "E131",
+      "name": "SSD",
+      "type": "Model",
+      "description": "单次检测器目标检测模型",
+      "year": "2016"
+    },
+    {
+      "id": "E132",
+      "name": "U-Net",
+      "type": "Model",
+      "description": "医学图像分割模型",
+      "year": "2015"
+    },
+    {
+      "id": "E133",
+      "name": "EfficientNet",
+      "type": "Model",
+      "description": "高效卷积神经网络",
+      "year": "2019"
+    },
+    {
+      "id": "E134",
+      "name": "MobileNet",
+      "type": "Model",
+      "description": "轻量级移动端模型",
+      "year": "2017"
+    },
+    {
+      "id": "E135",
+      "name": "SqueezeNet",
+      "type": "Model",
+      "description": "压缩的卷积神经网络",
+      "year": "2016"
+    },
+    {
+      "id": "E136",
+      "name": "Inception",
+      "type": "Model",
+      "description": "多尺度卷积网络",
+      "year": "2014"
+    },
+    {
+      "id": "E137",
+      "name": "DenseNet",
+      "type": "Model",
+      "description": "密集连接卷积网络",
+      "year": "2017"
+    },
+    {
+      "id": "E138",
+      "name": "SENet",
+      "type": "Model",
+      "description": "压缩激励网络",
+      "year": "2017"
+    },
+    {
+      "id": "E139",
+      "name": "ELMo",
+      "type": "Model",
+      "description": "上下文相关词表示模型",
+      "year": "2018"
+    },
+    {
+      "id": "E140",
+      "name": "GPT-2",
+      "type": "Model",
+      "description": "第二代生成式预训练Transformer",
+      "year": "2019",
+      "parameters": "15亿参数"
+    },
+    {
+      "id": "E141",
+      "name": "GPT-3",
+      "type": "Model",
+      "description": "第三代生成式预训练Transformer",
+      "year": "2020",
+      "parameters": "1750亿参数"
+    },
+    {
+      "id": "E142",
+      "name": "GPT-4",
+      "type": "Model",
+      "description": "第四代生成式预训练Transformer",
+      "year": "2023"
+    },
+    {
+      "id": "E143",
+      "name": "Claude",
+      "type": "Model",
+      "description": "Anthropic开发的大语言模型",
+      "year": "2023"
+    },
+    {
+      "id": "E144",
+      "name": "LLaMA",
+      "type": "Model",
+      "description": "Meta开源的大语言模型",
+      "year": "2023"
+    },
+    {
+      "id": "E145",
+      "name": "PaLM",
+      "type": "Model",
+      "description": "Google的大语言模型",
+      "year": "2022"
+    },
+    {
+      "id": "E146",
+      "name": "T5",
+      "type": "Model",
+      "description": "文本到文本转换Transformer模型",
+      "year": "2019"
+    },
+    {
+      "id": "E147",
+      "name": "RoBERTa",
+      "type": "Model",
+      "description": "优化的BERT模型",
+      "year": "2019"
+    },
+    {
+      "id": "E148",
+      "name": "XLNet",
+      "type": "Model",
+      "description": "广义自回归预训练模型",
+      "year": "2019"
+    },
+    {
+      "id": "E149",
+      "name": "ALBERT",
+      "type": "Model",
+      "description": "轻量级BERT",
+      "year": "2019"
+    },
+    {
+      "id": "E150",
+      "name": "ViT",
+      "type": "Model",
+      "description": "视觉Transformer模型",
+      "year": "2020"
+    },
+    {
+      "id": "E151",
+      "name": "CLIP",
+      "type": "Model",
+      "description": "对比语言-图像预训练模型",
+      "year": "2021"
+    },
+    {
+      "id": "E152",
+      "name": "DALL-E",
+      "type": "Model",
+      "description": "文本到图像生成模型",
+      "year": "2021"
+    },
+    {
+      "id": "E153",
+      "name": "Stable Diffusion",
+      "type": "Model",
+      "description": "开源文本到图像扩散模型",
+      "year": "2022"
+    },
+    {
+      "id": "E154",
+      "name": "Midjourney",
+      "type": "Model",
+      "description": "商业图像生成模型",
+      "year": "2022"
+    },
+    {
+      "id": "E155",
+      "name": "AlphaGo",
+      "type": "Model",
+      "description": "围棋AI程序",
+      "year": "2015"
+    },
+    {
+      "id": "E156",
+      "name": "AlphaZero",
+      "type": "Model",
+      "description": "通用棋类游戏AI",
+      "year": "2017"
+    },
+    {
+      "id": "E157",
+      "name": "AlphaFold",
+      "type": "Model",
+      "description": "蛋白质结构预测模型",
+      "year": "2020"
+    },
+    {
+      "id": "E158",
+      "name": "Whisper",
+      "type": "Model",
+      "description": "语音识别模型",
+      "year": "2022"
+    },
+    {
+      "id": "E159",
+      "name": "WaveNet",
+      "type": "Model",
+      "description": "语音生成模型",
+      "year": "2016"
+    },
+    {
+      "id": "E160",
+      "name": "Tacotron",
+      "type": "Model",
+      "description": "语音合成模型",
+      "year": "2017"
+    },
+    {
+      "id": "E161",
+      "name": "BLOOM",
+      "type": "Model",
+      "description": "多语言大语言模型",
+      "year": "2022"
+    },
+    {
+      "id": "E162",
+      "name": "计算机科学",
+      "type": "AI_Field",
+      "description": "研究计算机及其应用的学科"
+    },
+    {
+      "id": "E163",
+      "name": "认知科学",
+      "type": "AI_Field",
+      "description": "研究智能和认知过程的跨学科研究"
+    },
+    {
+      "id": "E164",
+      "name": "神经科学",
+      "type": "AI_Field",
+      "description": "研究神经系统的学科"
+    },
+    {
+      "id": "E165",
+      "name": "语音合成",
+      "type": "Application",
+      "description": "将文本转换为语音"
+    },
+    {
+      "id": "E166",
+      "name": "命名实体识别",
+      "type": "Application",
+      "description": "识别文本中的实体"
+    },
+    {
+      "id": "E167",
+      "name": "关系抽取",
+      "type": "Application",
+      "description": "识别实体间的关系"
+    },
+    {
+      "id": "E168",
+      "name": "文本摘要",
+      "type": "Application",
+      "description": "生成文本的简短摘要"
+    },
+    {
+      "id": "E169",
+      "name": "信息检索",
+      "type": "Application",
+      "description": "从大量数据中检索相关信息"
+    },
+    {
+      "id": "E170",
+      "name": "知识推理",
+      "type": "Application",
+      "description": "基于已知知识推导新知识"
+    },
+    {
+      "id": "E171",
+      "name": "图像超分辨率",
+      "type": "Application",
+      "description": "提升图像分辨率"
+    },
+    {
+      "id": "E172",
+      "name": "视频分析",
+      "type": "Application",
+      "description": "理解和分析视频内容"
+    },
+    {
+      "id": "E173",
+      "name": "OCR",
+      "type": "Application",
+      "description": "光学字符识别",
+      "year": "1974"
+    },
+    {
+      "id": "E174",
+      "name": "医疗诊断",
+      "type": "Application",
+      "description": "辅助医疗诊断",
+      "year": "1970"
+    },
+    {
+      "id": "E175",
+      "name": "游戏AI",
+      "type": "Application",
+      "description": "游戏中的智能体",
+      "year": "1950"
+    },
+    {
+      "id": "E176",
+      "name": "代码生成",
+      "type": "Application",
+      "description": "自动生成程序代码"
+    },
+    {
+      "id": "E177",
+      "name": "GitHub Copilot",
+      "type": "Model",
+      "description": "AI代码助手",
+      "year": "2021"
+    },
+    {
+      "id": "E178",
+      "name": "Codex",
+      "type": "Model",
+      "description": "代码生成模型",
+      "year": "2021"
+    },
+    {
+      "id": "E179",
+      "name": "Fine-tuning",
+      "type": "Technique",
+      "description": "在预训练模型基础上针对特定任务微调"
+    },
+    {
+      "id": "E180",
+      "name": "Prompt Engineering",
+      "type": "Technique",
+      "description": "设计提示词优化模型输出"
+    },
+    {
+      "id": "E181",
+      "name": "零样本学习",
+      "type": "Technique",
+      "description": "无需训练样本的学习方法"
+    },
+    {
+      "id": "E182",
+      "name": "少样本学习",
+      "type": "Technique",
+      "description": "使用少量样本学习新任务"
+    },
+    {
+      "id": "E183",
+      "name": "联邦学习",
+      "type": "Technique",
+      "description": "分布式机器学习保护隐私"
+    },
+    {
+      "id": "E184",
+      "name": "知识蒸馏",
+      "type": "Technique",
+      "description": "将大模型知识迁移到小模型"
+    },
+    {
+      "id": "E185",
+      "name": "模型压缩",
+      "type": "Technique",
+      "description": "减小模型大小和计算量"
+    },
+    {
+      "id": "E186",
+      "name": "量化",
+      "type": "Technique",
+      "description": "降低模型参数精度"
+    },
+    {
+      "id": "E187",
+      "name": "剪枝",
+      "type": "Technique",
+      "description": "移除不重要的模型参数"
+    },
+    {
+      "id": "E188",
+      "name": "神经架构搜索",
+      "type": "Technique",
+      "description": "自动搜索最优网络架构"
+    },
+    {
+      "id": "E189",
+      "name": "对比学习",
+      "type": "Technique",
+      "description": "通过对比样本学习表示"
+    },
+    {
+      "id": "E190",
+      "name": "自监督学习",
+      "type": "Technique",
+      "description": "从数据本身生成监督信号"
+    },
+    {
+      "id": "E191",
+      "name": "多模态学习",
+      "type": "Technique",
+      "description": "处理多种类型数据的学习方法"
+    },
+    {
+      "id": "E192",
+      "name": "因果推断",
+      "type": "Technique",
+      "description": "识别因果关系的方法"
+    },
+    {
+      "id": "E193",
+      "name": "图神经网络",
+      "type": "Algorithm",
+      "description": "处理图结构数据的神经网络",
+      "year": "2009"
+    },
+    {
+      "id": "E194",
+      "name": "GCN",
+      "type": "Algorithm",
+      "description": "图卷积网络",
+      "year": "2016"
+    },
+    {
+      "id": "E195",
+      "name": "GAT",
+      "type": "Algorithm",
+      "description": "图注意力网络",
+      "year": "2017"
+    },
+    {
+      "id": "E196",
+      "name": "GraphSAGE",
+      "type": "Algorithm",
+      "description": "图采样和聚合网络",
+      "year": "2017"
+    },
+    {
+      "id": "E197",
+      "name": "DQN",
+      "type": "Algorithm",
+      "description": "深度Q网络强化学习算法",
+      "year": "2013"
+    },
+    {
+      "id": "E198",
+      "name": "PPO",
+      "type": "Algorithm",
+      "description": "近端策略优化强化学习算法",
+      "year": "2017"
+    },
+    {
+      "id": "E199",
+      "name": "A3C",
+      "type": "Algorithm",
+      "description": "异步优势演员评论家算法",
+      "year": "2016"
+    },
+    {
+      "id": "E200",
+      "name": "SAC",
+      "type": "Algorithm",
+      "description": "软演员评论家算法",
+      "year": "2018"
+    },
+    {
+      "id": "E201",
+      "name": "MCTS",
+      "type": "Algorithm",
+      "description": "蒙特卡洛树搜索",
+      "year": "2006"
+    },
+    {
+      "id": "E202",
+      "name": "探索与利用",
+      "type": "Concept",
+      "description": "强化学习中的权衡策略"
+    },
+    {
+      "id": "E203",
+      "name": "策略梯度",
+      "type": "Concept",
+      "description": "直接优化策略的方法"
+    },
+    {
+      "id": "E204",
+      "name": "价值函数",
+      "type": "Concept",
+      "description": "评估状态或动作价值的函数"
+    },
+    {
+      "id": "E205",
+      "name": "奖励函数",
+      "type": "Concept",
+      "description": "强化学习中的反馈信号"
+    },
+    {
+      "id": "E206",
+      "name": "马尔可夫决策过程",
+      "type": "Concept",
+      "description": "强化学习的数学框架"
+    },
+    {
+      "id": "E207",
+      "name": "贝尔曼方程",
+      "type": "Concept",
+      "description": "动态规划的核心方程"
+    },
+    {
+      "id": "E208",
+      "name": "状态空间",
+      "type": "Concept",
+      "description": "所有可能状态的集合"
+    },
+    {
+      "id": "E209",
+      "name": "动作空间",
+      "type": "Concept",
+      "description": "所有可能动作的集合"
+    },
+    {
+      "id": "E210",
+      "name": "编码器-解码器",
+      "type": "Concept",
+      "description": "序列到序列模型架构"
+    },
+    {
+      "id": "E211",
+      "name": "自注意力",
+      "type": "Concept",
+      "description": "Transformer的核心机制"
+    },
+    {
+      "id": "E212",
+      "name": "位置编码",
+      "type": "Concept",
+      "description": "在Transformer中编码序列位置信息"
+    },
+    {
+      "id": "E213",
+      "name": "多头注意力",
+      "type": "Concept",
+      "description": "并行的多个注意力机制"
+    },
+    {
+      "id": "E214",
+      "name": "残差连接",
+      "type": "Concept",
+      "description": "跳跃连接缓解梯度消失"
+    },
+    {
+      "id": "E215",
+      "name": "层归一化",
+      "type": "Concept",
+      "description": "归一化层的输出"
+    },
+    {
+      "id": "E216",
+      "name": "前馈网络",
+      "type": "Concept",
+      "description": "信息单向传播的神经网络"
+    },
+    {
+      "id": "E217",
+      "name": "嵌入层",
+      "type": "Concept",
+      "description": "将离散符号映射到连续向量"
+    },
+    {
+      "id": "E218",
+      "name": "注意力权重",
+      "type": "Concept",
+      "description": "注意力机制中的重要性分数"
+    },
+    {
+      "id": "E219",
+      "name": "Beam Search",
+      "type": "Algorithm",
+      "description": "序列生成的搜索算法"
+    },
+    {
+      "id": "E220",
+      "name": "贪心搜索",
+      "type": "Algorithm",
+      "description": "每步选择最优的生成策略"
+    },
+    {
+      "id": "E221",
+      "name": "采样",
+      "type": "Technique",
+      "description": "从概率分布中生成序列"
+    },
+    {
+      "id": "E222",
+      "name": "温度参数",
+      "type": "Concept",
+      "description": "控制生成多样性的参数"
+    },
+    {
+      "id": "E223",
+      "name": "Top-k采样",
+      "type": "Technique",
+      "description": "从概率最高的k个候选中采样"
+    },
+    {
+      "id": "E224",
+      "name": "Top-p采样",
+      "type": "Technique",
+      "description": "核采样，累积概率达到p时截断"
+    },
+    {
+      "id": "E225",
+      "name": "困惑度",
+      "type": "Concept",
+      "description": "评估语言模型的指标"
+    },
+    {
+      "id": "E226",
+      "name": "BLEU",
+      "type": "Concept",
+      "description": "机器翻译评估指标"
+    },
+    {
+      "id": "E227",
+      "name": "ROUGE",
+      "type": "Concept",
+      "description": "文本摘要评估指标"
+    },
+    {
+      "id": "E228",
+      "name": "F1分数",
+      "type": "Concept",
+      "description": "分类模型性能指标"
+    },
+    {
+      "id": "E229",
+      "name": "准确率",
+      "type": "Concept",
+      "description": "正确预测的比例"
+    },
+    {
+      "id": "E230",
+      "name": "召回率",
+      "type": "Concept",
+      "description": "找出的正样本占总正样本的比例"
+    },
+    {
+      "id": "E231",
+      "name": "精确率",
+      "type": "Concept",
+      "description": "预测为正的样本中真正为正的比例"
+    },
+    {
+      "id": "E232",
+      "name": "AUC",
+      "type": "Concept",
+      "description": "ROC曲线下面积"
+    },
+    {
+      "id": "E233",
+      "name": "混淆矩阵",
+      "type": "Concept",
+      "description": "分类结果的统计表格"
+    },
+    {
+      "id": "E234",
+      "name": "偏差方差权衡",
+      "type": "Concept",
+      "description": "模型复杂度的权衡"
+    },
+    {
+      "id": "E235",
+      "name": "正则化",
+      "type": "Technique",
+      "description": "防止过拟合的技术"
+    },
+    {
+      "id": "E236",
+      "name": "交叉验证",
+      "type": "Technique",
+      "description": "评估模型泛化能力的方法"
+    },
+    {
+      "id": "E237",
+      "name": "早停",
+      "type": "Technique",
+      "description": "防止过拟合的训练策略"
+    },
+    {
+      "id": "E238",
+      "name": "标签平滑",
+      "type": "Technique",
+      "description": "改善模型泛化的技术"
+    },
+    {
+      "id": "E239",
+      "name": "Mixup",
+      "type": "Technique",
+      "description": "数据增强技术"
+    },
+    {
+      "id": "E240",
+      "name": "CutMix",
+      "type": "Technique",
+      "description": "图像数据增强技术"
+    },
+    {
+      "id": "E241",
+      "name": "LoRA",
+      "type": "Technique",
+      "description": "低秩适配微调技术",
+      "year": "2021"
+    },
+    {
+      "id": "E242",
+      "name": "PEFT",
+      "type": "Technique",
+      "description": "参数高效微调方法"
+    },
+    {
+      "id": "E243",
+      "name": "RLHF",
+      "type": "Technique",
+      "description": "基于人类反馈的强化学习",
+      "year": "2017"
+    },
+    {
+      "id": "E244",
+      "name": "扩散模型",
+      "type": "Algorithm",
+      "description": "通过去噪过程生成数据",
+      "year": "2015"
+    },
+    {
+      "id": "E245",
+      "name": "DDPM",
+      "type": "Algorithm",
+      "description": "去噪扩散概率模型",
+      "year": "2020"
+    },
+    {
+      "id": "E246",
+      "name": "Score Matching",
+      "type": "Algorithm",
+      "description": "分数匹配生成模型",
+      "year": "2005"
+    },
+    {
+      "id": "E247",
+      "name": "Flow-based模型",
+      "type": "Algorithm",
+      "description": "基于流的生成模型",
+      "year": "2014"
+    },
+    {
+      "id": "E248",
+      "name": "能量模型",
+      "type": "Concept",
+      "description": "基于能量函数的模型"
+    },
+    {
+      "id": "E249",
+      "name": "自编码器",
+      "type": "Algorithm",
+      "description": "学习数据压缩表示的神经网络",
+      "year": "1987"
+    },
+    {
+      "id": "E250",
+      "name": "稀疏自编码器",
+      "type": "Algorithm",
+      "description": "学习稀疏表示的自编码器"
+    },
+    {
+      "id": "E251",
+      "name": "去噪自编码器",
+      "type": "Algorithm",
+      "description": "通过去噪学习鲁棒表示"
+    },
+    {
+      "id": "E252",
+      "name": "对比散度",
+      "type": "Algorithm",
+      "description": "训练能量模型的算法"
+    },
+    {
+      "id": "E253",
+      "name": "受限玻尔兹曼机",
+      "type": "Algorithm",
+      "description": "生成式随机神经网络",
+      "year": "1986"
+    },
+    {
+      "id": "E254",
+      "name": "深度信念网络",
+      "type": "Algorithm",
+      "description": "堆叠受限玻尔兹曼机",
+      "year": "2006"
+    },
+    {
+      "id": "E255",
+      "name": "EM算法",
+      "type": "Algorithm",
+      "description": "期望最大化算法",
+      "year": "1977"
+    },
+    {
+      "id": "E256",
+      "name": "隐马尔可夫模型",
+      "type": "Algorithm",
+      "description": "处理序列数据的概率模型",
+      "year": "1960"
+    },
+    {
+      "id": "E257",
+      "name": "条件随机场",
+      "type": "Algorithm",
+      "description": "序列标注的概率模型",
+      "year": "2001"
+    },
+    {
+      "id": "E258",
+      "name": "PageRank",
+      "type": "Algorithm",
+      "description": "网页排名算法",
+      "year": "1996"
+    },
+    {
+      "id": "E259",
+      "name": "协同过滤",
+      "type": "Algorithm",
+      "description": "推荐系统的核心算法",
+      "year": "1992"
+    },
+    {
+      "id": "E260",
+      "name": "矩阵分解",
+      "type": "Algorithm",
+      "description": "推荐系统中的降维技术",
+      "year": "2006"
+    },
+    {
+      "id": "E261",
+      "name": "Neo4j",
+      "type": "Tool",
+      "description": "图数据库管理系统",
+      "year": "2007"
+    },
+    {
+      "id": "E262",
+      "name": "LangChain",
+      "type": "Tool",
+      "description": "大语言模型应用开发框架",
+      "year": "2022"
+    },
+    {
+      "id": "E263",
+      "name": "Weights & Biases",
+      "type": "Tool",
+      "description": "机器学习实验跟踪平台",
+      "year": "2017"
+    },
+    {
+      "id": "E264",
+      "name": "MLflow",
+      "type": "Tool",
+      "description": "机器学习生命周期管理平台",
+      "year": "2018"
+    },
+    {
+      "id": "E265",
+      "name": "DVC",
+      "type": "Tool",
+      "description": "数据版本控制工具",
+      "year": "2017"
+    },
+    {
+      "id": "E266",
+      "name": "Ray",
+      "type": "Tool",
+      "description": "分布式计算框架",
+      "year": "2017"
+    },
+    {
+      "id": "E267",
+      "name": "ONNX",
+      "type": "Tool",
+      "description": "开放神经网络交换格式",
+      "year": "2017"
+    },
+    {
+      "id": "E268",
+      "name": "TensorBoard",
+      "type": "Tool",
+      "description": "TensorFlow可视化工具",
+      "year": "2015"
+    },
+    {
+      "id": "E269",
+      "name": "Jupyter",
+      "type": "Tool",
+      "description": "交互式计算环境",
+      "year": "2014"
+    },
+    {
+      "id": "E270",
+      "name": "Matplotlib",
+      "type": "Tool",
+      "description": "Python绘图库",
+      "year": "2003"
+    },
+    {
+      "id": "E271",
+      "name": "Pandas",
+      "type": "Tool",
+      "description": "数据分析库",
+      "year": "2008"
+    },
+    {
+      "id": "E272",
+      "name": "Seaborn",
+      "type": "Tool",
+      "description": "统计数据可视化库",
+      "year": "2012"
+    }
+  ],
+  "relations": [
+    {"subject": "E002", "predicate": "isPartOf", "object": "E001"},
+    {"subject": "E003", "predicate": "isPartOf", "object": "E002"},
+    {"subject": "E004", "predicate": "isPartOf", "object": "E001"},
+    {"subject": "E005", "predicate": "isPartOf", "object": "E001"},
+    {"subject": "E006", "predicate": "isPartOf", "object": "E002"},
+    {"subject": "E007", "predicate": "isPartOf", "object": "E001"},
+    {"subject": "E008", "predicate": "isPartOf", "object": "E001"},
+    {"subject": "E009", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E010", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E010", "predicate": "basedon", "object": "E009"},
+    {"subject": "E011", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E011", "predicate": "basedon", "object": "E009"},
+    {"subject": "E012", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E013", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E014", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E015", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E016", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E017", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E017", "predicate": "basedon", "object": "E015"},
+    {"subject": "E018", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E019", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E020", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E021", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E022", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E023", "predicate": "basedon", "object": "E012"},
+    {"subject": "E023", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E024", "predicate": "basedon", "object": "E012"},
+    {"subject": "E024", "predicate": "developedBy", "object": "E076"},
+    {"subject": "E024", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E025", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E025", "predicate": "basedon", "object": "E010"},
+    {"subject": "E025", "predicate": "developedBy", "object": "E080"},
+    {"subject": "E026", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E026", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E027", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E027", "predicate": "basedon", "object": "E010"},
+    {"subject": "E028", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E028", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E029", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E029", "predicate": "developedBy", "object": "E065"},
+    {"subject": "E030", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E031", "predicate": "basedon", "object": "E011"},
+    {"subject": "E031", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E031", "predicate": "developedBy", "object": "E072"},
+    {"subject": "E032", "predicate": "basedon", "object": "E031"},
+    {"subject": "E032", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E033", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E033", "predicate": "isPartOf", "object": "E012"},
+    {"subject": "E034", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E035", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E036", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E037", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E038", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E039", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E040", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E041", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E042", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E043", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E044", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E045", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E046", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E047", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E048", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E049", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E050", "predicate": "appliedIn", "object": "E002"},
+    {"subject": "E051", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E052", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E053", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E054", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E055", "predicate": "appliedIn", "object": "E002"},
+    {"subject": "E056", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E057", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E058", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E059", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E061", "predicate": "proposes", "object": "E013"},
+    {"subject": "E061", "predicate": "worksAt", "object": "E076"},
+    {"subject": "E062", "predicate": "worksAt", "object": "E077"},
+    {"subject": "E063", "predicate": "developedBy", "object": "E010"},
+    {"subject": "E063", "predicate": "worksAt", "object": "E079"},
+    {"subject": "E064", "predicate": "worksAt", "object": "E078"},
+    {"subject": "E065", "predicate": "proposes", "object": "E029"},
+    {"subject": "E065", "predicate": "worksAt", "object": "E076"},
+    {"subject": "E066", "predicate": "worksAt", "object": "E075"},
+    {"subject": "E072", "predicate": "proposes", "object": "E031"},
+    {"subject": "E071", "predicate": "worksAt", "object": "E078"},
+    {"subject": "E084", "predicate": "developedBy", "object": "E076"},
+    {"subject": "E085", "predicate": "developedBy", "object": "E079"},
+    {"subject": "E086", "predicate": "relatedTo", "object": "E084"},
+    {"subject": "E087", "predicate": "usesTool", "object": "E093"},
+    {"subject": "E088", "predicate": "developedBy", "object": "E076"},
+    {"subject": "E089", "predicate": "relatedTo", "object": "E004"},
+    {"subject": "E023", "predicate": "usesTool", "object": "E085"},
+    {"subject": "E024", "predicate": "usesTool", "object": "E084"},
+    {"subject": "E025", "predicate": "usesTool", "object": "E085"},
+    {"subject": "E026", "predicate": "appliedIn", "object": "E046"},
+    {"subject": "E028", "predicate": "appliedIn", "object": "E045"},
+    {"subject": "E029", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E044", "predicate": "usesAlgorithm", "object": "E011"},
+    {"subject": "E045", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E046", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E011"},
+    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E012"},
+    {"subject": "E049", "predicate": "usesAlgorithm", "object": "E024"},
+    {"subject": "E053", "predicate": "usesAlgorithm", "object": "E023"},
+    {"subject": "E094", "predicate": "isPartOf", "object": "E009"},
+    {"subject": "E095", "predicate": "isPartOf", "object": "E009"},
+    {"subject": "E096", "predicate": "relatedTo", "object": "E009"},
+    {"subject": "E097", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E098", "predicate": "isPartOf", "object": "E014"},
+    {"subject": "E099", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E100", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E101", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E102", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E103", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E104", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E105", "predicate": "isPartOf", "object": "E010"},
+    {"subject": "E106", "predicate": "isPartOf", "object": "E010"},
+    {"subject": "E107", "predicate": "isPartOf", "object": "E095"},
+    {"subject": "E108", "predicate": "isPartOf", "object": "E095"},
+    {"subject": "E109", "predicate": "isPartOf", "object": "E095"},
+    {"subject": "E110", "predicate": "isPartOf", "object": "E096"},
+    {"subject": "E111", "predicate": "isPartOf", "object": "E096"},
+    {"subject": "E112", "predicate": "isPartOf", "object": "E097"},
+    {"subject": "E113", "predicate": "isPartOf", "object": "E097"},
+    {"subject": "E114", "predicate": "isPartOf", "object": "E097"},
+    {"subject": "E115", "predicate": "belongsTo", "object": "E014"},
+    {"subject": "E116", "predicate": "belongsTo", "object": "E014"},
+    {"subject": "E117", "predicate": "belongsTo", "object": "E014"},
+    {"subject": "E118", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E119", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E120", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E121", "predicate": "basedon", "object": "E015"},
+    {"subject": "E122", "predicate": "basedon", "object": "E121"},
+    {"subject": "E123", "predicate": "basedon", "object": "E121"},
+    {"subject": "E124", "predicate": "relatedTo", "object": "E021"},
+    {"subject": "E125", "predicate": "relatedTo", "object": "E021"},
+    {"subject": "E126", "predicate": "relatedTo", "object": "E021"},
+    {"subject": "E127", "predicate": "belongsTo", "object": "E036"},
+    {"subject": "E128", "predicate": "basedon", "object": "E010"},
+    {"subject": "E128", "predicate": "appliedIn", "object": "E046"},
+    {"subject": "E129", "predicate": "basedon", "object": "E128"},
+    {"subject": "E130", "predicate": "basedon", "object": "E129"},
+    {"subject": "E130", "predicate": "appliedIn", "object": "E056"},
+    {"subject": "E131", "predicate": "appliedIn", "object": "E046"},
+    {"subject": "E132", "predicate": "appliedIn", "object": "E056"},
+    {"subject": "E133", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E134", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E135", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E136", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E137", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E138", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E139", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E140", "predicate": "basedon", "object": "E023"},
+    {"subject": "E141", "predicate": "basedon", "object": "E140"},
+    {"subject": "E142", "predicate": "basedon", "object": "E141"},
+    {"subject": "E143", "predicate": "developedBy", "object": "E083"},
+    {"subject": "E144", "predicate": "developedBy", "object": "E079"},
+    {"subject": "E145", "predicate": "developedBy", "object": "E076"},
+    {"subject": "E146", "predicate": "developedBy", "object": "E076"},
+    {"subject": "E147", "predicate": "basedon", "object": "E024"},
+    {"subject": "E148", "predicate": "basedon", "object": "E024"},
+    {"subject": "E149", "predicate": "basedon", "object": "E024"},
+    {"subject": "E150", "predicate": "basedon", "object": "E012"},
+    {"subject": "E150", "predicate": "belongsTo", "object": "E005"},
+    {"subject": "E151", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E151", "predicate": "belongsTo", "object": "E191"},
+    {"subject": "E152", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E152", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E153", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E154", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E155", "predicate": "developedBy", "object": "E075"},
+    {"subject": "E155", "predicate": "usesAlgorithm", "object": "E022"},
+    {"subject": "E155", "predicate": "usesAlgorithm", "object": "E201"},
+    {"subject": "E156", "predicate": "basedon", "object": "E155"},
+    {"subject": "E157", "predicate": "developedBy", "object": "E075"},
+    {"subject": "E158", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E158", "predicate": "appliedIn", "object": "E044"},
+    {"subject": "E159", "predicate": "developedBy", "object": "E075"},
+    {"subject": "E159", "predicate": "appliedIn", "object": "E165"},
+    {"subject": "E160", "predicate": "appliedIn", "object": "E165"},
+    {"subject": "E161", "predicate": "basedon", "object": "E012"},
+    {"subject": "E162", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E163", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E164", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E166", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E167", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E167", "predicate": "appliedIn", "object": "E007"},
+    {"subject": "E168", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E169", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E170", "predicate": "appliedIn", "object": "E007"},
+    {"subject": "E171", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E172", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E173", "predicate": "appliedIn", "object": "E005"},
+    {"subject": "E174", "predicate": "appliedIn", "object": "E003"},
+    {"subject": "E175", "predicate": "appliedIn", "object": "E006"},
+    {"subject": "E176", "predicate": "appliedIn", "object": "E004"},
+    {"subject": "E177", "predicate": "basedon", "object": "E178"},
+    {"subject": "E177", "predicate": "appliedIn", "object": "E176"},
+    {"subject": "E178", "predicate": "basedon", "object": "E023"},
+    {"subject": "E179", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E180", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E181", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E182", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E183", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E184", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E185", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E186", "predicate": "isPartOf", "object": "E185"},
+    {"subject": "E187", "predicate": "isPartOf", "object": "E185"},
+    {"subject": "E188", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E189", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E190", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E191", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E192", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E193", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E194", "predicate": "isPartOf", "object": "E193"},
+    {"subject": "E195", "predicate": "isPartOf", "object": "E193"},
+    {"subject": "E196", "predicate": "isPartOf", "object": "E193"},
+    {"subject": "E197", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E198", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E199", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E200", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E201", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E202", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E203", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E204", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E205", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E206", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E207", "predicate": "isPartOf", "object": "E006"},
+    {"subject": "E208", "predicate": "isPartOf", "object": "E206"},
+    {"subject": "E209", "predicate": "isPartOf", "object": "E206"},
+    {"subject": "E210", "predicate": "isPartOf", "object": "E012"},
+    {"subject": "E211", "predicate": "isPartOf", "object": "E012"},
+    {"subject": "E212", "predicate": "isPartOf", "object": "E012"},
+    {"subject": "E213", "predicate": "isPartOf", "object": "E033"},
+    {"subject": "E214", "predicate": "isPartOf", "object": "E025"},
+    {"subject": "E215", "predicate": "isPartOf", "object": "E012"},
+    {"subject": "E216", "predicate": "relatedTo", "object": "E009"},
+    {"subject": "E217", "predicate": "relatedTo", "object": "E104"},
+    {"subject": "E218", "predicate": "isPartOf", "object": "E033"},
+    {"subject": "E219", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E220", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E221", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E222", "predicate": "relatedTo", "object": "E221"},
+    {"subject": "E223", "predicate": "relatedTo", "object": "E221"},
+    {"subject": "E224", "predicate": "relatedTo", "object": "E221"},
+    {"subject": "E225", "predicate": "relatedTo", "object": "E004"},
+    {"subject": "E226", "predicate": "relatedTo", "object": "E047"},
+    {"subject": "E227", "predicate": "relatedTo", "object": "E168"},
+    {"subject": "E228", "predicate": "isPartOf", "object": "E233"},
+    {"subject": "E229", "predicate": "isPartOf", "object": "E233"},
+    {"subject": "E230", "predicate": "isPartOf", "object": "E228"},
+    {"subject": "E231", "predicate": "isPartOf", "object": "E228"},
+    {"subject": "E232", "predicate": "relatedTo", "object": "E233"},
+    {"subject": "E233", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E234", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E235", "predicate": "relatedTo", "object": "E100"},
+    {"subject": "E236", "predicate": "relatedTo", "object": "E102"},
+    {"subject": "E237", "predicate": "relatedTo", "object": "E100"},
+    {"subject": "E238", "predicate": "relatedTo", "object": "E100"},
+    {"subject": "E239", "predicate": "isPartOf", "object": "E040"},
+    {"subject": "E240", "predicate": "isPartOf", "object": "E040"},
+    {"subject": "E241", "predicate": "isPartOf", "object": "E179"},
+    {"subject": "E242", "predicate": "relatedTo", "object": "E179"},
+    {"subject": "E243", "predicate": "belongsTo", "object": "E006"},
+    {"subject": "E244", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E245", "predicate": "isPartOf", "object": "E244"},
+    {"subject": "E246", "predicate": "relatedTo", "object": "E244"},
+    {"subject": "E247", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E248", "predicate": "relatedTo", "object": "E003"},
+    {"subject": "E249", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E250", "predicate": "basedon", "object": "E249"},
+    {"subject": "E251", "predicate": "basedon", "object": "E249"},
+    {"subject": "E252", "predicate": "relatedTo", "object": "E253"},
+    {"subject": "E253", "predicate": "belongsTo", "object": "E003"},
+    {"subject": "E254", "predicate": "basedon", "object": "E253"},
+    {"subject": "E255", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E256", "predicate": "belongsTo", "object": "E002"},
+    {"subject": "E257", "predicate": "belongsTo", "object": "E004"},
+    {"subject": "E258", "predicate": "belongsTo", "object": "E169"},
+    {"subject": "E259", "predicate": "appliedIn", "object": "E050"},
+    {"subject": "E260", "predicate": "appliedIn", "object": "E050"},
+    {"subject": "E261", "predicate": "relatedTo", "object": "E007"},
+    {"subject": "E262", "predicate": "usesTool", "object": "E074"},
+    {"subject": "E263", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E264", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E265", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E266", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E267", "predicate": "relatedTo", "object": "E003"},
+    {"subject": "E268", "predicate": "relatedTo", "object": "E084"},
+    {"subject": "E269", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E270", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E271", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E272", "predicate": "relatedTo", "object": "E270"},
+    {"subject": "E010", "predicate": "usesAlgorithm", "object": "E105"},
+    {"subject": "E010", "predicate": "usesAlgorithm", "object": "E106"},
+    {"subject": "E012", "predicate": "usesAlgorithm", "object": "E033"},
+    {"subject": "E023", "predicate": "appliedIn", "object": "E053"},
+    {"subject": "E024", "predicate": "appliedIn", "object": "E166"},
+    {"subject": "E029", "predicate": "usesAlgorithm", "object": "E039"},
+    {"subject": "E140", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E141", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E142", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E155", "predicate": "appliedIn", "object": "E175"},
+    {"subject": "E156", "predicate": "appliedIn", "object": "E175"},
+    {"subject": "E157", "predicate": "appliedIn", "object": "E174"},
+    {"subject": "E023", "predicate": "usesAlgorithm", "object": "E012"},
+    {"subject": "E024", "predicate": "usesAlgorithm", "object": "E012"},
+    {"subject": "E025", "predicate": "usesAlgorithm", "object": "E214"},
+    {"subject": "E009", "predicate": "usesAlgorithm", "object": "E013"},
+    {"subject": "E009", "predicate": "usesAlgorithm", "object": "E014"},
+    {"subject": "E044", "predicate": "usesAlgorithm", "object": "E031"},
+    {"subject": "E047", "predicate": "usesAlgorithm", "object": "E024"},
+    {"subject": "E048", "predicate": "usesAlgorithm", "object": "E024"},
+    {"subject": "E052", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E056", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E118", "predicate": "relatedTo", "object": "E104"},
+    {"subject": "E119", "predicate": "relatedTo", "object": "E104"},
+    {"subject": "E120", "predicate": "relatedTo", "object": "E104"},
+    {"subject": "E152", "predicate": "usesAlgorithm", "object": "E244"},
+    {"subject": "E153", "predicate": "usesAlgorithm", "object": "E244"},
+    {"subject": "E177", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E178", "predicate": "developedBy", "object": "E074"},
+    {"subject": "E061", "predicate": "relatedTo", "object": "E003"},
+    {"subject": "E062", "predicate": "relatedTo", "object": "E003"},
+    {"subject": "E063", "predicate": "relatedTo", "object": "E003"},
+    {"subject": "E064", "predicate": "relatedTo", "object": "E002"},
+    {"subject": "E067", "predicate": "proposes", "object": "E001"},
+    {"subject": "E068", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E069", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E070", "predicate": "relatedTo", "object": "E001"},
+    {"subject": "E060", "predicate": "proposes", "object": "E001"},
+    {"subject": "E051", "predicate": "usesAlgorithm", "object": "E010"},
+    {"subject": "E051", "predicate": "usesAlgorithm", "object": "E006"},
+    {"subject": "E050", "predicate": "usesAlgorithm", "object": "E259"},
+    {"subject": "E143", "predicate": "appliedIn", "object": "E059"},
+    {"subject": "E023", "predicate": "appliedIn", "object": "E059"},
+    {"subject": "E141", "predicate": "appliedIn", "object": "E053"},
+    {"subject": "E142", "predicate": "appliedIn", "object": "E053"},
+    {"subject": "E151", "predicate": "appliedIn", "object": "E045"},
+    {"subject": "E150", "predicate": "appliedIn", "object": "E045"},
+    {"subject": "E025", "predicate": "appliedIn", "object": "E045"},
+    {"subject": "E027", "predicate": "appliedIn", "object": "E045"},
+    {"subject": "E028", "predicate": "appliedIn", "object": "E052"},
+    {"subject": "E132", "predicate": "appliedIn", "object": "E174"},
+    {"subject": "E029", "predicate": "appliedIn", "object": "E058"},
+    {"subject": "E030", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E041", "predicate": "relatedTo", "object": "E235"},
+    {"subject": "E042", "predicate": "relatedTo", "object": "E235"},
+    {"subject": "E241", "predicate": "relatedTo", "object": "E242"},
+    {"subject": "E243", "predicate": "appliedIn", "object": "E023"},
+    {"subject": "E243", "predicate": "appliedIn", "object": "E141"},
+    {"subject": "E244", "predicate": "appliedIn", "object": "E054"},
+    {"subject": "E089", "predicate": "usesTool", "object": "E085"},
+    {"subject": "E262", "predicate": "usesTool", "object": "E085"},
+    {"subject": "E090", "predicate": "relatedTo", "object": "E005"},
+    {"subject": "E091", "predicate": "relatedTo", "object": "E004"},
+    {"subject": "E092", "predicate": "relatedTo", "object": "E004"},
+    {"subject": "E093", "predicate": "relatedTo", "object": "E002"}
+  ]
+}

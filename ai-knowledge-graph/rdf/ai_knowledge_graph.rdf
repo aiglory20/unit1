@@ -1,0 +1,2229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ai="http://www.ai-kg.org/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E006">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">强化学习</ai:name>
+    <ai:description xml:lang="zh">通过与环境交互学习最优策略的机器学习方法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1980</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E109">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">Softmax</ai:name>
+    <ai:description xml:lang="zh">多分类输出层常用激活函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E095"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E007">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">知识图谱</ai:name>
+    <ai:description xml:lang="zh">用图结构表示实体及其关系的知识库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E169">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">信息检索</ai:name>
+    <ai:description xml:lang="zh">从大量数据中检索相关信息</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E160">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Tacotron</ai:name>
+    <ai:description xml:lang="zh">语音合成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E165"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E161">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">BLOOM</ai:name>
+    <ai:description xml:lang="zh">多语言大语言模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E230">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">召回率</ai:name>
+    <ai:description xml:lang="zh">找出的正样本占总正样本的比例</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E228"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#developedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">开发者</rdfs:label>
+    <rdfs:comment xml:lang="zh">由某人或组织开发</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b17"/>
+    <rdfs:range rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b21"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E019">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">朴素贝叶斯</ai:name>
+    <ai:description xml:lang="zh">基于贝叶斯定理的概率分类算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1960</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E119">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">GloVe</ai:name>
+    <ai:description xml:lang="zh">全局向量词嵌入算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E041">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Dropout</ai:name>
+    <ai:description xml:lang="zh">防止过拟合的正则化技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E235"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E098">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">梯度</ai:name>
+    <ai:description xml:lang="zh">函数变化率的向量</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E241">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">LoRA</ai:name>
+    <ai:description xml:lang="zh">低秩适配微调技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E179"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E242"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E023">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GPT</ai:name>
+    <ai:description xml:lang="zh">生成式预训练Transformer模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:parameters xml:lang="zh">多版本，从1.17亿到1750亿参数</ai:parameters>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E012"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E085"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E053"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E059"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E133">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">EfficientNet</ai:name>
+    <ai:description xml:lang="zh">高效卷积神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E135">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">SqueezeNet</ai:name>
+    <ai:description xml:lang="zh">压缩的卷积神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E139">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">ELMo</ai:name>
+    <ai:description xml:lang="zh">上下文相关词表示模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E129">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Faster R-CNN</ai:name>
+    <ai:description xml:lang="zh">更快的区域卷积神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E128"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E060">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Alan Turing</ai:name>
+    <ai:description xml:lang="zh">计算机科学和人工智能之父</ai:description>
+    <ai:nationality xml:lang="zh">英国</ai:nationality>
+    <ai:field xml:lang="zh">计算机科学</ai:field>
+    <ai:proposes rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E272">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Seaborn</ai:name>
+    <ai:description xml:lang="zh">统计数据可视化库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E061">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Geoffrey Hinton</ai:name>
+    <ai:description xml:lang="zh">深度学习之父</ai:description>
+    <ai:nationality xml:lang="zh">加拿大</ai:nationality>
+    <ai:field xml:lang="zh">深度学习</ai:field>
+    <ai:proposes rdf:resource="http://www.ai-kg.org/entity#E013"/>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E076"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b32">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b33"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E167">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">关系抽取</ai:name>
+    <ai:description xml:lang="zh">识别实体间的关系</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E179">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Fine-tuning</ai:name>
+    <ai:description xml:lang="zh">在预训练模型基础上针对特定任务微调</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E029">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GAN</ai:name>
+    <ai:description xml:lang="zh">生成对抗网络，用于生成逼真数据</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E065"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E058"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E220">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">贪心搜索</ai:name>
+    <ai:description xml:lang="zh">每步选择最优的生成策略</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E024">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">BERT</ai:name>
+    <ai:description xml:lang="zh">双向编码器表示的Transformer模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:parameters xml:lang="zh">3.4亿参数</ai:parameters>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E012"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E076"/>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E084"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E166"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E229">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">准确率</ai:name>
+    <ai:description xml:lang="zh">正确预测的比例</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E233"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b20">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E196">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">GraphSAGE</ai:name>
+    <ai:description xml:lang="zh">图采样和聚合网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E193"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E099">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">特征</ai:name>
+    <ai:description xml:lang="zh">数据的可测量属性</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E200">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">SAC</ai:name>
+    <ai:description xml:lang="zh">软演员评论家算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E218">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">注意力权重</ai:name>
+    <ai:description xml:lang="zh">注意力机制中的重要性分数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#belongsTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">属于</rdfs:label>
+    <rdfs:comment xml:lang="zh">某实体属于某领域或类别</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b1"/>
+    <rdfs:range rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E194">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">GCN</ai:name>
+    <ai:description xml:lang="zh">图卷积网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E193"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E173">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">OCR</ai:name>
+    <ai:description xml:lang="zh">光学字符识别</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1974</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E090">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">OpenCV</ai:name>
+    <ai:description xml:lang="zh">开源计算机视觉库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2000</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E268">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">TensorBoard</ai:name>
+    <ai:description xml:lang="zh">TensorFlow可视化工具</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E228">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">F1分数</ai:name>
+    <ai:description xml:lang="zh">分类模型性能指标</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E233"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E095">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">激活函数</ai:name>
+    <ai:description xml:lang="zh">引入非线性特性的函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E009"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E124">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">PCA</ai:name>
+    <ai:description xml:lang="zh">主成分分析降维算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1901</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E136">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Inception</ai:name>
+    <ai:description xml:lang="zh">多尺度卷积网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E251">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">去噪自编码器</ai:name>
+    <ai:description xml:lang="zh">通过去噪学习鲁棒表示</ai:description>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E249"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E112">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">学习率</ai:name>
+    <ai:description xml:lang="zh">控制参数更新步长的超参数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E097"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E201">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">MCTS</ai:name>
+    <ai:description xml:lang="zh">蒙特卡洛树搜索</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E036">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">无监督学习</ai:name>
+    <ai:description xml:lang="zh">从无标注数据中学习模式</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E116">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">SGD</ai:name>
+    <ai:description xml:lang="zh">随机梯度下降优化算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1951</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E055">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">异常检测</ai:name>
+    <ai:description xml:lang="zh">识别数据中的异常模式</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1980</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b2">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E153">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Stable Diffusion</ai:name>
+    <ai:description xml:lang="zh">开源文本到图像扩散模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E244"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E221">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">采样</ai:name>
+    <ai:description xml:lang="zh">从概率分布中生成序列</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E149">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">ALBERT</ai:name>
+    <ai:description xml:lang="zh">轻量级BERT</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E130">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Mask R-CNN</ai:name>
+    <ai:description xml:lang="zh">实例分割模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E129"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E056"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E067">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">John McCarthy</ai:name>
+    <ai:description xml:lang="zh">人工智能一词的提出者</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">人工智能</ai:field>
+    <ai:proposes rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E080">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Microsoft Research</ai:name>
+    <ai:description xml:lang="zh">微软研究院</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1991</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E066">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Demis Hassabis</ai:name>
+    <ai:description xml:lang="zh">DeepMind创始人</ai:description>
+    <ai:nationality xml:lang="zh">英国</ai:nationality>
+    <ai:field xml:lang="zh">强化学习</ai:field>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E075"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E162">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">计算机科学</ai:name>
+    <ai:description xml:lang="zh">研究计算机及其应用的学科</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E237">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">早停</ai:name>
+    <ai:description xml:lang="zh">防止过拟合的训练策略</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E163">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">认知科学</ai:name>
+    <ai:description xml:lang="zh">研究智能和认知过程的跨学科研究</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E259">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">协同过滤</ai:name>
+    <ai:description xml:lang="zh">推荐系统的核心算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1992</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E050"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E204">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">价值函数</ai:name>
+    <ai:description xml:lang="zh">评估状态或动作价值的函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E145">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">PaLM</ai:name>
+    <ai:description xml:lang="zh">Google的大语言模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E076"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E258">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">PageRank</ai:name>
+    <ai:description xml:lang="zh">网页排名算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1996</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E169"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E182">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">少样本学习</ai:name>
+    <ai:description xml:lang="zh">使用少量样本学习新任务</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E256">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">隐马尔可夫模型</ai:name>
+    <ai:description xml:lang="zh">处理序列数据的概率模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1960</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E164">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">神经科学</ai:name>
+    <ai:description xml:lang="zh">研究神经系统的学科</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E114">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">Epoch</ai:name>
+    <ai:description xml:lang="zh">训练数据的完整遍历次数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E097"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b12">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E227">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">ROUGE</ai:name>
+    <ai:description xml:lang="zh">文本摘要评估指标</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E168"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">描述</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E014">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">梯度下降</ai:name>
+    <ai:description xml:lang="zh">优化算法，通过梯度方向更新参数</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1847</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E103">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">特征工程</ai:name>
+    <ai:description xml:lang="zh">选择和构造有效特征的过程</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E123">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">CatBoost</ai:name>
+    <ai:description xml:lang="zh">处理类别特征的梯度提升算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E121"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E028">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">AlexNet</ai:name>
+    <ai:description xml:lang="zh">首个在ImageNet上取得突破的深度卷积网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E045"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E052"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E127">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">DBSCAN</ai:name>
+    <ai:description xml:lang="zh">基于密度的聚类算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1996</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E036"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E188">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">神经架构搜索</ai:name>
+    <ai:description xml:lang="zh">自动搜索最优网络架构</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Algorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">算法</rdfs:label>
+    <rdfs:comment xml:lang="zh">具体的AI算法和技术方法</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b33">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E101">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">欠拟合</ai:name>
+    <ai:description xml:lang="zh">模型未能充分学习数据模式</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E092">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">SpaCy</ai:name>
+    <ai:description xml:lang="zh">工业级NLP库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E087">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">scikit-learn</ai:name>
+    <ai:description xml:lang="zh">Python机器学习库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</ai:year>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E093"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E185">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">模型压缩</ai:name>
+    <ai:description xml:lang="zh">减小模型大小和计算量</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E121">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">XGBoost</ai:name>
+    <ai:description xml:lang="zh">梯度提升决策树算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E183">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">联邦学习</ai:name>
+    <ai:description xml:lang="zh">分布式机器学习保护隐私</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b4">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E070">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Peter Norvig</ai:name>
+    <ai:description xml:lang="zh">AI教科书作者</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">人工智能</ai:field>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E048">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">情感分析</ai:name>
+    <ai:description xml:lang="zh">分析文本的情感倾向</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2000</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E271">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Pandas</ai:name>
+    <ai:description xml:lang="zh">数据分析库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E191">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">多模态学习</ai:name>
+    <ai:description xml:lang="zh">处理多种类型数据的学习方法</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b34">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b35"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E105">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">卷积核</ai:name>
+    <ai:description xml:lang="zh">卷积操作的滤波器</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E081">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">CMU</ai:name>
+    <ai:description xml:lang="zh">卡内基梅隆大学</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1900</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E045">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">图像分类</ai:name>
+    <ai:description xml:lang="zh">识别图像中的物体类别</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1960</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E170">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">知识推理</ai:name>
+    <ai:description xml:lang="zh">基于已知知识推导新知识</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E252">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">对比散度</ai:name>
+    <ai:description xml:lang="zh">训练能量模型的算法</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E253"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E154">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Midjourney</ai:name>
+    <ai:description xml:lang="zh">商业图像生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E038">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">元学习</ai:name>
+    <ai:description xml:lang="zh">学习如何学习的方法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1987</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E150">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">ViT</ai:name>
+    <ai:description xml:lang="zh">视觉Transformer模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E012"/>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E045"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E236">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">交叉验证</ai:name>
+    <ai:description xml:lang="zh">评估模型泛化能力的方法</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E102"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#proposes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">提出</rdfs:label>
+    <rdfs:comment xml:lang="zh">提出某概念或方法</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b31"/>
+    <rdfs:range rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b34"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E017">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">随机森林</ai:name>
+    <ai:description xml:lang="zh">集成多个决策树的机器学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2001</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E015"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b29">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b30"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E083">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Anthropic</ai:name>
+    <ai:description xml:lang="zh">AI安全研究公司</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E106">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">池化</ai:name>
+    <ai:description xml:lang="zh">降低特征图维度的操作</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E158">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Whisper</ai:name>
+    <ai:description xml:lang="zh">语音识别模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E044"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E197">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">DQN</ai:name>
+    <ai:description xml:lang="zh">深度Q网络强化学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E157">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">AlphaFold</ai:name>
+    <ai:description xml:lang="zh">蛋白质结构预测模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E075"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E174"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E215">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">层归一化</ai:name>
+    <ai:description xml:lang="zh">归一化层的输出</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E046">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">目标检测</ai:name>
+    <ai:description xml:lang="zh">定位和识别图像中的多个物体</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2001</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E100">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">过拟合</ai:name>
+    <ai:description xml:lang="zh">模型在训练数据上表现好但泛化能力差</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E034">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">迁移学习</ai:name>
+    <ai:description xml:lang="zh">将已训练模型的知识应用到新任务</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1993</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">名称</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b5">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E089">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Hugging Face</ai:name>
+    <ai:description xml:lang="zh">NLP模型库和平台</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E085"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E214">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">残差连接</ai:name>
+    <ai:description xml:lang="zh">跳跃连接缓解梯度消失</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E002">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">机器学习</ai:name>
+    <ai:description xml:lang="zh">通过数据和经验自动改善性能的计算机算法研究</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1959</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E001">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">人工智能</ai:name>
+    <ai:description xml:lang="zh">研究和开发模拟、延伸和扩展人类智能的理论、方法、技术及应用系统的技术科学</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1956</ai:year>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E205">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">奖励函数</ai:name>
+    <ai:description xml:lang="zh">强化学习中的反馈信号</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E206">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">马尔可夫决策过程</ai:name>
+    <ai:description xml:lang="zh">强化学习的数学框架</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E125">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">t-SNE</ai:name>
+    <ai:description xml:lang="zh">t分布随机邻域嵌入可视化算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E005">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">计算机视觉</ai:name>
+    <ai:description xml:lang="zh">使计算机能够理解和处理视觉信息的技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1960</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E035">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">监督学习</ai:name>
+    <ai:description xml:lang="zh">使用标注数据训练模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E031">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">LSTM</ai:name>
+    <ai:description xml:lang="zh">长短期记忆网络，解决RNN梯度消失问题</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1997</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E011"/>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E072"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E199">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">A3C</ai:name>
+    <ai:description xml:lang="zh">异步优势演员评论家算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E260">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">矩阵分解</ai:name>
+    <ai:description xml:lang="zh">推荐系统中的降维技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E050"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E074">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">OpenAI</ai:name>
+    <ai:description xml:lang="zh">人工智能研究实验室</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E107">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">ReLU</ai:name>
+    <ai:description xml:lang="zh">修正线性单元激活函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E095"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E040">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">数据增强</ai:name>
+    <ai:description xml:lang="zh">通过变换扩充训练数据</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E084">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">TensorFlow</ai:name>
+    <ai:description xml:lang="zh">Google开源的机器学习框架</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E076"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E234">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">偏差方差权衡</ai:name>
+    <ai:description xml:lang="zh">模型复杂度的权衡</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E151">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">CLIP</ai:name>
+    <ai:description xml:lang="zh">对比语言-图像预训练模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E191"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E045"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E232">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">AUC</ai:name>
+    <ai:description xml:lang="zh">ROC曲线下面积</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E233"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E224">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Top-p采样</ai:name>
+    <ai:description xml:lang="zh">核采样，累积概率达到p时截断</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E221"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E026">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">YOLO</ai:name>
+    <ai:description xml:lang="zh">实时目标检测模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E046"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E217">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">嵌入层</ai:name>
+    <ai:description xml:lang="zh">将离散符号映射到连续向量</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E262">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">LangChain</ai:name>
+    <ai:description xml:lang="zh">大语言模型应用开发框架</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</ai:year>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E085"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E246">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Score Matching</ai:name>
+    <ai:description xml:lang="zh">分数匹配生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E244"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E159">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">WaveNet</ai:name>
+    <ai:description xml:lang="zh">语音生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E075"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E165"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E253">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">受限玻尔兹曼机</ai:name>
+    <ai:description xml:lang="zh">生成式随机神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E216">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">前馈网络</ai:name>
+    <ai:description xml:lang="zh">信息单向传播的神经网络</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E025">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">ResNet</ai:name>
+    <ai:description xml:lang="zh">残差网络，解决深层网络训练问题</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E080"/>
+    <ai:usesTool rdf:resource="http://www.ai-kg.org/entity#E085"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E214"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E045"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b35">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b36"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E172">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">视频分析</ai:name>
+    <ai:description xml:lang="zh">理解和分析视频内容</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E047">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">机器翻译</ai:name>
+    <ai:description xml:lang="zh">自动将文本从一种语言翻译为另一种语言</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1954</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E011"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E012"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E049">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">问答系统</ai:name>
+    <ai:description xml:lang="zh">自动回答用户问题的系统</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1960</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E053">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">文本生成</ai:name>
+    <ai:description xml:lang="zh">自动生成自然语言文本</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1980</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E023"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E088">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">JAX</ai:name>
+    <ai:description xml:lang="zh">Google的自动微分库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E076"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E147">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">RoBERTa</ai:name>
+    <ai:description xml:lang="zh">优化的BERT模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E042">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">批归一化</ai:name>
+    <ai:description xml:lang="zh">加速训练和提高稳定性的技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E235"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E137">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">DenseNet</ai:name>
+    <ai:description xml:lang="zh">密集连接卷积网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E071">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Fei-Fei Li</ai:name>
+    <ai:description xml:lang="zh">ImageNet创建者</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">计算机视觉</ai:field>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E078"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E021">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">主成分分析</ai:name>
+    <ai:description xml:lang="zh">降维算法，提取数据的主要特征</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1901</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E117">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">RMSprop</ai:name>
+    <ai:description xml:lang="zh">自适应学习率优化算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E186">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">量化</ai:name>
+    <ai:description xml:lang="zh">降低模型参数精度</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E185"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#appliedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">应用于</rdfs:label>
+    <rdfs:comment xml:lang="zh">应用于某场景</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b24"/>
+    <rdfs:range rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E132">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">U-Net</ai:name>
+    <ai:description xml:lang="zh">医学图像分割模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E056"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E174"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E020">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">K均值聚类</ai:name>
+    <ai:description xml:lang="zh">将数据分为K个簇的聚类算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1967</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">人物</rdfs:label>
+    <rdfs:comment xml:lang="zh">AI领域的重要人物</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E008">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">专家系统</ai:name>
+    <ai:description xml:lang="zh">模拟人类专家决策能力的计算机系统</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1970</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E015">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">决策树</ai:name>
+    <ai:description xml:lang="zh">基于树结构进行决策的机器学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E177">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GitHub Copilot</ai:name>
+    <ai:description xml:lang="zh">AI代码助手</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E178"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E176"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E193">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">图神经网络</ai:name>
+    <ai:description xml:lang="zh">处理图结构数据的神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E118">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Word2Vec</ai:name>
+    <ai:description xml:lang="zh">学习词向量的算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E192">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">因果推断</ai:name>
+    <ai:description xml:lang="zh">识别因果关系的方法</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E115">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Adam优化器</ai:name>
+    <ai:description xml:lang="zh">自适应学习率优化算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E235">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">正则化</ai:name>
+    <ai:description xml:lang="zh">防止过拟合的技术</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E143">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Claude</ai:name>
+    <ai:description xml:lang="zh">Anthropic开发的大语言模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E083"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E059"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E033">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">注意力机制</ai:name>
+    <ai:description xml:lang="zh">使模型关注输入的重要部分</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E180">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Prompt Engineering</ai:name>
+    <ai:description xml:lang="zh">设计提示词优化模型输出</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#AI_Field">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">AI领域</rdfs:label>
+    <rdfs:comment xml:lang="zh">人工智能的主要研究领域和分支</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E062">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Yoshua Bengio</ai:name>
+    <ai:description xml:lang="zh">深度学习先驱</ai:description>
+    <ai:nationality xml:lang="zh">加拿大</ai:nationality>
+    <ai:field xml:lang="zh">深度学习</ai:field>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E077"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E058">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">风格迁移</ai:name>
+    <ai:description xml:lang="zh">将一种图像的风格应用到另一图像</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E111">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">均方误差</ai:name>
+    <ai:description xml:lang="zh">回归问题的常用损失函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E096"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E003">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">深度学习</ai:name>
+    <ai:description xml:lang="zh">基于多层神经网络的机器学习方法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Application">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">应用</rdfs:label>
+    <rdfs:comment xml:lang="zh">AI的实际应用场景</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E059">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">对话系统</ai:name>
+    <ai:description xml:lang="zh">与用户进行自然对话的系统</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1966</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E141">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GPT-3</ai:name>
+    <ai:description xml:lang="zh">第三代生成式预训练Transformer</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</ai:year>
+    <ai:parameters xml:lang="zh">1750亿参数</ai:parameters>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E140"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E011">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">循环神经网络</ai:name>
+    <ai:description xml:lang="zh">处理序列数据的神经网络架构</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E142">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GPT-4</ai:name>
+    <ai:description xml:lang="zh">第四代生成式预训练Transformer</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E141"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E242">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">PEFT</ai:name>
+    <ai:description xml:lang="zh">参数高效微调方法</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E179"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E226">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">BLEU</ai:name>
+    <ai:description xml:lang="zh">机器翻译评估指标</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E047"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E155">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">AlphaGo</ai:name>
+    <ai:description xml:lang="zh">围棋AI程序</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E075"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E022"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E201"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E175"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E213">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">多头注意力</ai:name>
+    <ai:description xml:lang="zh">并行的多个注意力机制</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E057">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">姿态估计</ai:name>
+    <ai:description xml:lang="zh">检测人体或物体的姿态和关键点</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E270">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Matplotlib</ai:name>
+    <ai:description xml:lang="zh">Python绘图库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E207">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">贝尔曼方程</ai:name>
+    <ai:description xml:lang="zh">动态规划的核心方程</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b29"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E140">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">GPT-2</ai:name>
+    <ai:description xml:lang="zh">第二代生成式预训练Transformer</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:parameters xml:lang="zh">15亿参数</ai:parameters>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E023"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Tool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">工具</rdfs:label>
+    <rdfs:comment xml:lang="zh">AI开发工具和框架</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E266">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Ray</ai:name>
+    <ai:description xml:lang="zh">分布式计算框架</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E209">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">动作空间</ai:name>
+    <ai:description xml:lang="zh">所有可能动作的集合</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E206"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E225">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">困惑度</ai:name>
+    <ai:description xml:lang="zh">评估语言模型的指标</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#usesTool">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">使用工具</rdfs:label>
+    <rdfs:comment xml:lang="zh">使用某工具实现</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b28"/>
+    <rdfs:range rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b15">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E198">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">PPO</ai:name>
+    <ai:description xml:lang="zh">近端策略优化强化学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E128">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">R-CNN</ai:name>
+    <ai:description xml:lang="zh">区域卷积神经网络目标检测模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E046"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E181">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">零样本学习</ai:name>
+    <ai:description xml:lang="zh">无需训练样本的学习方法</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E069">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Stuart Russell</ai:name>
+    <ai:description xml:lang="zh">AI教科书作者</ai:description>
+    <ai:nationality xml:lang="zh">英国</ai:nationality>
+    <ai:field xml:lang="zh">人工智能</ai:field>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E056">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">语义分割</ai:name>
+    <ai:description xml:lang="zh">对图像进行像素级分类</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E265">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">DVC</ai:name>
+    <ai:description xml:lang="zh">数据版本控制工具</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#usesAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">使用算法</rdfs:label>
+    <rdfs:comment xml:lang="zh">模型或应用使用某算法</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b6"/>
+    <rdfs:range rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b23">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E108">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">Sigmoid</ai:name>
+    <ai:description xml:lang="zh">S形激活函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E095"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E203">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">策略梯度</ai:name>
+    <ai:description xml:lang="zh">直接优化策略的方法</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E113">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">批大小</ai:name>
+    <ai:description xml:lang="zh">每次训练迭代使用的样本数量</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E097"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E076">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Google AI</ai:name>
+    <ai:description xml:lang="zh">Google的AI研究部门</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E131">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">SSD</ai:name>
+    <ai:description xml:lang="zh">单次检测器目标检测模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E046"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E004">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#AI_Field"/>
+    <ai:name xml:lang="zh">自然语言处理</ai:name>
+    <ai:description xml:lang="zh">使计算机能够理解、解释和生成人类语言的技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E189">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">对比学习</ai:name>
+    <ai:description xml:lang="zh">通过对比样本学习表示</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E032">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">GRU</ai:name>
+    <ai:description xml:lang="zh">门控循环单元，LSTM的简化版本</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E031"/>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E263">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Weights &amp; Biases</ai:name>
+    <ai:description xml:lang="zh">机器学习实验跟踪平台</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E077">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">MIT CSAIL</ai:name>
+    <ai:description xml:lang="zh">麻省理工学院计算机科学与人工智能实验室</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1959</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E016">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">支持向量机</ai:name>
+    <ai:description xml:lang="zh">在高维空间中构造分隔超平面的分类算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1995</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E050">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">推荐系统</ai:name>
+    <ai:description xml:lang="zh">向用户推荐可能感兴趣的内容</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1992</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E002"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E259"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E269">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Jupyter</ai:name>
+    <ai:description xml:lang="zh">交互式计算环境</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E146">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">T5</ai:name>
+    <ai:description xml:lang="zh">文本到文本转换Transformer模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E076"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E171">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">图像超分辨率</ai:name>
+    <ai:description xml:lang="zh">提升图像分辨率</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E212">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">位置编码</ai:name>
+    <ai:description xml:lang="zh">在Transformer中编码序列位置信息</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E065">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Ian Goodfellow</ai:name>
+    <ai:description xml:lang="zh">生成对抗网络发明者</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">深度学习</ai:field>
+    <ai:proposes rdf:resource="http://www.ai-kg.org/entity#E029"/>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E076"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#basedon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">基于</rdfs:label>
+    <rdfs:comment xml:lang="zh">某技术基于另一技术发展而来</rdfs:comment>
+    <rdfs:domain rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b9"/>
+    <rdfs:range rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E240">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">CutMix</ai:name>
+    <ai:description xml:lang="zh">图像数据增强技术</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#year">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">年份</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E051">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">自动驾驶</ai:name>
+    <ai:description xml:lang="zh">使车辆能够自主驾驶的技术</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1984</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E223">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Top-k采样</ai:name>
+    <ai:description xml:lang="zh">从概率最高的k个候选中采样</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E221"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b19">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#field">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">研究领域</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E264">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">MLflow</ai:name>
+    <ai:description xml:lang="zh">机器学习生命周期管理平台</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E044">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">语音识别</ai:name>
+    <ai:description xml:lang="zh">将语音转换为文本</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1952</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E011"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E178">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">Codex</ai:name>
+    <ai:description xml:lang="zh">代码生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E023"/>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E238">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">标签平滑</ai:name>
+    <ai:description xml:lang="zh">改善模型泛化的技术</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E064">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Andrew Ng</ai:name>
+    <ai:description xml:lang="zh">机器学习教育先驱</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">机器学习</ai:field>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E078"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E247">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Flow-based模型</ai:name>
+    <ai:description xml:lang="zh">基于流的生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E110">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">交叉熵</ai:name>
+    <ai:description xml:lang="zh">分类问题的常用损失函数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E096"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E043">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">集成学习</ai:name>
+    <ai:description xml:lang="zh">组合多个模型提高性能</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E244">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">扩散模型</ai:name>
+    <ai:description xml:lang="zh">通过去噪过程生成数据</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b30">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E009">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">神经网络</ai:name>
+    <ai:description xml:lang="zh">模拟生物神经网络的计算模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1943</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E013"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E222">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">温度参数</ai:name>
+    <ai:description xml:lang="zh">控制生成多样性的参数</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E221"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#relatedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">相关</rdfs:label>
+    <rdfs:comment xml:lang="zh">两个实体相关</rdfs:comment>
+    <owl:propertyType rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E027">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">VGG</ai:name>
+    <ai:description xml:lang="zh">使用小卷积核的深度卷积网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E045"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E096">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">损失函数</ai:name>
+    <ai:description xml:lang="zh">衡量预测值与真实值差异的函数</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E245">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">DDPM</ai:name>
+    <ai:description xml:lang="zh">去噪扩散概率模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2020</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E244"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E104">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">词嵌入</ai:name>
+    <ai:description xml:lang="zh">将词语映射到连续向量空间</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E018">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">K近邻算法</ai:name>
+    <ai:description xml:lang="zh">基于距离度量的分类和回归算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1967</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E075">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">DeepMind</ai:name>
+    <ai:description xml:lang="zh">Google旗下AI研究公司</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E063">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Yann LeCun</ai:name>
+    <ai:description xml:lang="zh">卷积神经网络之父</ai:description>
+    <ai:nationality xml:lang="zh">法国</ai:nationality>
+    <ai:field xml:lang="zh">深度学习</ai:field>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E010"/>
+    <ai:worksAt rdf:resource="http://www.ai-kg.org/entity#E079"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E261">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Neo4j</ai:name>
+    <ai:description xml:lang="zh">图数据库管理系统</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E134">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">MobileNet</ai:name>
+    <ai:description xml:lang="zh">轻量级移动端模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E175">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">游戏AI</ai:name>
+    <ai:description xml:lang="zh">游戏中的智能体</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1950</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E166">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">命名实体识别</ai:name>
+    <ai:description xml:lang="zh">识别文本中的实体</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E012">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Transformer</ai:name>
+    <ai:description xml:lang="zh">基于自注意力机制的神经网络架构</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E255">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">EM算法</ai:name>
+    <ai:description xml:lang="zh">期望最大化算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1977</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E037">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">半监督学习</ai:name>
+    <ai:description xml:lang="zh">结合标注和未标注数据的学习方法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1970</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E239">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">Mixup</ai:name>
+    <ai:description xml:lang="zh">数据增强技术</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E022">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Q学习</ai:name>
+    <ai:description xml:lang="zh">无模型的强化学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1989</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E144">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">LLaMA</ai:name>
+    <ai:description xml:lang="zh">Meta开源的大语言模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E079"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E243">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">RLHF</ai:name>
+    <ai:description xml:lang="zh">基于人类反馈的强化学习</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E006"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E023"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E141"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E231">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">精确率</ai:name>
+    <ai:description xml:lang="zh">预测为正的样本中真正为正的比例</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E228"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E210">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">编码器-解码器</ai:name>
+    <ai:description xml:lang="zh">序列到序列模型架构</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E233">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">混淆矩阵</ai:name>
+    <ai:description xml:lang="zh">分类结果的统计表格</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E039">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">对抗训练</ai:name>
+    <ai:description xml:lang="zh">通过对抗样本提高模型鲁棒性</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E078">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Stanford AI Lab</ai:name>
+    <ai:description xml:lang="zh">斯坦福大学人工智能实验室</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1962</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E030">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">VAE</ai:name>
+    <ai:description xml:lang="zh">变分自编码器，用于生成和表示学习</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E094">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">神经元</ai:name>
+    <ai:description xml:lang="zh">神经网络的基本计算单元</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E079">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Meta AI</ai:name>
+    <ai:description xml:lang="zh">Meta的AI研究部门</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E156">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">AlphaZero</ai:name>
+    <ai:description xml:lang="zh">通用棋类游戏AI</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E155"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E175"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Technique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">技术</rdfs:label>
+    <rdfs:comment xml:lang="zh">AI中的技术概念和方法</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E174">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">医疗诊断</ai:name>
+    <ai:description xml:lang="zh">辅助医疗诊断</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1970</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E138">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">SENet</ai:name>
+    <ai:description xml:lang="zh">压缩激励网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E072">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Jürgen Schmidhuber</ai:name>
+    <ai:description xml:lang="zh">LSTM贡献者</ai:description>
+    <ai:nationality xml:lang="zh">瑞士</ai:nationality>
+    <ai:field xml:lang="zh">深度学习</ai:field>
+    <ai:proposes rdf:resource="http://www.ai-kg.org/entity#E031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E152">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">DALL-E</ai:name>
+    <ai:description xml:lang="zh">文本到图像生成模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E074"/>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E054"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E244"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E120">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">FastText</ai:name>
+    <ai:description xml:lang="zh">基于子词的词嵌入算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E195">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">GAT</ai:name>
+    <ai:description xml:lang="zh">图注意力网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E193"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Model">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">模型</rdfs:label>
+    <rdfs:comment xml:lang="zh">具体的AI模型</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E097">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">超参数</ai:name>
+    <ai:description xml:lang="zh">在训练前设定的参数</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b26">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b27"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E126">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">UMAP</ai:name>
+    <ai:description xml:lang="zh">统一流形逼近与投影降维算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E010">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">卷积神经网络</ai:name>
+    <ai:description xml:lang="zh">专门用于处理网格结构数据的深度学习算法</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1989</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E009"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E105"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E106"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E254">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">深度信念网络</ai:name>
+    <ai:description xml:lang="zh">堆叠受限玻尔兹曼机</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E253"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E187">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">剪枝</ai:name>
+    <ai:description xml:lang="zh">移除不重要的模型参数</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E185"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E086">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">Keras</ai:name>
+    <ai:description xml:lang="zh">高级神经网络API</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E085">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">PyTorch</ai:name>
+    <ai:description xml:lang="zh">Meta开源的深度学习框架</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</ai:year>
+    <ai:developedBy rdf:resource="http://www.ai-kg.org/entity#E079"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E184">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">知识蒸馏</ai:name>
+    <ai:description xml:lang="zh">将大模型知识迁移到小模型</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E093">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">NumPy</ai:name>
+    <ai:description xml:lang="zh">Python科学计算库</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E068">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Marvin Minsky</ai:name>
+    <ai:description xml:lang="zh">人工智能先驱</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">人工智能</ai:field>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E267">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">ONNX</ai:name>
+    <ai:description xml:lang="zh">开放神经网络交换格式</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E052">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">人脸识别</ai:name>
+    <ai:description xml:lang="zh">识别或验证人脸身份</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1964</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+    <ai:usesAlgorithm rdf:resource="http://www.ai-kg.org/entity#E010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#AI_Knowledge_Graph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="zh">人工智能核心概念知识图谱本体</rdfs:label>
+    <rdfs:comment xml:lang="zh">定义人工智能领域的核心概念、实体和关系</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b22"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b16">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E054">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">图像生成</ai:name>
+    <ai:description xml:lang="zh">自动生成图像内容</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</ai:year>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E208">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">状态空间</ai:name>
+    <ai:description xml:lang="zh">所有可能状态的集合</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E206"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E202">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">探索与利用</ai:name>
+    <ai:description xml:lang="zh">强化学习中的权衡策略</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E091">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Tool"/>
+    <ai:name xml:lang="zh">NLTK</ai:name>
+    <ai:description xml:lang="zh">自然语言处理工具包</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2001</ai:year>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E168">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">文本摘要</ai:name>
+    <ai:description xml:lang="zh">生成文本的简短摘要</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#nationality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">国籍</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#parameters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">参数量</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b37">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E176">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">代码生成</ai:name>
+    <ai:description xml:lang="zh">自动生成程序代码</ai:description>
+    <ai:appliedIn rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b10">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E082">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <ai:name xml:lang="zh">Berkeley AI Research</ai:name>
+    <ai:description xml:lang="zh">伯克利人工智能研究实验室</ai:description>
+    <ai:founded rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</ai:founded>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E257">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">条件随机场</ai:name>
+    <ai:description xml:lang="zh">序列标注的概率模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2001</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b32"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">概念</rdfs:label>
+    <rdfs:comment xml:lang="zh">基础AI理论概念</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E249">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">自编码器</ai:name>
+    <ai:description xml:lang="zh">学习数据压缩表示的神经网络</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1987</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E073">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <ai:name xml:lang="zh">Herbert Simon</ai:name>
+    <ai:description xml:lang="zh">认知心理学和AI先驱</ai:description>
+    <ai:nationality xml:lang="zh">美国</ai:nationality>
+    <ai:field xml:lang="zh">人工智能</ai:field>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E102">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">泛化能力</ai:name>
+    <ai:description xml:lang="zh">模型在新数据上的表现能力</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#founded">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">成立年份</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b3">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E250">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">稀疏自编码器</ai:name>
+    <ai:description xml:lang="zh">学习稀疏表示的自编码器</ai:description>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E249"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b36">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b37"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b8">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E013">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">反向传播</ai:name>
+    <ai:description xml:lang="zh">神经网络训练的核心算法，用于计算梯度</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1986</ai:year>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="zh">组织</rdfs:label>
+    <rdfs:comment xml:lang="zh">AI研究机构和公司</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E190">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <ai:name xml:lang="zh">自监督学习</ai:name>
+    <ai:description xml:lang="zh">从数据本身生成监督信号</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E002"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b11">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E219">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">Beam Search</ai:name>
+    <ai:description xml:lang="zh">序列生成的搜索算法</ai:description>
+    <ai:belongsTo rdf:resource="http://www.ai-kg.org/entity#E004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E211">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">自注意力</ai:name>
+    <ai:description xml:lang="zh">Transformer的核心机制</ai:description>
+    <ai:isPartOf rdf:resource="http://www.ai-kg.org/entity#E012"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E122">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Algorithm"/>
+    <ai:name xml:lang="zh">LightGBM</ai:name>
+    <ai:description xml:lang="zh">高效梯度提升框架</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E121"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b22">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b23"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">是...的一部分</rdfs:label>
+    <rdfs:comment xml:lang="zh">某概念是更大概念的组成部分</rdfs:comment>
+    <owl:propertyType rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E165">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Application"/>
+    <ai:name xml:lang="zh">语音合成</ai:name>
+    <ai:description xml:lang="zh">将文本转换为语音</ai:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E248">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Concept"/>
+    <ai:name xml:lang="zh">能量模型</ai:name>
+    <ai:description xml:lang="zh">基于能量函数的模型</ai:description>
+    <ai:relatedTo rdf:resource="http://www.ai-kg.org/entity#E003"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b24">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/ontology#worksAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">工作于</rdfs:label>
+    <rdfs:comment xml:lang="zh">某人在某组织工作</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.ai-kg.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.ai-kg.org/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b7">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ai-kg.org/entity#E148">
+    <rdf:type rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <ai:name xml:lang="zh">XLNet</ai:name>
+    <ai:description xml:lang="zh">广义自回归预训练模型</ai:description>
+    <ai:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</ai:year>
+    <ai:basedon rdf:resource="http://www.ai-kg.org/entity#E024"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b25">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b18">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b17">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b14">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Model"/>
+    <rdf:rest rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b15"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbf2af5fa736543019dd2a24c5f172c07b27">
+    <rdf:first rdf:resource="http://www.ai-kg.org/ontology#Technique"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>
