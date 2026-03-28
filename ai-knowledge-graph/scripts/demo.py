@@ -4,12 +4,14 @@
 展示核心功能和典型应用场景
 """
 
-from kg_core import KnowledgeGraph
 import sys
 import os
 
+# 首先修改 sys.path，然后才能导入 kg_core
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), '..')))
+
+from kg_core import KnowledgeGraph
 
 
 def demo_intro():

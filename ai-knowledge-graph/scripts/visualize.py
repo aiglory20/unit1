@@ -4,16 +4,18 @@
 生成知识图谱的可视化图像
 """
 
-from collections import defaultdict
-import networkx as nx
-import matplotlib.pyplot as plt
-from kg_core import KnowledgeGraph
-import matplotlib
 import sys
 import os
 
+# 添加项目根目录到Python路径
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), '..')))
+
+from collections import defaultdict
+import networkx as nx
+import matplotlib
+import matplotlib.pyplot as plt
+from kg_core import KnowledgeGraph
 
 # 设置matplotlib使用非交互式后端
 matplotlib.use('Agg')
